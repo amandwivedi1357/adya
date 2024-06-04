@@ -1,0 +1,26 @@
+.sector_2{
+    width: 100%;
+
+}
+.sector_2_inner{
+    margin: 100px;
+    margin-bottom: 69px;
+}
+.sector_2_inner .head_text{
+    color: #030303;
+font-family: Poppins;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 55px; /* 137.5% */
+letter-spacing: 1px;
+}
+.sector_2_inner .desc_text{
+    color: rgba(3, 3, 3, 0.90);
+font-family: Poppins;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 200% */
+letter-spacing: 0.25px;
+}

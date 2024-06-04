@@ -1,0 +1,131 @@
+.top_main{
+  /* border: 1px solid red; */
+}
+
+.Positions_container{
+  margin-bottom: 47px;
+   /* Add pointer cursor to indicate clickability */
+  transition: height 0.3s ease;
+    border-radius: 10px;
+border: 0.5px solid rgba(147, 149, 152, 0.47);
+}
+.post{
+   
+    display: flex;
+    margin: 49px;
+    margin-bottom: 21px;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+}
+.post .post_name{
+    color: #030303;
+font-family: Poppins;
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: 40px; /* 160% */
+letter-spacing: 0.25px;
+}
+.post .Apply_button{
+  cursor: pointer;
+display: inline-flex;
+height: 43px;
+padding: 10px 26px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 125% */
+letter-spacing: 1px;
+flex-shrink: 0;
+border-radius: 4px;
+border: 1px solid #E85123;
+background: #E85123;
+box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06);
+}
+.post_desc{
+  /* border: 1px solid red; */
+  width: 80%;
+    margin: 0 49px;
+    margin-bottom: 49px;
+    color: rgba(3, 3, 3, 0.90);
+font-family: Poppins;
+font-size: 15px;
+font-style: normal;
+font-weight: 300;
+line-height: 29px; /* 193.333% */
+letter-spacing: 0.5px;
+}
+.main_req_container{
+    width: 80%;
+    margin: auto 49px;
+    display: none; /* Initially hidden */
+  transition: height 0.3s ease; /* Smooth transition for height change */
+    /* border: 1px solid red; */
+}
+.Positions_container.expanded .main_req_container {
+   display: block;  /* Display the main_req_container when Positions_container is expanded */
+  }
+.main_req_container .topic{
+    color: #030303;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+ul {
+    margin-top: 21px;
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .skills_list {
+    margin-bottom: 21px; /* Adjust spacing between list items */
+  }
+  .post_desc .read_more{
+    color: #E85123;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .skills_list::before {
+    content: ""; /* Add bullet using pseudo-element */
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #E85123;
+    margin-right: 16px; /* Adjust spacing between bullet and text */
+  }
+  
+.pre_reqs{
+    display: flex;
+    justify-content: space-between;
+    width: 37%;
+    margin-left: 49px;
+    margin-top: 37px;
+    margin-bottom: 63px;
+}
+.reqs{
+
+padding: 7px 22px;
+align-items: center;
+
+border-radius: 25px;
+border: 0.4px solid #808285;
+}
+.pre_reqs .reqs p{
+    color: #808080;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24.5px; /* 175% */
+letter-spacing: 0.25px;
+}
