@@ -110,7 +110,7 @@ export const cards1_Sectors = [
         img:"/images/sectors/energy.svg",
         head:"Energy & Utilities ",
         route:'Energy & Utilities',
-        hover:"images/sectors/energy_fff.svg",
+        hover:"/images/sectors/energy_fff.svg",
         followUp:"( Advance Metering Infrastructure )",
         desc:"Curtail your revenue leakages by upgrading your legacy prepayment system with Smart prepayment.",
         explore:"explore"
@@ -119,7 +119,7 @@ export const cards1_Sectors = [
         img:"/images/sectors/industrial.svg",
         head:"Industrial",
         route:'Industrial',
-        hover:"images/sectors/industrial_fff.svg",
+        hover:"/images/sectors/industrial_fff.svg",
         desc:"Upgrade your existing Digital Meter to Smart Meter or smart prepayment at fractional cost.",
         explore:"explore"
     },
@@ -127,7 +127,7 @@ export const cards1_Sectors = [
         img:"/images/sectors/commercial.svg",
         head:"Commercial",
        route:'Commercial',
-        hover:"images/sectors/commercial_fff.svg",
+        hover:"/images/sectors/commercial_fff.svg",
         desc:"Upgrade your existing Digital Meter to Smart Meter or smart prepayment at fractional cost.",
         explore:"explore"
     },
@@ -135,7 +135,7 @@ export const cards1_Sectors = [
         img:"/images/sectors/resident.svg",
         head:"Residential",
       route:'Residential',
-        hover:"images/sectors/resident_fff.svg",
+        hover:"/images/sectors/resident_fff.svg",
         desc:"Scalable and secured networks which enable self-healing and get your alerts, notifications in seconds.",
         explore:"explore"
     },
@@ -143,7 +143,7 @@ export const cards1_Sectors = [
         img:"/images/sectors/electric.svg",
         head:"Electric Vehicle ",
         route:'Electric Vehicle ',
-        hover:"images/sectors/electric_fff.svg",
+        hover:"/images/sectors/electric_fff.svg",
         desc:"Connect any Smart Meter, Digital Meter or any communication with one Head End System.",
         explore:"explore"
     },

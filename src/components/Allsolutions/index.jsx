@@ -47,11 +47,10 @@ export const Single_solution_data = [
          
         overviewDesc: (
             <>
-                As pioneers in the field, we are proud to be one of the select few companies offering an all-encompassing smart metering solution. Our comprehensive suite of products is designed for seamless integration, enabling effortless plug-and-play of devices. We don&apos;t just provide Smart Meters; we offer a complete ecosystem including Communication Networks, Head End Systems, and Meter Data Management, all working in perfect harmony. Our services extend beyond product provision. We also offer bespoke integration and customization services tailored to your Advanced Metering Infrastructure (AMI) needs.
-                <br />
-                <br />
-                We stand out as one of the few enterprises that have undertaken extensive research, design, and development in creating comprehensive end-to-end smart metering products and solutions. Our offerings empower utility providers to not only successfully deploy Advanced Metering Infrastructure (AMI) systems but also provide a full spectrum of services, including System Integrations, Smart Metering Operations Center (SMOC) setup, Facility Management Services (FMS), and Installation and Commissioning services.
-            </>
+                We are proud to present our state-of-the-art Smart Prepaid System, a blend of sophistication and simplicity designed for Commercial, Industrial, and Home communities. It's not just a product; it's an experience tailored for ease of deployment, operation, and usage. <br />
+Our system is fully automated, eliminating the need for human intervention and thereby reducing the risk of errors. We've engineered a dual-layer prepaid metering engine and calculation system, loaded both in the Meter and at the backend Software. This design provides a fail-safe mechanism, ensuring uninterrupted service even during communication outages. <br /><br />
+With our Smart Prepaid System, you can say goodbye to hidden revenue losses associated with legacy prepayment systems. We've developed our solution with a keen understanding of the industry's challenges and the need to secure every cent of your revenue.
+ </>
         ),        
         features: [
             

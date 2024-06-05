@@ -12,6 +12,7 @@ import SingleSect from "../pages/SingleSector/SingleSect";
 import Products from "../pages/Products/Products";
 import Services from "../pages/Services/Services";
 import SingleServices from "../pages/SingleServices/SingleServices";
+import Partners from "../pages/Partners/Partners";
 
 
 export default function AllRoutes() {
@@ -21,6 +22,8 @@ export default function AllRoutes() {
       <Route path="/all-solutions" element={<AllSolutions/>} />
       <Route path="/:single" element={<SingleSols/>} />
        <Route path="/career" element={<Career/>} />
+       <Route path="/partners" element={<Partners/>} />
+
        <Route path="/contact-us" element={<ContactUs/>} />
       <Route path="/about-us" element={<Aboutus/>} />
       <Route path="/sector" element={<Sectors/>} />

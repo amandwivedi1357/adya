@@ -45,10 +45,10 @@ export const Single_sector_data = [
          
         overviewDesc: (
             <>
-                As pioneers in the field, we are proud to be one of the select few companies offering an all-encompassing smart metering solution. Our comprehensive suite of products is designed for seamless integration, enabling effortless plug-and-play of devices. We don&apos;t just provide Smart Meters; we offer a complete ecosystem including Communication Networks, Head End Systems, and Meter Data Management, all working in perfect harmony. Our services extend beyond product provision. We also offer bespoke integration and customization services tailored to your Advanced Metering Infrastructure (AMI) needs.
+In today's world, energy efficiency is more important than ever. For homeowners, we provide a solution that enables you to monitor your energy consumption in real-time, particularly for high-demand appliances and systems such as EV charging stations, HVAC systems, refrigerators, and swimming pools. 
                 <br />
                 <br />
-                We stand out as one of the few enterprises that have undertaken extensive research, design, and development in creating comprehensive end-to-end smart metering products and solutions. Our offerings empower utility providers to not only successfully deploy Advanced Metering Infrastructure (AMI) systems but also provide a full spectrum of services, including System Integrations, Smart Metering Operations Center (SMOC) setup, Facility Management Services (FMS), and Installation and Commissioning services.
+                Our technology goes beyond simple monitoring, offering predictive analytics to identify which appliances are the heaviest energy users and when they consume the most power. This allows you to understand your home's energy usage patterns in detail, providing you with the knowledge you need to make smarter, more eco-friendly decisions.
             </>
         ),        
         features: [
@@ -84,7 +84,14 @@ export const Single_sector_data = [
          
         overviewDesc: (
             <>
-                Our Digi2Smart solution provides a groundbreaking approach for utilities and consumers looking to advance their current digital metering systems. This innovative system allows for an upgrade to a Smart Prepaid System or Smart Meter through the simple retrofitting of a compact IoT device. Remarkably, this can be achieved at just half the cost of installing a new Smart Meter or Smart Prepaid System. This cost-effective solution seamlessly integrates with existing infrastructure, offering a smart, budget-friendly way to modernize energy management.
+                In today's world, energy efficiency is more important than ever. For homeowners, we provide a solution that enables you to monitor your energy consumption in real-time, particularly for high-demand appliances and systems such as EV charging stations, HVAC systems, refrigerators, and swimming pools. <br /><br />
+                Our technology goes beyond simple monitoring, offering predictive analytics to identify which appliances are the heaviest energy users and when they consume the most power. This allows you to understand your home's energy usage patterns in detail, providing you with the knowledge you need to make smarter, more eco-friendly decisions.
+                <br /><br />
+                In addition to helping you reduce your carbon footprint, our real-time energy tracking can also help you save money on your utility bills. By identifying which appliances are using the most energy, you can adjust your usage habits or consider upgrading to more energy-efficient models. <br />
+                <br />
+                Furthermore, our system can provide valuable insights into appliance maintenance. By tracking energy usage, it can identify potential issues before they become bigger problems, helping you avoid costly repairs or replacements.
+Ultimately, our goal is to empower homeowners with the tools and information they need to take control of their energy consumption, leading to a greener, more sustainable future.
+<br /><br />
             </>
         ),
         features: [
@@ -114,15 +121,10 @@ export const Single_sector_data = [
          
         overviewDesc: (
             <>
-                In the modern interconnected world, wireless communication networks are fundamental to national infrastructure, crucial for their scalability, security, and ability to handle high-frequency data essential for the growing number of IoT devices. These networks facilitate business communication, including data transmission and client interactions, and offer a cost-efficient alternative to wired infrastructures due to fewer required components. Additionally, wireless LANs enhance collaboration and productivity without extensive cabling.
+                We provide homeowners with real-time energy consumption monitoring for high-demand appliances and systems. Our technology uses predictive analytics to spotlight the heaviest energy users in your home. Understanding these patterns allows you to make eco-friendly decisions, reduce your carbon footprint, and save on utility bills. We also offer insights into appliance maintenance, identifying potential issues before they worsen. 
                 <br />
                 <br />
-                A robust telecommunications infrastructure, encompassing both wired and wireless networks, is key to seamless connectivity, facilitating computing and communication across various platforms.
-                <br />
-                <br />
-                &Adya;s RF networks utilize unlicensed, less crowded frequency bands to ensure effective device connectivity and enable modular private network creation. These networks, connected through gateways and routers, provide cloud connectivity via GSM or Fiber Optic and are designed for scalable expansion across cityscapes, aligning with technological advancements.
-                sol_banner:'images/Homepage/all_solution.png',
-                tag:'solutions',
+                Our aim is to equip homeowners with the knowledge to control their energy use for a sustainable future.In today's world, energy efficiency is more important than ever. For homeowners, we provide a solution that enables you to monitor your energy consumption in real-time, particularly for high-demand appliances and systems such as EV charging stations, HVAC systems, refrigerators, and swimming pools.
                  
             </>
         )
@@ -159,12 +161,18 @@ export const Single_sector_data = [
          
         overviewDesc: (
             <>
-                The Key to Streamlined Smart Meter Rollouts.
+                In today's world, energy efficiency is more important than ever. For homeowners, we provide a solution that enables you to monitor your energy consumption in real-time, particularly for high-demand appliances and systems such as EV charging stations, HVAC systems, refrigerators, and swimming pools.
                 <br />
-                We are excited to introduce our advanced interoperable solution, expertly crafted to enhance and simplify your smart meter rollouts. This system is meticulously designed to effortlessly connect various brands of Smart Meters, regardless of their communication protocols, to a singular, unified Head End System and Meter Data Management platform.
+                Our technology goes beyond simple monitoring, offering predictive analytics to identify which appliances are the heaviest energy users and when they consume the most power. This allows you to understand your home's energy usage patterns in detail, providing you with the knowledge you need to make smarter, more eco-friendly decisions.
                 <br />
                 <br />
-                Our interoperable solution is not just a tool for connecting different smart meters and communication systems; it is a robust, versatile platform designed to evolve with your needs, ensuring efficiency, flexibility, and scalability at every step of your smart meter rollout journey.
+                In addition to helping you reduce your carbon footprint, our real-time energy tracking can also help you save money on your utility bills. By identifying which appliances are using the most energy, you can adjust your usage habits or consider upgrading to more energy-efficient models.
+                <br />
+                <br />
+                Furthermore, our system can provide valuable insights into appliance maintenance. By tracking energy usage, it can identify potential issues before they become bigger problems, helping you avoid costly repairs or replacements.
+Ultimately, our goal is to empower homeowners with the tools and information they need to take control of their energy consumption, leading to a greener, more sustainable future.
+<br /><br />
+
             </>
         ),
         features: [

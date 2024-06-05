@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom";
  
 import "../Allsolutions/Single.css";
-import { cards1_AllSolutions } from "../index";
+import { cards1_AllSolutions, cards1_Sectors } from "../index";
 import { useState } from "react";
 import { Single_sector_data } from ".";
 
@@ -62,8 +62,8 @@ export default function SingleSector() {
               </p>
               <div className="links">
                 {
-                  cards1_AllSolutions.map((data,idx)=>(
-                    <div className="single_link" key={idx} onClick={()=>navigate(`/${data.head}`)} onMouseEnter={() => setIsHovered(idx)}
+                  cards1_Sectors.map((data,idx)=>(
+                    <div className="single_link" key={idx} onClick={()=>navigate(`/sector/${data.head}`)} onMouseEnter={() => setIsHovered(idx)}
                     onMouseLeave={() => setIsHovered(null)}>
                     <div className="inner">
                       <img className="link_img" src={isHovered === idx ? data.hover : data.img} alt="" />
