@@ -1,0 +1,115 @@
+.Single_prod_container{
+    width: 100%;
+    
+}
+.Single_prod_container .inner1{
+    margin: 50px 100px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+ .prod_head_text{
+    color: #030303;
+font-family: Poppins;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: 45px; /* 150% */
+letter-spacing: 0.25px;
+}
+.overview_cont ul {
+    margin-left: 1.5rem;
+    list-style-type: disc;
+    
+}
+.overview_cont ul li{
+    margin-bottom: 10px;
+}
+.overview_cont .variant_cont{
+    display: flex;
+}
+.variant_cont .left{
+    flex: 1;
+}
+.variant_cont .right{
+    flex: 1;
+}
+.flex_ul{
+    display: flex;
+    gap: 40px;
+}
+.overview_cont .application_cont{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.Specification_cont{
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+.Specification_cont .left{
+    flex: 1;
+    border-radius: 4px;
+    background: rgba(128, 128, 128, 0.05);
+    padding: 20px 0; 
+}
+.Specification_cont .right{
+    flex: 1;
+    border-radius: 4px;
+    background: rgba(128, 128, 128, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+    
+}
+.key_features{
+    display: flex;
+    margin-left:20px;
+    
+}
+.key_features div{
+    flex: 1;
+
+}
+.key_features div .key{
+    color: #000;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 45px; /* 250% */
+letter-spacing: 0.25px;
+}
+.key_features div .value{
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    color: rgba(3, 3, 3, 0.90);
+font-family: Poppins;
+text-align: left;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 29px; /* 161.111% */
+letter-spacing: 0.5px;
+}   
+
+.Specification_cont .right p:nth-child(even){
+    margin-bottom: 20px;
+}
+.images_container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.images_container .single_image{
+    margin: auto;
+    width: 375px;
+    gap: 20px;
+height: 290px;
+flex-shrink: 0;
+background: #D9D9D9;
+}

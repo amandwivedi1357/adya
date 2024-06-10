@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { cards1_data, cards2_data, listData } from "../index";
-import MySlider from "./HomeSlider";
+
 import "./Main.css";
 
 export default function Main() {
@@ -36,7 +36,7 @@ export default function Main() {
             <p className="head_text">
             Solutions We Offer
             </p>
-            <p style={{marginBottom:'68px'}} className="desc_text">Seamlessly integrated, easy to rollout and cost effective solution <br /> which impacts business.</p>
+            <p  className="desc_text">Seamlessly integrated, easy to rollout and cost effective solution <br /> which impacts business.</p>
         </div>
 
         <div className="cards_container_11">
@@ -67,6 +67,7 @@ export default function Main() {
                 <p className="desc_text">
                 Our services help utilities, solution providers and system integrators to rollout projects faster and cost effectively.
                 </p>
+                <img src="/images/Homepage/mobile_home1.png" alt="" />
                 <div className="tabs">
                     <div className="tab" onMouseEnter={() => setIsHovered1(true)}
                 onMouseLeave={() => setIsHovered1(false)}>

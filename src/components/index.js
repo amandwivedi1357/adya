@@ -362,7 +362,7 @@ export const products_Card = [
     {
         img:"images/Homepage/d1.svg",
         head:"Measurement Device",
-        route:'Measurement Device',
+        route:'Measurement-Device',
         hover:"images/Homepage/d1_fff.svg",
         
         desc:"Adya has developed products and solutions that are “ORIGINAL” which support the entire smart grid chain.",
@@ -379,7 +379,7 @@ export const products_Card = [
     {
         img:"images/Homepage/digi2.svg",
         head:"Communication Module",
-       route:'Communication Module',
+       route:'Communication-Module',
         hover:"images/Homepage/digi2_fff.svg",
         desc:"Adya has developed products and solutions that are “ORIGINAL” which support the entire smart grid chain.",
         explore:"explore"

@@ -118,4 +118,22 @@ transition: all  delay 0.3s ease ;
    
 }
 
+@media only screen and (max-width: 600px) {
+    .navbar_div{
+      float: left;
+      /* border: 1px solid red; */
+      margin-right: auto;
+      margin-left: 20px;
+    }
+    .Advanced-Energy-Management{
+      display: none;
+    }
+    .logo{
+      width: 86px;
+    }
+    .search{
+      display: none;
+  }
+}
+
 

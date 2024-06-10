@@ -139,7 +139,7 @@ margin: 0 50px;
         transition: background-color 0.3s, color 0.3s;
 }
 .card .card_vect{
-   
+   z-index: 100;
   flex-grow: 0;
   margin: 17px 34px ;
 color: #fff;
@@ -230,6 +230,9 @@ letter-spacing: 0.25px;
   letter-spacing: 0.25px;
   text-align: left;
   color: rgba(3, 3, 3, 0.9);
+}
+.left_content img{
+    display: none;
 }
 .tabs{
     display: flex;
@@ -492,4 +495,56 @@ font-family: Poppins;
   letter-spacing: 0.25px;
   text-align: left;
   color: rgba(3, 3, 3, 0.9);
+}
+
+@media only screen and (max-width: 600px) {
+
+    .inner_container .head_text{
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .sol_banner{
+        border: 1px solid red;
+        width: 360px;
+        height: 518px;
+       
+    }
+    .mid_cont_1 .top_cont{
+        margin: 0;
+        margin-top: -5rem;
+        margin-left: -1rem;
+        margin-bottom: -18px;
+        /* border: 1px solid red; */
+    }
+    .mid_cont_1 .top_cont .head_text{
+        font-size: 20px; 
+    }
+    .mid_cont_1 .top_cont .desc_text{
+        width: 100%;
+        color: rgba(3, 3, 3, 0.90);
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 157.143% */
+letter-spacing: 0.5px;
+
+    }
+    .mid_cont_1 .cards_container_11{
+        display: none;
+     
+    }
+    .left_content .head_text{
+        font-size: 20px;
+        margin: 0;
+        margin-left: 10px;
+    }
+    .left_content .desc_text{
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    .left_content img{
+        display: block;
+    }
 }

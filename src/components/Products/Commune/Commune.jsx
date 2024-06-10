@@ -1,33 +1,37 @@
 import { useNavigate } from "react-router-dom";
-import "./Products.css"
+import Navbar from "../../Navbar";
 import { useState } from "react";
-import { products_Card } from "..";
+import { Communicate, Software } from "..";
+import Footer from "../../Footer/Footer";
 
-export default function ProductsMain() {
-  const navigate = useNavigate();
-  const [isHovered, setIsHovered] = useState();
-  const handleClick = (route)=>{
-      navigate(`/${route}`)
-  }
+
+
+export default function Commune() {
+    const navigate = useNavigate();
+    const [isHovered, setIsHovered] = useState();
+    const handleClick = (route)=>{
+        navigate(`/${route}`)
+    }
   return (
-    <div className="products_container">
-         <div className="top_main">
+    <div>
+       <Navbar/>
+      <div className="top_main">
             <img className="sol_banner" src="images/Homepage/careerBanner.png" alt="" />
             <div className="img_cont">
                 <p className="head_text">
-                Products 
+                Communication Module 
                 </p>
                 <div className="bred">
 
                 <img src="images/Homepage/Home.svg" alt="" />
-                <span>Home/Products</span>
+                <span>Home/Communication Module</span>
                 </div>
             </div>
-    </div> 
+    </div>
     <div className="mid_cont_1">
         <div className="top_cont">
             <p className="head_text">
-            Products We Offer
+            Communication Module
             </p>
             <p className="desc_text">
             Adya has developed products and solutions that are “ORIGINAL” <br /> which support the entire smart grid chain.
@@ -36,7 +40,7 @@ export default function ProductsMain() {
         
         
         <div className="cards_container_11">
-            {products_Card.map((data,idx)=>(
+            {Communicate.map((data,idx)=>(
                 <div onClick={()=>handleClick(data.route)} className="card" key={idx}   onMouseEnter={() => setIsHovered(idx)}
                 onMouseLeave={() => setIsHovered(null)}>
                     <img src={isHovered === idx ? data.hover : data.img} alt="" className="card_vect" />
@@ -52,8 +56,8 @@ export default function ProductsMain() {
                 </div>
             ))}
         </div>
-        </div> 
+        </div>  
+        <Footer/>
     </div>
-
   )
 }

@@ -13,6 +13,10 @@ import Products from "../pages/Products/Products";
 import Services from "../pages/Services/Services";
 import SingleServices from "../pages/SingleServices/SingleServices";
 import Partners from "../pages/Partners/Partners";
+import MeasureMentDevice from "../components/Products/MeasurementDevice/MeasureMentDevice";
+import SingleProduct from "../pages/SingleProduct/SingleProduct";
+import Softwares from "../components/Products/Softwares/Softwares";
+import Commune from "../components/Products/Commune/Commune";
 
 
 export default function AllRoutes() {
@@ -32,6 +36,10 @@ export default function AllRoutes() {
       <Route path="/services/:single" element={<SingleServices/>} />
       <Route path="/sector/:sectors" element={<SingleSect/>} />
       <Route path="/products" element={<Products/>}/>
+      <Route path="/Measurement-Device" element={<MeasureMentDevice/>}/>
+      <Route path="/Softwares" element={<Softwares/>}/>
+      <Route path="/Communication-Module" element={<Commune/>}/>
+      <Route path="/Measurement-Device/:single" element={<SingleProduct/>}/>
       {/* <Route path="/products/single" element={<Products/>}/> */}
     </Routes>
   )
