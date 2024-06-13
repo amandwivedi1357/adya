@@ -129,3 +129,116 @@ font-weight: 400;
 line-height: 24.5px; /* 175% */
 letter-spacing: 0.25px;
 }
+.mobile_Positions{
+  display: none;
+}
+
+
+/* Single Career start */
+.career_container{
+  width: 100%;
+  margin-bottom: 30px;
+  /* border: 1px solid red; */
+}
+.career_container .overview{
+  margin: 20px;
+}
+.career_container .overview .head_text{
+  color: #030303;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 25px; /* 138.889% */
+letter-spacing: 0.5px;
+}
+.career_container .overview .desc_text{
+  color: rgba(3, 3, 3, 0.90);
+font-family: Poppins;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 146.667% */
+letter-spacing: 0.5px;
+}
+.overview .mandates{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: start;
+  /* border: 1px solid red; */
+}
+.mandates .inner_mandates{
+  display: inline-flex;
+height: 34px;
+padding: 7px 22px;
+align-items: center;
+gap: 17px;
+flex-shrink: 0;
+border-radius: 25px;
+background: rgba(232, 81, 35, 0.17);
+}
+.career_container .req_skills{
+  margin: 40px 20px;
+}
+.career_container .req_skills .head_text{
+  color: #030303;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 111.111% */
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+.req_skills .mid_cont_5{
+  margin-top: 60px;
+}
+.req_skills .mid_cont_5 .bottom_cont {
+  /* border: 1px solid red; */
+}
+.req_skills .mid_cont_5 .bottom_cont .single_list .head{
+  width: 96%;
+  /* border: 1px solid red; */
+}
+
+.tab_cont_mob .head_text{
+  color: #030303;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 111.111% */
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.career_container .tab_cont_mob{
+  padding: 20px 0;
+  background: rgba(128, 130, 133, 0.05);
+}
+/* Single Career end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+  .Positions_container{
+    display: none;
+  }
+  .mobile_Positions{
+    display: block;
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+}

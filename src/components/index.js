@@ -277,7 +277,7 @@ export const cards1_AllSolutions = [
 ]
 
 export const positionsData = [
-    {
+    {   route:'',  
         postName: "Senior Data Engineer",
         postDesc: "We are looking for Senior Data Engineer with MS or BS in Computer Science or a related field OR equivalent practical experience in data engineering.",
         requiredSkills: [
@@ -290,7 +290,7 @@ export const positionsData = [
         yearsExp: "+ 4  Years of exp.",
         fullTime: "Full Time"
     },
-    {
+    {   route:'',
         postName: "Cloud Infrastructure Engineer",
         postDesc: "We are looking for a Cloud Infrastructure Engineer with experience in managing cloud infrastructure, deploying and scaling applications, and ensuring system reliability and performance.",
         requiredSkills: [
@@ -303,7 +303,7 @@ export const positionsData = [
         yearsExp: "+ 3 Years of exp.",
         fullTime: "Full Time"
     },
-    {
+    {   route:'',
         postName: "Full Stack Engineer",
         postDesc: "We are seeking a Full Stack Engineer with experience in both front-end and back-end development to join our dynamic team.",
         requiredSkills: [
@@ -316,7 +316,7 @@ export const positionsData = [
         yearsExp: "+ 2 Years of exp.",
         fullTime: "Full Time"
     },
-    {
+    {   route:'',
         postName: ".NET Sr. Developer",
         postDesc: "We are looking for a skilled .NET Senior Developer to join our team and help build high-quality, innovative software solutions.",
         requiredSkills: [
@@ -329,7 +329,7 @@ export const positionsData = [
         yearsExp: "+ 5 Years of exp.",
         fullTime: "Full Time"
     },
-    {
+    {   route:'',
         postName: "Hardware Engineer",
         postDesc: "We are seeking a Hardware Engineer with expertise in designing, testing, and optimizing hardware systems.",
         requiredSkills: [
@@ -342,7 +342,7 @@ export const positionsData = [
         yearsExp: "+ 3 Years of exp.",
         fullTime: "Full Time"
     },
-    {
+    {   route:'',
         postName: "Data Quality Engineer",
         postDesc: "We are looking for a Data Quality Engineer to ensure the accuracy, completeness, and reliability of data used for analysis and decision-making.",
         requiredSkills: [

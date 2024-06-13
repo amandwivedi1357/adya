@@ -15,7 +15,7 @@ export default function Footer() {
             Plot no.61, Nagarjuna hills, Punjagutta, Hyderabad - 500 082, Telangana, India  
             </p>
         </div>
-        <div style={{marginLeft:'20px'}} className="contents">
+        <div  className="contents">
              <p className="list_head">
                 Contact Details
             </p>
@@ -42,7 +42,7 @@ export default function Footer() {
            </div>
            <div style={{marginTop:'20px'}} className='quick_links'>
             <p>About us</p>
-            <p style={{marginLeft:'-28px'}}>Products</p>
+            <p className="footer_prod">Products</p>
             <p  onClick={()=>navigate('/sectors')}>Sectors</p>
             </div>  
            <div style={{marginTop:'20px'}} className='quick_links'>
@@ -55,7 +55,7 @@ export default function Footer() {
       </div>
       
     </div>
-    <p style={{paddingBottom:'2rem'}} className="list_head">@2023Adya - Website by Rayformula</p>
+    <p style={{paddingBottom:'2rem'}} className="list_head ray_formula">@2023Adya - Website by Ray Formula</p>
     </div>
     
   )

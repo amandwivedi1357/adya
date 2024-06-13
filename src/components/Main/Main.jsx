@@ -2,6 +2,7 @@ import { useState } from "react";
 import { cards1_data, cards2_data, listData } from "../index";
 
 import "./Main.css";
+import { Box } from "@chakra-ui/react";
 
 export default function Main() {
     const [isHovered, setIsHovered] = useState(false);
@@ -18,8 +19,8 @@ export default function Main() {
     const img = [{img:'img1'},{img:'img2'},{img:'img3'},{img:'img4'},{img:'img5'},{img:'img6'},{img:'img7'},{img:'img8'},{img:'img9'},{img:'img10'}]
     
   return (
-    <div className="red">
-     <div className="banner">
+    <div className="red_home">
+     {/* <div className="banner">
     <img className="sol_banner" src="images/Homepage/ban1.png" />
     <div className="inner_container">
         <p className="head_text">
@@ -28,7 +29,7 @@ export default function Main() {
         <p className="desc_text">Adya Smart metering solutions</p>
         <button className="contact_btn">Contact Us</button>
     </div>
-</div>
+</div> */}
 
       {/* <MySlider/> */}
       <div className="mid_cont_1">
@@ -164,13 +165,14 @@ export default function Main() {
       </div>
       <div className="mid_cont_4">
       <div className="left left4">
-            <img src="images/Homepage/mid_5_banner.jpg" alt="" />
+            <img src="/images/Homepage/mid_4.png" alt="" />
         </div>
       <div className="right">
             <div className="right_content">
                 <p className="head_text">
                 Sectors We Serve
                 </p>
+                <img src="/images/Homepage/mid_4_m.png" alt="" />
                 <p className="desc_text">
                 Our services cater to a diverse range of sectors that benefit from the implementation of our cutting-edge energy management systems.
                 </p>
@@ -264,7 +266,7 @@ export default function Main() {
                 ))
             }
         </div>
-        <button style={{margin:"44px  0 0 36px "}} className="contact_btn">Contact us</button>
+        <button className="contact_btn">Contact us</button>
       </div>
       <div className="mid_cont_6">
         <div className="left">
@@ -274,7 +276,8 @@ export default function Main() {
             </p>
             <p className="desc_text">Empowering Journeys, Empowered Words</p>
         </div>
-        <img src="images/Homepage/quote.svg" alt="quote" />
+        <img src="images/Homepage/mid_6_m.png" alt="" className="mid_m_6"/>
+        <img src="images/Homepage/quote.svg" alt="quote" className="quote"/>
         <div className="testimonial">
             <p>We are Immensely satisfied and delighted on the Installation, Commissioning of end to end smart meter project awarded to ADYA Smart Metering Pvt. Ltd., We also hereby certify that the plug & play project was delivered to our satisfactory levels.</p>
             <p className="desc_text_2">
@@ -284,19 +287,24 @@ export default function Main() {
         
       </div>
       <div className="right">
-            <img src="images/Homepage/mid_66.png" alt="" />
+            <img src="images/Homepage/mid_2.png" alt="" />
         </div>
         </div>
         
-     <div className="marquee_container">
-     <marquee scrollAmount={20}  direction="left">
-    {
-        img.map((data,idx)=>(
-            <img src={`images/Homepage/${data.img}.png`} style={{marginRight:'2rem'}} key={idx} alt="" />
-        ))
-    }
-     </marquee>
-     </div>
+        <Box className="marquee_container">
+      <marquee scrollAmount={20} direction="left">
+        <Box display="flex">
+          {img.map((data, idx) => (
+            <img
+              src={`images/Homepage/${data.img}.png`}
+              style={{ marginRight: "2rem" }}
+              key={idx}
+              alt=""
+            />
+          ))}
+        </Box>
+      </marquee>
+    </Box>
     </div>
   );
 }

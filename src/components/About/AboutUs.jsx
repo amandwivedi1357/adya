@@ -34,7 +34,7 @@ export default function AboutUs() {
           <p className="head_text">About Us</p>
           <div className="bred">
             <img src="images/Homepage/Home.svg" alt="" />
-            <span>Home/About Us</span>
+            <p>Home/About Us</p>
           </div>
         </div>
       </div>
@@ -97,12 +97,12 @@ export default function AboutUs() {
         </div>
     </div>
         </div>
-        <div className="mid_cont_5" style={{marginLeft:'100px'}}>
+        <div className="mid_cont_5" >
       <div className="top_cont">
             <p className="head_text">
-            Why Our Customers <br /> Choose  Working With Us
+            Why Our Customers  Choose  Working With Us
             </p>
-            <p className="desc_text">Adya empowers you and your community to control your energy <br /> generation and payments.</p>
+            <p className="desc_text">Adya empowers you and your community to control your energy  generation and payments.</p>
         </div>
         <div className="bottom_cont">
             {
@@ -130,6 +130,9 @@ export default function AboutUs() {
         <div className="About_top">
             <p className="head_text">
             Our Team Members
+            </p>
+            <p className="desc_text">
+            Empowering Journeys, Empowered Words.
             </p>
         </div>
         <div className="about_members">

@@ -4,6 +4,8 @@ import { useState } from "react";
 import { products_Card } from "..";
 
 export default function ProductsMain() {
+    
+    const [isHovered5, setIsHovered5] = useState(false);
   const navigate = useNavigate();
   const [isHovered, setIsHovered] = useState();
   const handleClick = (route)=>{
@@ -20,7 +22,7 @@ export default function ProductsMain() {
                 <div className="bred">
 
                 <img src="images/Homepage/Home.svg" alt="" />
-                <span>Home/Products</span>
+                <p>Home/Products</p>
                 </div>
             </div>
     </div> 
@@ -53,6 +55,30 @@ export default function ProductsMain() {
             ))}
         </div>
         </div> 
+        <div className="tab_cont_mob">
+        <div className="tabs">
+        {
+            products_Card.map((data,idx)=>(
+                <div key={idx} className="tab" onMouseEnter={() => setIsHovered5(true)}
+                onMouseLeave={() => setIsHovered5(false)} onClick={()=>handleClick(data.route)}>
+                        <div className="in_tab">
+                            <img src={
+                      isHovered5
+                        ? "images/Homepage/energy_fff.svg"
+                        : data.img
+                    }  alt="" />
+                            <p className="tab_text">
+                           {data.head}
+                            </p>
+                        </div>
+                        <p style={{marginTop:'5px',fontWeight:'bold'}}
+                        className="tab_text">→</p>
+                    </div>
+            ))
+        }
+      
+      </div>
+        </div>
     </div>
 
   )

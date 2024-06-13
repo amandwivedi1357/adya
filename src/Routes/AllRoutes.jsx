@@ -17,6 +17,7 @@ import MeasureMentDevice from "../components/Products/MeasurementDevice/MeasureM
 import SingleProduct from "../pages/SingleProduct/SingleProduct";
 import Softwares from "../components/Products/Softwares/Softwares";
 import Commune from "../components/Products/Commune/Commune";
+import SingleCareer from "../components/Career/SingleCareer";
 
 
 export default function AllRoutes() {
@@ -26,6 +27,7 @@ export default function AllRoutes() {
       <Route path="/all-solutions" element={<AllSolutions/>} />
       <Route path="/:single" element={<SingleSols/>} />
        <Route path="/career" element={<Career/>} />
+       <Route path="/career/:single" element={<SingleCareer/>} />
        <Route path="/partners" element={<Partners/>} />
 
        <Route path="/contact-us" element={<ContactUs/>} />

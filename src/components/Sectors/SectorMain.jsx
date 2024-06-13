@@ -13,7 +13,7 @@ export default function SectorMain() {
           <p className="head_text">Sectors</p>
           <div className="bred">
             <img src="images/Homepage/Home.svg" alt="" />
-            <span>Home / Industries</span>
+            <p>Home / Industries</p>
           </div>
         </div>
       </div>

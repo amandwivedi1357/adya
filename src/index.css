@@ -96,3 +96,8 @@ html {
   scrollbar-width: thin; /* Make the scrollbar thin */
   scrollbar-color: gray transparent; /* Color of the scrollbar thumb and track */
 }
+@media screen and (max-width: 767px) {
+  body{
+    overflow-x:hidden;
+  }
+}

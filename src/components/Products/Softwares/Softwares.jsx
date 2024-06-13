@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../../Navbar";
 import { useState } from "react";
 import { Software } from "..";
+import Footer from "../../Footer/Footer";
 
 
 
@@ -23,7 +24,7 @@ export default function Softwares() {
                 <div className="bred">
 
                 <img src="images/Homepage/Home.svg" alt="" />
-                <span>Home/Softwares</span>
+                <p>Home/Softwares</p>
                 </div>
             </div>
     </div>
@@ -55,7 +56,8 @@ export default function Softwares() {
                 </div>
             ))}
         </div>
-        </div>  
+        </div> 
+        <Footer/> 
     </div>
   )
 }

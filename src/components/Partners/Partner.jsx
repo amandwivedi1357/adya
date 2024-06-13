@@ -11,7 +11,7 @@ export default function PartnerMain() {
                     <p className="head_text">Partners</p>
                     <div className="bred">
                         <img src="images/Homepage/Home.svg" alt="" />
-                        <span>Home/Partners</span>
+                        <p>Home/Partners</p>
                     </div>
                 </div>
             </div>

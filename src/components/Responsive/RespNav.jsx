@@ -32,35 +32,44 @@ export default function RespNav() {
           onClick={onOpen}
           color="#031B4E"
           size={"1.5rem"}
+          
         />
       </div>
       <Drawer isOpen={isOpen} placement="right" onClose={onClose} finalFocusRef={btnRef}>
         <DrawerOverlay />
-        <DrawerContent>
+        
+        <DrawerContent bg={'#fff'}>
           <DrawerCloseButton />
           <DrawerHeader>Menu</DrawerHeader>
-          <DrawerBody bg={'#fff'}>
+          <DrawerBody>
             <div className="drawer-link" onClick={() => handleNavigate("/")}>
-              Home
+                Home
+            </div>
+            <div className="drawer-link" onClick={() => handleNavigate("/all-solutions")}>
+            Solutions
+            </div>
+            <div className="drawer-link" onClick={() => handleNavigate("/sector")}>
+            Sectors
+            </div>
+            <div className="drawer-link" onClick={() => handleNavigate("/products")}>
+            Products
+            </div>
+            <div className="drawer-link" onClick={() => handleNavigate("/services")}>
+            Service
+            </div>
+            <div className="drawer-link" onClick={() => handleNavigate("/partners")}>
+            Partners
             </div>
             <div className="drawer-link" onClick={() => handleNavigate("/about-us")}>
-              About Us
+            About us
             </div>
-            <div className="drawer-link" onClick={() => handleNavigate("/cheuffeurdrive")}>
-              Chauffeur Drive
-            </div>
-            <div className="drawer-link" onClick={() => handleNavigate("/selfdrive")}>
-              Self Drive
-            </div>
-            <div className="drawer-link" onClick={() => handleNavigate("/gallery")}>
-              Gallery
-            </div>
-            <div className="drawer-link" onClick={() => handleNavigate("/faq")}>
-              FAQs
+            <div className="drawer-link" onClick={() => handleNavigate("/career")}>
+            Career
             </div>
             <div className="drawer-link" onClick={() => handleNavigate("/contact-us")}>
-              Contact us
+            COntact Us
             </div>
+            
             {/* Add more items as needed */}
           </DrawerBody>
         </DrawerContent>

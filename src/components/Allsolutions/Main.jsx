@@ -4,6 +4,9 @@ import { cards1_AllSolutions } from ".."
 import "./Main.css"
 import { useNavigate } from "react-router-dom";
 export default function Main() {
+    
+    const [isHovered5, setIsHovered5] = useState(false);
+   
     const navigate = useNavigate();
     const [isHovered, setIsHovered] = useState();
     const handleClick = (route)=>{
@@ -20,7 +23,7 @@ export default function Main() {
                 <div className="bred">
 
                 <img  src="images/Homepage/Home.svg" alt="" />
-                <span>Home/Solutions</span>
+                <p>Home/Solutions</p>
                 </div>
                
             </div>
@@ -50,7 +53,32 @@ export default function Main() {
                 </div>
             ))}
         </div>
+        
       </div>
+      <div className="tab_cont_mob">
+        <div className="tabs">
+        {
+            cards1_AllSolutions.map((data,idx)=>(
+                <div key={idx} className="tab" onMouseEnter={() => setIsHovered5(true)}
+                onMouseLeave={() => setIsHovered5(false)} onClick={()=>handleClick(data.head)}>
+                        <div className="in_tab">
+                            <img src={
+                      isHovered5
+                        ? "images/Homepage/energy_fff.svg"
+                        : data.img
+                    }  alt="" />
+                            <p className="tab_text">
+                           {data.head}
+                            </p>
+                        </div>
+                        <p style={{marginTop:'5px',fontWeight:'bold'}}
+                        className="tab_text">→</p>
+                    </div>
+            ))
+        }
+      
+      </div>
+        </div>
     </div>
   )
 }

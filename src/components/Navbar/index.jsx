@@ -4,13 +4,9 @@ import { CiSearch } from "react-icons/ci";
 import { useState } from "react";
 import RespNav from "../Responsive/RespNav"
 export default function Navbar() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768); // Initial check for mobile
 
   const navigate = useNavigate()
-  const handleResize = () => {
-    setIsMobile(window.innerWidth < 768);
-  };
-  window.addEventListener("resize", handleResize);
+  
   return (
     <div>
       <div className="blue_strip"></div>
@@ -25,10 +21,7 @@ export default function Navbar() {
 </span>
 </div>
         </div>
-        {
-      isMobile ? (
-        <RespNav/>
-      ):(
+        
         <div className='nav_list'>
   <ul className='navlist_ul'>
     
@@ -42,9 +35,11 @@ export default function Navbar() {
     <li onClick={()=>navigate('/career')}>Career</li>
   </ul>
 </div>
-      )
+      <div className="respnav">
+        <RespNav/>
+      </div>
         
-}
+
         <div className='search'>
           <button  onClick={()=>navigate('/contact-us')}>
 

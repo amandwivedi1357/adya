@@ -201,3 +201,63 @@ select {
     padding-right: 20px; /* Adjust padding to make space for the arrow */
   }
   
+
+  @media only screen and (max-width: 600px){
+    .contact_2{
+        margin: 0;
+        margin-top: 40px;
+    }
+    .contact_2 .contact_2_inner{
+flex-direction: column;
+margin: 0;
+width: 100%;
+    }
+
+    .contact_2 .contact_2_inner .inner_contact_2{
+        width: 100%;
+        border: none;
+    }
+    .contact_2 .contact_2_inner .inner_contact_2 .office_info{
+        margin: 20px;
+     
+       
+    }
+    .contact_2 .contact_2_inner .imgg img{
+        width: 90%;
+        /* border: 1px solid red; */
+        margin: auto;
+    }
+    .contact-us_container .mid_text{
+        margin: 40px 0;
+    }
+    .mid_text .head_text{
+        color: rgba(3, 3, 3, 0.90);
+text-align: center;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 29px; /* 161.111% */
+letter-spacing: 0.5px;
+text-transform: capitalize;
+    }
+    .contact_form_div .contact_form_outer{
+        margin: 0;
+        border: none;
+    }
+    .contact_form_div .contact_form_outer .contact_form{
+        /* border: 1px solid red; */
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        
+    }
+    .contact_form_div .contact_form_outer .contact_form .outer_single_line{
+        display: block;
+        row-gap: 9px;
+        /* border: 1px solid black; */
+    }
+    .inner_inputs{
+        width: 100%;
+    }
+  }

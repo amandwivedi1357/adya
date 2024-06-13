@@ -24,7 +24,7 @@ console.log(singleData)
                     <p className="head_text">{singleData.route}</p>
                     <div className="bred">
                         <img src="images/Homepage/Home.svg" alt="" />
-                        <span>Home/Solutions</span>
+                        <p>Home/Solutions</p>
                     </div>
                 </div>
             </div>

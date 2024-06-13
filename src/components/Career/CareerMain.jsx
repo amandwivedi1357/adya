@@ -3,9 +3,13 @@ import "./Career.css"
 import { positionsData } from "..";
 import Positions from "./Positions";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 export default function CareerMain() {
-
+  const navigate = useNavigate()
     const [expandedIndex, setExpandedIndex] = useState(null);
+    const handleClick = (route)=>{
+      navigate(`/career/${route}`)
+  }
   return (
     <div>
       <div className="top_main">
@@ -39,7 +43,28 @@ export default function CareerMain() {
                     setExpandedIndex={setExpandedIndex}
                 />
             ))}
+
+           
     </div>
+    <div className="tab_cont_mob">
+        <div className="tabs">
+        {
+            positionsData.map((data,idx)=>(
+                <div key={idx} className="tab" onClick={()=>handleClick(data.postName)}>
+                        <div className="in_tab">
+                            
+                            <p className="tab_text">
+                           {data.postName}
+                            </p>
+                        </div>
+                        <p style={{marginTop:'5px',fontWeight:'bold'}}
+                        className="tab_text">→</p>
+                    </div>
+            ))
+        }
+      
+      </div>
+        </div>
     </div>
   )
 }

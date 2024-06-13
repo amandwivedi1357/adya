@@ -80,7 +80,7 @@ export default function Contact() {
     };
   
   return (
-    <div>
+    <div className='contact-us_container'>
       <div className="top_main">
             <img className="sol_banner" src="images/About/Contact_banner.png" alt="" />
             <div className="img_cont">
@@ -124,7 +124,7 @@ export default function Contact() {
                        </div>
                     </div>
                 </div>
-                <div className="inner_contact_2">
+                <div className="inner_contact_2 imgg">
                     <img src="images/About/sm_banner.png" alt="" />
                     <div className="text-overlay">
         <p>Find us on google maps</p>

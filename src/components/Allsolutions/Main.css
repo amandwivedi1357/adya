@@ -1,6 +1,4 @@
-.red{
-  overflow-x: hidden;
-}
+
 .top_main {
   position: relative;
   display: flex;
@@ -153,4 +151,60 @@ letter-spacing: 0.25px;
     }
     .card:hover  .follow-up{
         color: #fff;
+    }
+
+    .tab_cont_mob{
+      display: none;
+    }
+.bred{
+  display: flex;
+  gap: 10px;
+  /* border: 1px solid red; */
+  justify-content: center;
+}
+.top_main .img_cont .bred img{
+  width: 20px;
+}
+.top_main .img_cont .bred p{
+  margin-top: 8px;
+}
+    @media only screen and (max-width: 600px){
+      .tab_cont_mob{
+        display: block;
+        width: 100%;
+        /* border: 1px solid red; */
+       
+      }
+      .top_main{
+        width: 100%;
+      }
+      .top_main .sol_banner{
+        width: 100%;
+      }
+      .top_main .img_cont{
+        width: 100%;
+      }
+      .top_main .img_cont .head_text{
+      /* border: 1px solid red; */
+        color: rgba(3, 3, 3, 0.90);
+text-align: center;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 29px; /* 145% */
+letter-spacing: 0.25px;
+text-transform: capitalize;
+      }
+      .bred{
+        display: flex;
+        gap: 10px;
+      }
+      .top_main .img_cont .bred img{
+        width: 20px;
+        margin: 0;
+      }
+      .top_main .img_cont .bred p{
+        margin-top: 5px;
+      }
     }

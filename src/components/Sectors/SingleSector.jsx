@@ -58,7 +58,7 @@ export default function SingleSector() {
             </div>
             <div className="sols_links">
               <p className="head_text">
-                List of Solutions
+                List of Sectors
               </p>
               <div className="links">
                 {

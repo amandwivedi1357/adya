@@ -22,7 +22,7 @@ export default function MeasureMentDevice() {
                 <div className="bred">
 
                 <img src="images/Homepage/Home.svg" alt="" />
-                <span>Home/Products</span>
+                <p>Home/Products</p>
                 </div>
             </div>
     </div> 

@@ -24,7 +24,7 @@ export default function Commune() {
                 <div className="bred">
 
                 <img src="images/Homepage/Home.svg" alt="" />
-                <span>Home/Communication Module</span>
+                <p>Home/Communication Module</p>
                 </div>
             </div>
     </div>
