@@ -67,7 +67,7 @@ export default function RespNav() {
             Career
             </div>
             <div className="drawer-link" onClick={() => handleNavigate("/contact-us")}>
-            COntact Us
+            Contact Us
             </div>
             
             {/* Add more items as needed */}

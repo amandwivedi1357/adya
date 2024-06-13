@@ -3,6 +3,7 @@ import { cards1_data, cards2_data, listData } from "../index";
 
 import "./Main.css";
 import { Box } from "@chakra-ui/react";
+import MySlider from "./HomeSlider";
 
 export default function Main() {
     const [isHovered, setIsHovered] = useState(false);
@@ -20,7 +21,8 @@ export default function Main() {
     
   return (
     <div className="red_home">
-     {/* <div className="banner">
+
+    {/* <div className="hero_Section">
     <img className="sol_banner" src="images/Homepage/ban1.png" />
     <div className="inner_container">
         <p className="head_text">
@@ -29,9 +31,15 @@ export default function Main() {
         <p className="desc_text">Adya Smart metering solutions</p>
         <button className="contact_btn">Contact Us</button>
     </div>
+    </div> */}
+
+
+     {/* <div className="banner">
+   
+    
 </div> */}
 
-      {/* <MySlider/> */}
+      <MySlider/>
       <div className="mid_cont_1">
         <div className="top_cont">
             <p className="head_text">

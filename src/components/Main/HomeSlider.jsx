@@ -31,47 +31,24 @@ function MySlider() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    // autoplaySpeed: 1000
+    //  autoplaySpeed: 1000
   };
 
   return (
     <Slider {...settings}>
-      <div className="banner">
-        <div className="image">
-          <img className="outer" src="images/Homepage/ban1.png" />
-        </div>
-        <div className="inner_container">
-          <p className="head_text">
-            Committed to sustainable energy through Adya innovation.
-          </p>
-          <p className="desc_text">Adya Smart metering solutions</p>
-          <button className="contact_btn">Contact Us</button>
-        </div>
-      </div>
-      <div className="banner">
-        <div className="image">
-          <img className="outer" src="images/Homepage/ban2.png" />
-        </div>
-        <div className="inner_container">
-          <p className="head_text">
-            Committed to sustainable energy through Adya innovation.
-          </p>
-          <p className="desc_text">Adya Smart metering solutions</p>
-          <button className="contact_btn">Contact Us</button>
-        </div>
-      </div>
-      <div className="banner">
-        <div className="image">
-          <img className="outer" src="images/Homepage/ban3.png" />
-        </div>
-        <div className="inner_container">
-          <p className="head_text">
-            Committed to sustainable energy through Adya innovation.
-          </p>
-          <p className="desc_text">Adya Smart metering solutions</p>
-          <button className="contact_btn">Contact Us</button>
-        </div>
-      </div>
+      {slides.map((data,idx)=>(
+         <div key={idx} className="hero_Section">
+         <img className="sol_banner" src={data.image}/>
+         <div className="inner_container">
+             <p className="head_text">
+                 {data.headText}
+             </p>
+             <p className="desc_text">{data.descText}</p>
+             <button className="contact_btn">Contact Us</button>
+         </div>
+         </div>
+      ))}
+    
     </Slider>
   );
 }
