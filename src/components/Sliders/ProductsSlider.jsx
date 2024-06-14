@@ -1,8 +1,10 @@
+/* eslint-disable react/prop-types */
 import Slider from "react-slick";
 import "./SolutionsSlider.css"
 import { cards2_data } from "..";
+import { useNavigate } from "react-router-dom";
 
-export default function ProductsSlider() {
+export default function ProductsSlider({item}) {
    
       const settings = {
         dots: true,
@@ -13,11 +15,15 @@ export default function ProductsSlider() {
         autoplay: true,
         //  autoplaySpeed: 1000
       };
+      const navigate = useNavigate()
+      const handleClick = (route)=>{
+        navigate(`/${route}`)
+    }
   return (
   <div className="sols_mob prods_mob">
   
     <Slider {...settings}>
-    {cards2_data.map((data,idx)=>(
+    {item.map((data,idx)=>(
         
                 <div className="card" key={idx}>  
                     <img src={data.hover} alt="" className="card_vect" />
@@ -30,7 +36,7 @@ export default function ProductsSlider() {
                     </div>
                     <p className="desc_text">{data.desc}</p>
 
-                    <p className="explore">Explore{"    "}  <span style={{marginLeft:"1rem"}}>→</span></p>
+                    <p className="explore" onClick={()=>handleClick(data.route)}>Explore{"    "}  <span style={{marginLeft:"1rem"}}>→</span></p>
                 </div>
             ))}
   

@@ -22,8 +22,8 @@ export default function SingProduct() {
                 <div className="img_cont">
                     <p className="head_text">{singleData.head}</p>
                     <div className="bred">
-                        <img src="images/Homepage/Home.svg" alt="" />
-                        <span>Home/Partners</span>
+                        <img src="/images/Homepage/Home.svg" alt="" />
+                        <p>Home/Partners</p>
                     </div>
                 </div>
             </div>
@@ -37,7 +37,7 @@ export default function SingProduct() {
           {singleData.overview}
         </p>
         </div>
-        <div className="overview_cont">
+        <div className="overview_cont standard">
 
         <p className="prod_head_text">
         Standard
@@ -57,7 +57,7 @@ export default function SingProduct() {
         </li>
         </ul>
         </div>
-        <div className="overview_cont">
+        <div className="overview_cont vc">
             <div className="variant_cont">
               <div className="left">
                 <p className="prod_head_text">
@@ -93,7 +93,7 @@ export default function SingProduct() {
               </div>
             </div>
         </div>
-        <div className="overview_cont">
+        <div className="overview_cont app">
            <p className="prod_head_text">
            Applications
            </p>
@@ -105,7 +105,7 @@ export default function SingProduct() {
                 ))}
            </ul>
         </div>
-        <div className="overview_cont">
+        <div className="overview_cont ks">
            <p className="prod_head_text">
            Key Specification
            </p>

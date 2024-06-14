@@ -113,3 +113,60 @@ height: 290px;
 flex-shrink: 0;
 background: #D9D9D9;
 }
+
+@media only screen and (max-width: 600px){
+    .Single_prod_container .inner1{
+        margin: 20px;
+    }
+    .prod_head_text{
+        color: #030303;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 25px; /* 138.889% */
+letter-spacing: 0.5px;
+    }
+   .standard,.vc,.app,.ks{
+    margin-top: -30px;
+   }
+   
+   .variant_cont{
+    /* border: 1px solid red; */
+    gap: 20px;
+    flex-direction: column;
+   }
+   .flex_ul{
+    flex-wrap: wrap;
+    gap: 30px;
+   }
+  .overview_cont .application_cont{
+    grid-template-columns: repeat(2,1fr);
+    /* border: 1px solid red; */
+   }
+   .Specification_cont{
+    flex-direction: column;
+   }
+   .Specification_cont .right{
+    /* border: 1px solid red; */
+    padding: 20px 20px;
+    padding-bottom: 0;
+    margin-bottom: -60px;
+   }
+   .key_features div .key{
+    font-size: 14px;
+   }
+   .key_features div .value{
+    font-size: 14px;
+   }
+   .images_container{
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+   }
+   .images_container .single_image{
+    width: 100%;
+   }
+   .sols_links .head_text{
+    font-size: 18px;
+   }
+}

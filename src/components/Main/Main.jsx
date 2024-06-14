@@ -179,7 +179,7 @@ export default function Main() {
         </div>
       </div>
       <div className="solutions_Slider">
-        <ProductsSlider/>
+        <ProductsSlider item={cards2_data}/>
       </div>
       <div className="mid_cont_4">
       <div className="left left4">

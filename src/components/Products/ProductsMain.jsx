@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import "./Products.css"
 import { useState } from "react";
 import { products_Card } from "..";
+import ProductsSlider from "../Sliders/ProductsSlider";
 
 export default function ProductsMain() {
     
@@ -55,6 +56,7 @@ export default function ProductsMain() {
             ))}
         </div>
         </div> 
+        
         <div className="tab_cont_mob">
         <div className="tabs">
         {

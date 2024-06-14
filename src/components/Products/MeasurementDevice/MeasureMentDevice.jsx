@@ -3,6 +3,7 @@ import Navbar from '../../Navbar'
 import Footer from '../../Footer/Footer'
 import { useNavigate } from 'react-router-dom';
 import { D2S, Measurement, prepayMeter } from '..';
+import ProductsSlider from '../../Sliders/ProductsSlider';
 
 export default function MeasureMentDevice() {
     const navigate = useNavigate();
@@ -55,6 +56,9 @@ export default function MeasureMentDevice() {
             ))}
         </div>
         </div> 
+        <div className="solutions_Slider">
+        <ProductsSlider item={Measurement}/>
+      </div>
     <div className="mid_cont_1">
         <div className="top_cont">
             <p className="head_text">
@@ -83,6 +87,9 @@ export default function MeasureMentDevice() {
             ))}
         </div>
         </div> 
+        <div className="solutions_Slider">
+        <ProductsSlider item={prepayMeter}/>
+      </div>
     <div className="mid_cont_1">
         <div className="top_cont">
             <p className="head_text">
@@ -112,6 +119,26 @@ export default function MeasureMentDevice() {
             ))}
         </div>
         </div> 
+        <div className="D2S_Mob">
+            {
+                D2S.map((data,idx)=>(
+                    <div className="card" key={idx}>  
+                    <img src={data.hover} alt="" className="card_vect" />
+                    <div className="redd" style={{display:"flex"}}>
+                    <p className="head_text">
+                        {data.head}{" "}
+                        
+                    </p>
+                    <span className="follow-up">{data?.followUp}</span>
+                    </div>
+                    <p className="desc_text">{data.desc}</p>
+
+                    <p className="explore">Explore{"    "}  <span style={{marginLeft:"1rem"}}>→</span></p>
+                </div>
+      
+                ))
+            }
+        </div>
       <Footer/>
     </div>
   )

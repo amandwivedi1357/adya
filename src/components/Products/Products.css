@@ -1,0 +1,15 @@
+.D2S_Mob{
+    width: 100%;
+    margin-top: -60px;
+    /* border: 1px solid red; */
+    margin-bottom: 30px;
+}
+.D2S_Mob .card{
+    width: 90%;
+    margin: auto;
+    height: auto;
+   padding: 30px 0;
+}
+.D2S_Mob .card .card_vect{
+    margin-top: 0;
+}
