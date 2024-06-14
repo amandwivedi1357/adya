@@ -1,11 +1,15 @@
 import { useState } from "react";
-import { cards1_data, cards2_data, listData } from "../index";
+import { cards1_Sectors, cards1_data, cards2_data, listData } from "../index";
 
 import "./Main.css";
 import { Box } from "@chakra-ui/react";
 import MySlider from "./HomeSlider";
+import SolutionsSlider from "../Sliders/SolutionsSlider";
+import ProductsSlider from "../Sliders/ProductsSlider";
+import { useNavigate } from "react-router-dom";
 
 export default function Main() {
+    const navigate = useNavigate()
     const [isHovered, setIsHovered] = useState(false);
     const [isHovered1, setIsHovered1] = useState(false);
     const [isHovered2, setIsHovered2] = useState(false);
@@ -66,6 +70,9 @@ export default function Main() {
                 </div>
             ))}
         </div>
+      </div>
+      <div className="solutions_Slider">
+        <SolutionsSlider/>
       </div>
       <div className="mid_cont_2">
         <div className="left">
@@ -171,6 +178,9 @@ export default function Main() {
             ))}
         </div>
       </div>
+      <div className="solutions_Slider">
+        <ProductsSlider/>
+      </div>
       <div className="mid_cont_4">
       <div className="left left4">
             <img src="/images/Homepage/mid_4.png" alt="" />
@@ -249,6 +259,25 @@ export default function Main() {
             </div>
         </div>
         
+      </div>
+      <div className="sectors_mob">
+      <div className="sols_links">
+             
+              <div className="links">
+                {
+                  cards1_Sectors.map((data,idx)=>(
+                    <div className="single_link" key={idx} onClick={()=>navigate(`/sector/${data.route}`)} onMouseEnter={() => setIsHovered(idx)}
+                    onMouseLeave={() => setIsHovered(null)}>
+                    <div className="inner">
+                      <img className="link_img" src={isHovered === idx ? data.hover : data.img} alt="" />
+                      <p className="link_text">{data.head}</p>
+                    </div>
+                    <p className="arrow-right">→</p>
+                  </div>
+                  ))
+                }
+              </div>
+            </div>
       </div>
       <div className="mid_cont_5">
       <div className="top_cont">

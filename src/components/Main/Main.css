@@ -142,6 +142,9 @@ margin: 0 50px;
 color: #fff;
 
 }
+.solutions_Slider{
+    display: none;
+}
 .card .head_text{
     margin: 0 0 0 34px;
     font-size: 24px;
@@ -423,15 +426,16 @@ transition: background-color 0.3s, color 0.3s;
     grid-template-columns: repeat(2,1fr);
     row-gap: 97px;
     
-    /* border: 2px solid rebeccapurple; */
+    
 }
 .mid_cont_5 .bottom_cont .single_list{
     width: 100%;
-   
+    margin-bottom: -50px;
+
     /* border: 1px solid red; */
 }
 .mid_cont_5 .contact_btn{
-    margin:44px  0 0 36px ;
+    margin:84px  0 64px 36px ;
 }
 .head{
     width: 80%;
@@ -466,6 +470,7 @@ transition: background-color 0.3s, color 0.3s;
 .mid_cont_6{
     margin: -40px 0 0 50px ;
     padding-bottom: 35px;
+    
     display: flex;
 }
 .mid_cont_6 .left{
@@ -507,12 +512,26 @@ font-family: Poppins;
     border: 1px solid black;
 } */
 @media only screen and (max-width: 600px) {
-
+    .inner_container {
+        /* border: 1px solid red; */
+        width: 90%;
+    }
     .inner_container .head_text{
         font-size: 20px;
+        width: 100%;
+        /* border: 1px solid red; */
         margin: 0;
     }
-
+    .inner_container .desc_text{
+        margin-top: 14px;
+        color: rgba(3, 3, 3, 0.90);
+font-family: Poppins;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 160% */
+letter-spacing: 0.5px;
+    }
     .sol_banner{
         /* border: 1px solid red; */
         width: 360px;
@@ -548,7 +567,7 @@ letter-spacing: 0.5px;
     .mid_cont_2{
         width: 100%;
         margin: 0;
-       
+       margin-top: 60px;
     }
     .mid_cont_2 .left{
         width: 100%;
@@ -763,6 +782,7 @@ box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06);
         /* border: 1px solid red; */
         margin: 0;
         width: 100%;
+        margin-top: -30px;
         display: block;
     }
     .mid_cont_6 .left{
@@ -774,7 +794,7 @@ box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06);
         color: rgba(3, 3, 3, 0.90);
 font-family: Poppins;
 font-size: 18px;
-margin-left: 1rem;
+
 font-style: normal;
 font-weight: 700;
 line-height: 29px; /* 161.111% */
@@ -783,7 +803,7 @@ text-transform: capitalize;
     }
     .mid_cont_6 .left .top_cont .desc_text{
         width: 100%;
-        margin-left: 1rem;
+       
         font-size: 14px;
     }
     .mid_cont_6 .right{
@@ -803,4 +823,49 @@ text-transform: capitalize;
         padding: 0 1rem;
     }
     /* mid 6 end */
+    .solutions_Slider{
+        display: block;
+    }
+    
+    .card{
+        width: 312px;
+        height: 306px;
+
+        border-radius: 5px;
+background: #E85123;
+    }
+    .card .redd .head_text{
+        color: #FFF;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 133.333% */
+letter-spacing: 0.25px;
+    }
+    .card .redd .follow-up{
+        margin-top: -08px;
+    }
+  .sols_mob .card .desc_text{
+        color: #FFF;
+font-family: Poppins;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 19px; /* 146.154% */
+letter-spacing: 0.5px;
+    }
+    .card .explore{
+        color: #FFF;
+font-family: Poppins;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 133.333% */
+letter-spacing: 1px;
+text-transform: capitalize;
+    }
+    .mid_cont_5 .bottom_cont .single_list{
+        margin-bottom: 0;
+    }
 }
