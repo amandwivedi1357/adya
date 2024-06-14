@@ -23,7 +23,8 @@ export default function ProductsMain() {
                 <div className="bred">
 
                 <img src="images/Homepage/Home.svg" alt="" />
-                <p>Home/Products</p>
+                <p><span onClick={()=>navigate('/')}>Home</span> / <span onClick={()=>navigate('/products')}>Sectors</span></p>
+
                 </div>
             </div>
     </div> 

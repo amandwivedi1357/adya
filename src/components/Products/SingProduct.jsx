@@ -23,8 +23,8 @@ export default function SingProduct() {
                     <p className="head_text">{singleData.head}</p>
                     <div className="bred">
                         <img src="/images/Homepage/Home.svg" alt="" />
-                        <p>Home/Partners</p>
-                    </div>
+                        <p><span onClick={()=>navigate('/')}>Home</span> / <span onClick={()=>navigate('/products')}>Sectors</span></p>
+                        </div>
                 </div>
             </div>
       <div className="inner1">

@@ -11,8 +11,8 @@ export default function PartnerMain() {
                     <p className="head_text">Partners</p>
                     <div className="bred">
                         <img src="images/Homepage/Home.svg" alt="" />
-                        <p>Home/Partners</p>
-                    </div>
+                        <p><span onClick={()=>navigate('/')}>Home</span> / <span onClick={()=>navigate('/partners')}>Partners</span></p>
+                        </div>
                 </div>
             </div>
             <div className="partners_desc">

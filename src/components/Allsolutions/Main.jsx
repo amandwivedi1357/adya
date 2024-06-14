@@ -23,7 +23,7 @@ export default function Main() {
                 <div className="bred">
 
                 <img  src="images/Homepage/Home.svg" alt="" />
-                <p>Home/Solutions</p>
+                <p onClick={()=>navigate('/')}>Home/Solutions</p>
                 </div>
                
             </div>

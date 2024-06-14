@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import { useNavigate } from "react-router-dom";
 import { listData } from "..";
 
 import "./About.css";
@@ -26,6 +27,7 @@ const board = [
     },
 ]
 export default function AboutUs() {
+  const navigate = useNavigate()
   return (
     <div className="about_container">
       <div className="top_main">
@@ -33,9 +35,9 @@ export default function AboutUs() {
         <div className="img_cont">
           <p className="head_text">About Us</p>
           <div className="bred">
-            <img src="images/Homepage/Home.svg" alt="" />
-            <p>Home/About Us</p>
-          </div>
+            <img src="/images/Homepage/Home.svg" alt="" />
+            <p><span onClick={()=>navigate('/')}>Home</span> / <span onClick={()=>navigate('/about-us')}>About us</span></p>
+            </div>
         </div>
       </div>
       <div className="main">

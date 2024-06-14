@@ -19,8 +19,8 @@ export default function AllService() {
                 </p>
                 <div className="bred">
 
-                <img src="images/Homepage/Home.svg" alt="" />
-                <span>Home/Services</span>
+                <img src="/images/Homepage/Home.svg" alt="" />
+                <p><span onClick={()=>navigate('/')}>Home</span> / <span onClick={()=>navigate('/services')}>Services</span></p>
                 </div>
             </div>
     </div> 

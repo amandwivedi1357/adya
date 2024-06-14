@@ -24,7 +24,7 @@ console.log(singleData)
                     <p className="head_text">{singleData.route}</p>
                     <div className="bred">
                         <img src="images/Homepage/Home.svg" alt="" />
-                        <p>Home/Solutions</p>
+                        <p><span onClick={()=>navigate('/')}>Home</span>/<span onClick={()=>navigate('/all-solutions')}>Solutions</span></p>
                     </div>
                 </div>
             </div>

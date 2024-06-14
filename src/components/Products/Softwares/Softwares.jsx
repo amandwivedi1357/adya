@@ -24,7 +24,7 @@ export default function Softwares() {
                 <div className="bred">
 
                 <img src="images/Homepage/Home.svg" alt="" />
-                <p>Home/Softwares</p>
+                <p><span onClick={()=>navigate('/')}>Home</span> / <span onClick={()=>navigate('/products')}>Products</span></p>
                 </div>
             </div>
     </div>

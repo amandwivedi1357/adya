@@ -26,8 +26,9 @@ export default function SingleSector() {
                 <div className="img_cont">
                     <p className="head_text">{singleData.route}</p>
                     <div className="bred">
-                        <img src="images/Homepage/Home.svg" alt="" />
-                        <span>Home/Solutions</span>
+                        <img src="/images/Homepage/Home.svg" alt="" />
+                        <p><span onClick={()=>navigate('/')}>Home</span> / <span onClick={()=>navigate('/sector')}>Sectors</span></p>
+
                     </div>
                 </div>
             </div>

@@ -13,7 +13,7 @@ export default function SectorMain() {
           <p className="head_text">Sectors</p>
           <div className="bred">
             <img src="images/Homepage/Home.svg" alt="" />
-            <p>Home / Industries</p>
+            <p><span onClick={()=>navigate('/')}>Home</span> / <span onClick={()=>navigate('/sector')}>Sectors</span></p>
           </div>
         </div>
       </div>

@@ -38,12 +38,12 @@ export default function Footer() {
            <div className='quick_links'>
             <p onClick={()=>navigate('/')}>Home</p>
             <p onClick={()=>navigate('/all-solutions')}>Solutions</p>
-            <p>Services</p>
+            <p  onClick={()=>navigate('/services')}>Services</p>
            </div>
            <div style={{marginTop:'20px'}} className='quick_links'>
-            <p>About us</p>
-            <p className="footer_prod">Products</p>
-            <p  onClick={()=>navigate('/sectors')}>Sectors</p>
+            <p  onClick={()=>navigate('/about-us')}>About us</p>
+            <p className="footer_prod"  onClick={()=>navigate('/products')}>Products</p>
+            <p  onClick={()=>navigate('/sector')}>Sectors</p>
             </div>  
            <div style={{marginTop:'20px'}} className='quick_links'>
             <p onClick={()=>navigate('/career')}>Career</p>

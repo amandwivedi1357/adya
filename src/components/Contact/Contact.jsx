@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react'
 import  './Contact.css'
 import {City, Country, State} from 'country-state-city';
+import { useNavigate } from 'react-router-dom';
 const style = {width:'20px',
 marginRight:'15px',
 }
@@ -78,6 +79,7 @@ export default function Contact() {
       e.preventDefault();
       console.log(formData);
     };
+    const navigate = useNavigate()
   
   return (
     <div className='contact-us_container'>
@@ -89,8 +91,9 @@ export default function Contact() {
                 </p>
                 <div className="bred">
 
-                <img  src="images/Homepage/Home.svg" alt="" />
-                <span>Home/Contact us</span>
+                <img  src="/images/Homepage/Home.svg" alt="" />
+                <p><span onClick={()=>navigate('/')}>Home</span> / <span onClick={()=>navigate('/contact-us')}>Contact us</span></p>
+
                 </div>
                
             </div>

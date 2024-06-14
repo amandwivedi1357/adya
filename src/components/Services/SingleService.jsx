@@ -26,9 +26,9 @@ export default function SingleService() {
                 <div className="img_cont">
                     <p className="head_text">{singleData.route}</p>
                     <div className="bred">
-                        <img src="images/Homepage/Home.svg" alt="" />
-                        <span>Home/Services</span>
-                    </div>
+                        <img src="/images/Homepage/Home.svg" alt="" />
+                        <p><span onClick={()=>navigate('/')}>Home</span> / <span onClick={()=>navigate('/services')}>Services</span></p>
+                        </div>
                 </div>
             </div>
             <div className="mid_single">

@@ -20,8 +20,8 @@ export default function CareerMain() {
                 </p>
                 <div className="bred">
 
-                <img src="images/Homepage/Home.svg" alt="" />
-                <span>Home/Solutions</span>
+                <img src="/images/Homepage/Home.svg" alt="" />
+                <p><span onClick={()=>navigate('/')}>Home</span> / <span onClick={()=>navigate('/career')}>Career</span></p>
                 </div>
                
             </div>
