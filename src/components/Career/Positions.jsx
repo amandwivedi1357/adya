@@ -15,7 +15,7 @@ function Positions({ data, index, expandedIndex, setExpandedIndex }) {
                 <p className="post_name">{data.postName}  </p>
                 <button className="Apply_button">Apply Now</button>
             </div>
-            <p className="post_desc">{data.postDesc} <span onClick={expandMainReqContainer} className='read_more'>Read more</span></p>
+            <p className="post_desc pd">{data.postDesc} <span onClick={expandMainReqContainer} className='read_more'>Read more</span></p>
             <div className="main_req_container">
                 <p className="topic">Required Skills</p>
                 <ul>

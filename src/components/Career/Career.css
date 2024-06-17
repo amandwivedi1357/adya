@@ -47,14 +47,18 @@ border: 1px solid #E85123;
 background: #E85123;
 box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06);
 }
+.pd{
+  color: #000;
+}
 .post_desc{
   /* border: 1px solid red; */
   width: 80%;
     margin: 0 49px;
     margin-bottom: 49px;
-    color: rgba(3, 3, 3, 0.90);
+   
+    
 font-family: Poppins;
-font-size: 15px;
+font-size: 16px;
 font-style: normal;
 font-weight: 300;
 line-height: 29px; /* 193.333% */
@@ -85,7 +89,9 @@ ul {
     padding: 0; /* Remove default padding */
   }
   
-  .skills_list {
+.main_req_container ul .skills_list {
+   
+   
     margin-bottom: 21px; /* Adjust spacing between list items */
   }
   .post_desc .read_more{
@@ -106,22 +112,24 @@ ul {
   
 .pre_reqs{
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
     width: 37%;
     margin-left: 49px;
+    /* border: 1px solid red; */
     margin-top: 37px;
+    
     margin-bottom: 63px;
 }
 .reqs{
 
 padding: 7px 22px;
 align-items: center;
-
+background: #ffded2;
 border-radius: 25px;
-border: 0.4px solid #808285;
+/* border: 0.4px solid #808285; */
 }
 .pre_reqs .reqs p{
-    color: #808080;
+    color: #1d1919;
 font-family: Poppins;
 font-size: 14px;
 font-style: normal;

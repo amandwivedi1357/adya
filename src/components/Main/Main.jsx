@@ -88,11 +88,14 @@ export default function Main() {
                     <div className="tab" onMouseEnter={() => setIsHovered1(true)}
                 onMouseLeave={() => setIsHovered1(false)}>
                         <div className="in_tab" >
-                            <img  src={
+                            <img 
+                             src={
                       isHovered1
                         ? "images/Homepage/Bs_consulting_fff.svg"
                         : "images/Homepage/BS_consulting.svg"
-                    } alt="" />
+                    } 
+                    // src='images/Homepage/BS_consulting.svg'
+                    alt="" />
                             <p className="tab_text">
                             Business Consulting
                             </p>
@@ -105,8 +108,8 @@ export default function Main() {
                         <div className="in_tab">
                             <img  src={
                       isHovered2
-                        ? "images/Homepage/test_fff.svg"
-                        : "images/Homepage/test.svg"
+                        ? "/images/Homepage/test_fff.svg"
+                        : "/images/Homepage/test.svg"
                     }  alt="" />
                             <p className="tab_text">
                             Testing
@@ -120,8 +123,8 @@ export default function Main() {
                         <div className="in_tab">
                             <img src={
                       isHovered3
-                        ? "images/Homepage/system_integ_fff.svg"
-                        : "images/Homepage/system_integ.svg"
+                        ? "/images/Homepage/system_integ_fff.svg"
+                        : "/images/Homepage/system_integ.svg"
                     }  alt="" />
                             <p className="tab_text">
                             System Integrations
@@ -135,8 +138,8 @@ export default function Main() {
                         <div className="in_tab">
                             <img src={
                       isHovered4
-                        ? "images/Homepage/d1_fff.svg"
-                        : "images/Homepage/d1.svg"
+                        ? "/images/Homepage/d1_fff.svg"
+                        : "/images/Homepage/d1.svg"
                     }  alt="" />
                             <p className="tab_text">
                             API ( Application Programming Interface )
@@ -149,7 +152,7 @@ export default function Main() {
             </div>
         </div>
         <div className="right">
-            <img style={{width:'100%'}} src="images/Homepage/mid_2.png" alt="" />
+            <img style={{width:'100%'}} src="/images/Homepage/mid_2.png" alt="" />
         </div>
       </div>
       <div className="mid_cont_3">
