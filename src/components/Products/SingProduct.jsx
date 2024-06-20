@@ -147,7 +147,7 @@ export default function SingProduct() {
               <div className="links">
                 {
                   list_measurement.map((data,idx)=>(
-                    <div className="single_link" key={idx} onClick={()=>navigate(`/sector/${data.head}`)} onMouseEnter={() => setIsHovered(idx)}
+                    <div className="single_link" key={idx} onClick={()=>navigate(`/products/${data.head}`)} onMouseEnter={() => setIsHovered(idx)}
                     onMouseLeave={() => setIsHovered(null)}>
                     <div className="inner">
                       <img className="link_img" src={isHovered === idx ? data.hover : data.img} alt="" />

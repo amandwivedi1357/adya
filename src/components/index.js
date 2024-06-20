@@ -1,50 +1,50 @@
 export const cards1_data = [
     {
-        img:"images/Homepage/d1.svg",
+        img:"/images/Homepage/d1.svg",
         head:"AMI",
         route:'',
-        hover:"images/Homepage/d1_fff.svg",
+        hover:"/images/Homepage/d1_fff.svg",
         followUp:"( Advance Metering Infrastructure )",
         desc:"Curtail your revenue leakages by upgrading your legacy prepayment system with Smart prepayment.",
         explore:"explore"
     },
     {
-        img:"images/Homepage/smart.svg",
+        img:"/images/Homepage/smart.svg",
         head:"Smart Prepayment",
         route:'',
-        hover:"images/Homepage/smart_fff.svg",
+        hover:"/images/Homepage/smart_fff.svg",
         desc:"Upgrade your existing Digital Meter to Smart Meter or smart prepayment at fractional cost.",
         explore:"explore"
     },
     {
-        img:"images/Homepage/digi2.svg",
+        img:"/images/Homepage/digi2.svg",
         head:"Digi2smart",
        route:'',
-        hover:"images/Homepage/digi2_fff.svg",
+        hover:"/images/Homepage/digi2_fff.svg",
         desc:"Upgrade your existing Digital Meter to Smart Meter or smart prepayment at fractional cost.",
         explore:"explore"
     },
     {
-        img:"images/Homepage/mesh.svg",
+        img:"/images/Homepage/mesh.svg",
         head:"RF Mesh Network",
       route:'',
-        hover:"images/Homepage/mesh_fff.svg",
+        hover:"/images/Homepage/mesh_fff.svg",
         desc:"Scalable and secured networks which enable self-healing and get your alerts, notifications in seconds.",
         explore:"explore"
     },
     {
-        img:"images/Homepage/icon.svg",
+        img:"/images/Homepage/icon.svg",
         head:"Interoperability",
         route:'',
-        hover:"images/Homepage/icon_fff.svg",
+        hover:"/images/Homepage/icon_fff.svg",
         desc:"Connect any Smart Meter, Digital Meter or any communication with one Head End System.",
         explore:"explore"
     },
     {
-        img:"images/Homepage/micro.svg",
+        img:"/images/Homepage/micro.svg",
         head:"Microgrid",
         route:'',
-        hover:"images/Homepage/micro_fff.svg",
+        hover:"/images/Homepage/micro_fff.svg",
         desc:"As pioneers we offer a comprehensive plug-and-play smart metering solutions for our costumers.",
         explore:"explore"
     },
@@ -52,27 +52,27 @@ export const cards1_data = [
 
 export const cards2_data = [
     {
-        img:"images/Homepage/measure.svg",
-        route:'',
-        hover:'images/Homepage/measure_fff.svg',
+        img:"/images/Homepage/measure.svg",
+        route:'Measurement-Device',
+        hover:'/images/Homepage/measure_fff.svg',
         head:"Measurement Device",
         
         desc:"High precision devices seamlessly integrated and supports multiple communications 4G/NBIoT/RF Mesh.",
         explore:"explore"
     },
     {
-        img:"images/Homepage/communication.svg",
+        img:"/images/Homepage/communication.svg",
         head:"Communication Network",
-        route:'',
-        hover:'images/Homepage/communication_fff.svg',
+        route:'Communication-Module',
+        hover:'/images/Homepage/communication_fff.svg',
         desc:"Choice of highly intelligent comm. networks customised for every sector based on use case and topography.",
         explore:"explore"
     },
     {
-        img:"images/Homepage/soft.svg",
+        img:"/images/Homepage/soft.svg",
         head:"Softwares",
-        route:'',
-        hover:'images/Homepage/soft_fff.svg',
+        route:'Softwares',
+        hover:'/images/Homepage/soft_fff.svg',
         desc:`End-to-end softwares stacks are built using open source based offered on subscription  model.`,
         explore:"explore"
     },
@@ -116,7 +116,7 @@ export const cards1_Sectors = [
         explore:"explore"
     },
     {
-        img:"/images/sectors/industrial.svg",
+        im:"/images/sectors/industrial.svg",
         head:"Industrial",
         route:'Industrial',
         hover:"/images/sectors/industrial_fff.svg",
@@ -148,129 +148,129 @@ export const cards1_Sectors = [
         explore:"explore"
     },
     // {
-    //     img:"images/Homepage/micro.svg",
+    //     img:"/images/Homepage/micro.svg",
     //     head:"Microgrid",
     //     route:'Microgrid',
-    //     hover:"images/Homepage/micro_fff.svg",
+    //     hover:"/images/Homepage/micro_fff.svg",
     //     desc:"As pioneers we offer a comprehensive plug-and-play smart metering solutions for our costumers.",
     //     explore:"explore"
     // },
     // {
-    //     img:"images/Homepage/Derm.svg",
+    //     img:"/images/Homepage/Derm.svg",
     //     head:"DERM",
     //     route:'DERM',
-    //     hover:"images/Homepage/dern_fff.svg",
+    //     hover:"/images/Homepage/dern_fff.svg",
     //     followUp:"( Distributed Energy Resource Mgmt )",
     //     desc:"Helping operators, C&I consumers control energy costs, reduce carbon emissions, & ensure more reliable electricity.",
     //     explore:"explore"
     // },
     // {
-    //     img:"images/Homepage/computed.svg",
+    //     img:"/images/Homepage/computed.svg",
     //     head:"Distributed Intelligence",
     //     route:'Distributed-Intelligence',
-    //     hover:"images/Homepage/computed_fff.svg",
+    //     hover:"/images/Homepage/computed_fff.svg",
     //     desc:"Distributed Intelligence (DI) powers the next-gen smart grid with a secure, open platform and edge computing.",
     //     explore:"explore"
     // },
     // {
-    //     img:"images/Homepage/dta.svg",
+    //     img:"/images/Homepage/dta.svg",
     //     head:"DTA",
     //     route:'DTA',
-    //     hover:"images/Homepage/dta_fff.svg",
+    //     hover:"/images/Homepage/dta_fff.svg",
     //     followUp:"( Distributed Transformer Automation )",
     //     desc:"Our system empowers you with data for better asset management, energy auditing, outage prediction, and more.",
     //     explore:"explore"
     // },
     // {
-    //     img:"images/Homepage/net.svg",
+    //     img:"/images/Homepage/net.svg",
     //     head:"Net Metering",
     //     route:'Net-Metering',
-    //     hover:"images/Homepage/net_fff.svg",
+    //     hover:"/images/Homepage/net_fff.svg",
     //     desc:"Our solution helps in monitoring the generation, efficiency and calculating correct credits for utilised units.",
     //     explore:"explore"
     // },
 ]
 export const cards1_AllSolutions = [
     {
-        img:"images/Homepage/d1.svg",
+        img:"/images/Homepage/d1.svg",
         head:"AMI",
         route:'ami',
-        hover:"images/Homepage/d1_fff.svg",
+        hover:"/images/Homepage/d1_fff.svg",
         followUp:"( Advance Metering Infrastructure )",
         desc:"Curtail your revenue leakages by upgrading your legacy prepayment system with Smart prepayment.",
         explore:"explore"
     },
     {
-        img:"images/Homepage/smart.svg",
+        img:"/images/Homepage/smart.svg",
         head:"Smart Prepayment",
         route:'smart-prepayment',
-        hover:"images/Homepage/smart_fff.svg",
+        hover:"/images/Homepage/smart_fff.svg",
         desc:"Upgrade your existing Digital Meter to Smart Meter or smart prepayment at fractional cost.",
         explore:"explore"
     },
     {
-        img:"images/Homepage/digi2.svg",
+        img:"/images/Homepage/digi2.svg",
         head:"Digi2smart",
        route:'digi2smart',
-        hover:"images/Homepage/digi2_fff.svg",
+        hover:"/images/Homepage/digi2_fff.svg",
         desc:"Upgrade your existing Digital Meter to Smart Meter or smart prepayment at fractional cost.",
         explore:"explore"
     },
     {
-        img:"images/Homepage/mesh.svg",
+        img:"/images/Homepage/mesh.svg",
         head:"RF Mesh Network",
       route:'RFMeshNetwork',
-        hover:"images/Homepage/mesh_fff.svg",
+        hover:"/images/Homepage/mesh_fff.svg",
         desc:"Scalable and secured networks which enable self-healing and get your alerts, notifications in seconds.",
         explore:"explore"
     },
     {
-        img:"images/Homepage/icon.svg",
+        img:"/images/Homepage/icon.svg",
         head:"Interoperability",
         route:'Interoperability',
-        hover:"images/Homepage/icon_fff.svg",
+        hover:"/images/Homepage/icon_fff.svg",
         desc:"Connect any Smart Meter, Digital Meter or any communication with one Head End System.",
         explore:"explore"
     },
     {
-        img:"images/Homepage/micro.svg",
+        img:"/images/Homepage/micro.svg",
         head:"Microgrid",
         route:'Microgrid',
-        hover:"images/Homepage/micro_fff.svg",
+        hover:"/images/Homepage/micro_fff.svg",
         desc:"As pioneers we offer a comprehensive plug-and-play smart metering solutions for our costumers.",
         explore:"explore"
     },
     {
-        img:"images/Homepage/Derm.svg",
+        img:"/images/Homepage/Derm.svg",
         head:"DERM",
         route:'DERM',
-        hover:"images/Homepage/dern_fff.svg",
+        hover:"/images/Homepage/dern_fff.svg",
         followUp:"( Distributed Energy Resource Mgmt )",
         desc:"Helping operators, C&I consumers control energy costs, reduce carbon emissions, & ensure more reliable electricity.",
         explore:"explore"
     },
     {
-        img:"images/Homepage/computed.svg",
+        img:"/images/Homepage/computed.svg",
         head:"Distributed Intelligence",
         route:'Distributed-Intelligence',
-        hover:"images/Homepage/computed_fff.svg",
+        hover:"/images/Homepage/computed_fff.svg",
         desc:"Distributed Intelligence (DI) powers the next-gen smart grid with a secure, open platform and edge computing.",
         explore:"explore"
     },
     {
-        img:"images/Homepage/dta.svg",
+        img:"/images/Homepage/dta.svg",
         head:"DTA",
         route:'DTA',
-        hover:"images/Homepage/dta_fff.svg",
+        hover:"/images/Homepage/dta_fff.svg",
         followUp:"( Distributed Transformer Automation )",
         desc:"Our system empowers you with data for better asset management, energy auditing, outage prediction, and more.",
         explore:"explore"
     },
     {
-        img:"images/Homepage/net.svg",
+        img:"/images/Homepage/net.svg",
         head:"Net Metering",
         route:'Net-Metering',
-        hover:"images/Homepage/net_fff.svg",
+        hover:"/images/Homepage/net_fff.svg",
         desc:"Our solution helps in monitoring the generation, efficiency and calculating correct credits for utilised units.",
         explore:"explore"
     },
@@ -360,27 +360,27 @@ export const positionsData = [
 
 export const products_Card = [
     {
-        img:"images/Homepage/d1.svg",
+        img:"/images/Homepage/d1.svg",
         head:"Measurement Device",
         route:'Measurement-Device',
-        hover:"images/Homepage/d1_fff.svg",
+        hover:"/images/Homepage/d1_fff.svg",
         
         desc:"Adya has developed products and solutions that are “ORIGINAL” which support the entire smart grid chain.",
         explore:"explore"
     },
     {
-        img:"images/Homepage/smart.svg",
+        img:"/images/Homepage/smart.svg",
         head:"Softwares",
         route:'Softwares',
-        hover:"images/Homepage/smart_fff.svg",
+        hover:"/images/Homepage/smart_fff.svg",
         desc:"Adya has developed products and solutions that are “ORIGINAL” which support the entire smart grid chain.",
         explore:"explore"
     },
     {
-        img:"images/Homepage/digi2.svg",
+        img:"/images/Homepage/digi2.svg",
         head:"Communication Module",
        route:'Communication-Module',
-        hover:"images/Homepage/digi2_fff.svg",
+        hover:"/images/Homepage/digi2_fff.svg",
         desc:"Adya has developed products and solutions that are “ORIGINAL” which support the entire smart grid chain.",
         explore:"explore"
     },

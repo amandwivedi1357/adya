@@ -54,7 +54,7 @@ export default function Main() {
 
         <div className="cards_container_11">
             {cards1_data.map((data,idx)=>(
-                <div className="card" key={idx}   onMouseEnter={() => setIsHovered(idx)}
+                <div className="card" key={idx} onClick={()=>navigate(data.head)}   onMouseEnter={() => setIsHovered(idx)}
                 onMouseLeave={() => setIsHovered(null)}>
                     <img src={isHovered === idx ? data.hover : data.img} alt="" className="card_vect" />
                     <div className="redd" style={{display:"flex"}}>
@@ -83,16 +83,16 @@ export default function Main() {
                 <p className="desc_text">
                 Our services help utilities, solution providers and system integrators to rollout projects faster and cost effectively.
                 </p>
-                <img src="/images/Homepage/mobile_home1.png" alt="" />
+                <img src="/images/Homepage/mobile_home1.png" className="mid_2_mob" alt="" />
                 <div className="tabs">
-                    <div className="tab" onMouseEnter={() => setIsHovered1(true)}
+                    <div onClick={()=>navigate(`services/Business Consulting`)} className="tab" onMouseEnter={() => setIsHovered1(true)}
                 onMouseLeave={() => setIsHovered1(false)}>
                         <div className="in_tab" >
                             <img 
                              src={
                       isHovered1
-                        ? "images/Homepage/Bs_consulting_fff.svg"
-                        : "images/Homepage/BS_consulting.svg"
+                        ? "/images/Homepage/Bs_consulting_fff.svg"
+                        : "/images/Homepage/BS_consulting.svg"
                     } 
                     // src='images/Homepage/BS_consulting.svg'
                     alt="" />
@@ -103,7 +103,7 @@ export default function Main() {
                         <p style={{marginTop:'5px',fontWeight:'bold'}}
                         className="tab_text">→</p>
                     </div>
-                    <div className="tab" onMouseEnter={() => setIsHovered2(true)}
+                    <div onClick={()=>navigate(`services/Testing`)} className="tab" onMouseEnter={() => setIsHovered2(true)}
                 onMouseLeave={() => setIsHovered2(false)}>
                         <div className="in_tab">
                             <img  src={
@@ -118,7 +118,7 @@ export default function Main() {
                         <p style={{marginTop:'5px',fontWeight:'bold'}}
                         className="tab_text">→</p>
                     </div>
-                    <div className="tab" onMouseEnter={() => setIsHovered3(true)}
+                    <div onClick={()=>navigate(`services/System Integrations`)} className="tab" onMouseEnter={() => setIsHovered3(true)}
                 onMouseLeave={() => setIsHovered3(false)}>
                         <div className="in_tab">
                             <img src={
@@ -133,7 +133,7 @@ export default function Main() {
                         <p style={{marginTop:'5px',fontWeight:'bold'}}
                         className="tab_text">→</p>
                     </div>
-                    <div className="tab" onMouseEnter={() => setIsHovered4(true)}
+                    <div onClick={()=>navigate(`services/API `)} className="tab" onMouseEnter={() => setIsHovered4(true)}
                 onMouseLeave={() => setIsHovered4(false)}>
                         <div className="in_tab">
                             <img src={
@@ -164,7 +164,7 @@ export default function Main() {
         </div> 
         <div className="cards_container_11">
             {cards2_data.map((data,idx)=>(
-                <div className="card" key={idx} onMouseEnter={() => setIsHovered(idx)}
+                <div className="card" key={idx} onMouseEnter={() => setIsHovered(idx)} onClick={()=>navigate(data.route)}
                 onMouseLeave={() => setIsHovered(null)}>
                    <img src={isHovered === idx ? data.hover : data.img} alt="" className="card_vect"/>
                     <div className="redd" style={{display:"flex"}}>
@@ -193,10 +193,11 @@ export default function Main() {
                 <p className="head_text">
                 Sectors We Serve
                 </p>
-                <img src="/images/Homepage/mid_4_m.png" alt="" />
+                <img src="/images/Homepage/mid_4_m.png" className="mid_2_mob" alt="" />
                 <p className="desc_text">
                 Our services cater to a diverse range of sectors that benefit from the implementation of our cutting-edge energy management systems.
                 </p>
+                
                 <div className="tabs">
                     <div className="tab" onMouseEnter={() => setIsHovered5(true)}
                 onMouseLeave={() => setIsHovered5(false)}>
@@ -331,20 +332,30 @@ export default function Main() {
         </div>
         </div>
         
-        <Box className="marquee_container">
-      <marquee scrollAmount={20} direction="left">
-        <Box display="flex">
+        <div className="marquee_container">
+      <div className="marquee">
+        <div className="marquee__group">
           {img.map((data, idx) => (
             <img
               src={`images/Homepage/${data.img}.png`}
-              style={{ marginRight: "2rem" }}
+              className="marquee__image"
               key={idx}
               alt=""
             />
           ))}
-        </Box>
-      </marquee>
-    </Box>
+        </div>
+        <div className="marquee__group">
+          {img.map((data, idx) => (
+            <img
+              src={`images/Homepage/${data.img}.png`}
+              className="marquee__image"
+              key={idx + img.length}
+              alt=""
+            />
+          ))}
+        </div>
+      </div>
+    </div>
     </div>
   );
 }
