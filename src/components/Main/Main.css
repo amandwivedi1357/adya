@@ -211,7 +211,7 @@ letter-spacing: 0.25px;
 
 }
 .left_content .head_text{
-    margin: 40px 37px 12px;
+    margin: 40px 50px 12px;
     font-family: Poppins;
   font-size: 40px;
   font-weight: bold;
@@ -223,7 +223,7 @@ letter-spacing: 0.25px;
   color: #030303;
 }
 .left_content .desc_text{
-    margin: 0 37px 12px;
+    margin: 0 50px 12px;
     font-family: Poppins;
   font-size: 15px;
   font-weight: normal;
@@ -234,6 +234,7 @@ letter-spacing: 0.25px;
   text-align: left;
   color: rgba(3, 3, 3, 0.9);
 }
+
 .left_content .mid_2_mob{
     display: none;
 }
@@ -242,7 +243,7 @@ letter-spacing: 0.25px;
     flex-direction: column;
     gap: 28px;
     margin-top: 54px;
-    margin-left: 37px;
+    margin-left: 50px;
 }
 .tabs .tab{
     width: 445px;
@@ -287,11 +288,22 @@ transition: background-color 0.3s, color 0.3s;
     flex: 1;
 }
 .mid_cont_2 .right img{
-    height: 100%;
+   margin: auto;
+   /* border: 1px solid red; */
+   height: 500px;
+   width: 60%;
+   margin-top: 8rem;
 }
 
 .mid_cont_3{
     margin: -40px 50px 90px 30px;
+    /* border: 1px solid red; */
+}
+.mid_cont_3 .top_cont .head_text{
+    margin-left: 20px;
+}
+.mid_cont_3 .top_cont .desc_text{
+    margin-left: 20px;
 }
 .mid_cont_3 .cards_container_11{
     /* border: 1px solid red; */

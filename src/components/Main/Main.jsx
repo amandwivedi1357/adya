@@ -83,7 +83,7 @@ export default function Main() {
                 <p className="desc_text">
                 Our services help utilities, solution providers and system integrators to rollout projects faster and cost effectively.
                 </p>
-                <img src="/images/Homepage/mobile_home1.png" className="mid_2_mob" alt="" />
+                <img src="/images/Homepage/api.png" className="mid_2_mob" alt="" />
                 <div className="tabs">
                     <div onClick={()=>navigate(`services/Business Consulting`)} className="tab" onMouseEnter={() => setIsHovered1(true)}
                 onMouseLeave={() => setIsHovered1(false)}>
@@ -152,7 +152,7 @@ export default function Main() {
             </div>
         </div>
         <div className="right">
-            <img style={{width:'100%'}} src="/images/Homepage/mid_2.png" alt="" />
+            <img  src="/images/Homepage/api.png" alt="" />
         </div>
       </div>
       <div className="mid_cont_3">
@@ -186,7 +186,7 @@ export default function Main() {
       </div>
       <div className="mid_cont_4">
       <div className="left left4">
-            <img src="/images/Homepage/mid_4.png" alt="" />
+            <img src="/images/Homepage/sectorss.jpeg" alt="" />
         </div>
       <div className="right">
             <div className="right_content">
@@ -317,7 +317,7 @@ export default function Main() {
             </p>
             <p className="desc_text">Empowering Journeys, Empowered Words</p>
         </div>
-        <img src="images/Homepage/mid_6_m.png" alt="" className="mid_m_6"/>
+        <img src="images/Homepage/test.png" alt="" className="mid_m_6"/>
         <img src="images/Homepage/quote.svg" alt="quote" className="quote"/>
         <div className="testimonial">
             <p>We are Immensely satisfied and delighted on the Installation, Commissioning of end to end smart meter project awarded to ADYA Smart Metering Pvt. Ltd., We also hereby certify that the plug & play project was delivered to our satisfactory levels.</p>
@@ -328,7 +328,7 @@ export default function Main() {
         
       </div>
       <div className="right">
-            <img src="images/Homepage/mid_2.png" alt="" />
+            <img src="images/Homepage/test.png" alt="" />
         </div>
         </div>
         

@@ -1,15 +1,19 @@
 *{
     font-family: 'Poppins';
 }
+.navbar_div{
+  margin-left: -2.5rem;
+  
+}
 .blue_strip{
-    background-color: #024C70;
+    background-color: #1f1e1e;
     height: 15px;
     width: 100%;
   margin-bottom: 1rem;
 }
 .navbar{
     background: transparent;
-    /* border: 1px solid red; */
+    
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -39,17 +43,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
+    
   }
   
   .navlist_ul {
     list-style-type: none;
    display: flex;
+  margin-left: -6rem;
+   margin-top: -0.1rem;
    
 }
 
   .navlist_ul li:not(:last-child) {
-    margin-right: 49px; 
+    margin-right: 32px; 
   }
   .navlist_ul li {
     margin: auto;
@@ -82,13 +88,13 @@
   } */
   .search{
  
-
+    margin-right: -2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
-    margin-top: 1rem;
     
+    /* margin-top: 1rem; */
+   
   }
 .search button{
   display: inline-flex;
@@ -129,7 +135,7 @@ transition: all  delay 0.3s ease ;
   }
     .navbar_div{
       float: left;
-      /* border: 1px solid red; */
+      /*  */
       margin-right: auto;
       margin-left: 20px;
     }
