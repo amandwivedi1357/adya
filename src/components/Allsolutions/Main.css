@@ -82,7 +82,7 @@ letter-spacing: 0.25px;
     .cards_container_11 .card{
             padding-bottom: 25px;
            cursor: pointer;
-           height: auto;
+           height: 299px;
             margin: auto;
             width: 100%;
             border-radius: 10px;
@@ -93,13 +93,14 @@ letter-spacing: 0.25px;
        /* border: 1px solid red; */
       flex-grow: 0;
       width: 50px;
-      margin: 37px 34px ;
+      height: 50px;
+      margin: 27px 34px ;
     color: #fff;
     
     }
     .card .head_text{
         margin: 0 0 0 34px;
-        font-size: 24px;
+        font-size: 18px;
       font-weight: 600;
       font-stretch: normal;
       font-style: normal;
@@ -109,7 +110,11 @@ letter-spacing: 0.25px;
       color: #030303;
     }
     .card .desc_text{
-        margin: 15px 24px 0 34px;
+      margin-top: 10px;
+      margin-left: 34px;
+      margin-right: 24px;
+      height: 75px;
+        /* margin: 15px 24px 0 34px; */
         font-size: 14px;
         /* border: 1px solid red; */
       font-weight: normal;
@@ -121,7 +126,7 @@ letter-spacing: 0.25px;
       color: rgba(3, 3, 3, 0.9);
     }
      .follow-up{
-        margin: 0 0 0 0;
+        margin: -5px 0 0 0;
         font-family: Inter;
       font-size: 14px;
       font-weight: normal;
@@ -136,7 +141,7 @@ letter-spacing: 0.25px;
         font-size: 16px;
         font-weight: 500;
        margin-left: 34px;
-       margin-top: 38px;
+       margin-top: 20px;
     }
     
     .card:hover{

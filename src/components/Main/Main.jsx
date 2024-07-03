@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { cards1_Sectors, cards1_data, cards2_data, listData } from "../index";
 
 import "./Main.css";
@@ -7,8 +7,16 @@ import MySlider from "./HomeSlider";
 import SolutionsSlider from "../Sliders/SolutionsSlider";
 import ProductsSlider from "../Sliders/ProductsSlider";
 import { useNavigate } from "react-router-dom";
+import { ReactTyped, Typed } from "react-typed";
+import RespNav from "../Responsive/RespNav";
 
 export default function Main() {
+  const text1 = 'Committed to sustainable energy through Adya innovation'
+  const text2 = 'Upgrade your Digital Meters to Smart Prepaid Chekout our AM+'
+  const text3 = 'Enabling Sustainable Energy Management Solutions for Utilities, Commercial & Industries sectors'
+
+  const desc1 = 'Adya Smart metering solutions'
+  const videoRef = useRef()
     const navigate = useNavigate()
     const [isHovered, setIsHovered] = useState(false);
     const [isHovered1, setIsHovered1] = useState(false);
@@ -19,23 +27,83 @@ export default function Main() {
     const [isHovered6, setIsHovered6] = useState(false);
     const [isHovered7, setIsHovered7] = useState(false);
     const [isHovered8, setIsHovered8] = useState(false);
-
+    const [typed,setTyped] = useState()
 
     const img = [{img:'img1'},{img:'img2'},{img:'img3'},{img:'img4'},{img:'img5'},{img:'img6'},{img:'img7'},{img:'img8'},{img:'img9'},{img:'img10'}]
     
   return (
     <div className="red_home">
 
-    {/* <div className="hero_Section">
-    <img className="sol_banner" src="images/Homepage/ban1.png" />
-    <div className="inner_container">
-        <p className="head_text">
-            Enabling Sustainable Energy Management Solutions for Utilities, Commercial & Industries sectors.
-        </p>
-        <p className="desc_text">Adya Smart metering solutions</p>
-        <button className="contact_btn">Contact Us</button>
-    </div>
-    </div> */}
+<div className="hero_Section">
+  <div className="blend_nav">
+  <div className="navbar">
+        <div className="navbar_div" style={{cursor:'pointer'}} onClick={()=>navigate('/')}>
+          <img  src="/images/Homepage/logo.svg" alt="" className="logo"/>
+          <div>
+          <span className="Advanced-Energy-Management">
+  Advanced{" "}
+  <span className="text-style-1">Energy{" "}</span>
+  Management
+</span>
+</div>
+        </div>
+        
+        <div className='nav_list'>
+  <ul className='navlist_ul'>
+    
+    
+  <li onClick={()=>navigate('/all-solutions')}>Solutions</li>
+    <li onClick={()=>navigate('/sector')}>Sectors</li>
+    <li onClick={()=>navigate('/products')}>Products</li>
+    <li onClick={()=>navigate('/services')}>Service</li>
+    <li onClick={()=>navigate('/partners')}>Partners</li>
+    <li onClick={()=>navigate('/about-us')}>About us</li>
+    <li onClick={()=>navigate('/career')}>Career</li>
+  </ul>
+</div>
+      <div className="respnav">
+        <RespNav/>
+      </div>
+        
+
+        <div className='search'>
+          <button  onClick={()=>navigate('/contact-us')}>
+
+       Contact us
+          </button>
+
+        </div>
+      </div>
+  </div>
+            {/* <img className="sol_banner" src="images/Homepage/ban1.png" />
+            <div className="inner_container">
+                <p className="head_text">
+                    Enabling Sustainable Energy Management Solutions for Utilities, Commercial & Industries sectors.
+                </p>
+                <p className="desc_text">Adya Smart metering solutions</p>
+                <button className="contact_btn">Contact Us</button>
+            </div> */}
+
+            <video className="video_height" ref={videoRef} autoPlay loop muted>
+                <source src="/videos/homeVideo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <div className="animated_text">
+            <ReactTyped
+             typedRef={setTyped}
+      strings={[
+        text1,text2,text3
+      ]}
+      typeSpeed={50}
+      backSpeed={80}
+      
+      loop
+    />
+    <p className="desc_text">
+      {desc1}
+    </p>
+            </div>
+        </div>
 
 
      {/* <div className="banner">
@@ -43,7 +111,7 @@ export default function Main() {
     
 </div> */}
 
-      <MySlider/>
+      {/* <MySlider/> */}
       <div className="mid_cont_1">
         <div className="top_cont">
             <p className="head_text">
@@ -152,7 +220,7 @@ export default function Main() {
             </div>
         </div>
         <div className="right">
-            <img  src="/images/Homepage/api.png" alt="" />
+            <img  src="/images/Homepage/adobe_Service-removebg-preview.png" alt="" />
         </div>
       </div>
       <div className="mid_cont_3">

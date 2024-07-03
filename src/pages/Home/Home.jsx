@@ -6,7 +6,7 @@ import Navbar from "../../components/Navbar/index";
 export  function Home() {
   return (
     <div>
-      <Navbar/>
+      {/* <Navbar/> */}
      <Main/>
     <Footer/>
     </div>
