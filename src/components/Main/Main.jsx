@@ -7,7 +7,7 @@ import MySlider from "./HomeSlider";
 import SolutionsSlider from "../Sliders/SolutionsSlider";
 import ProductsSlider from "../Sliders/ProductsSlider";
 import { useNavigate } from "react-router-dom";
-import { ReactTyped, Typed } from "react-typed";
+import { ReactTyped, } from "react-typed";
 import RespNav from "../Responsive/RespNav";
 
 export default function Main() {
