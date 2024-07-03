@@ -220,7 +220,7 @@ export default function Main() {
             </div>
         </div>
         <div className="right">
-            <img  src="/images/Homepage/adobe_Service-removebg-preview.png" alt="" />
+            <img  src="/images/Homepage/api_2.png" alt="" />
         </div>
       </div>
       <div className="mid_cont_3">
