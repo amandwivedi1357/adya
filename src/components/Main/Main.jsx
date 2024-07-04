@@ -12,10 +12,10 @@ import RespNav from "../Responsive/RespNav";
 
 export default function Main() {
   const text1 = 'Committed to sustainable energy through Adya innovation'
-  const text2 = 'Upgrade your Digital Meters to Smart Prepaid Chekout our AM+'
+  const text2 = 'Upgrade your Digital Meters to Smart Prepaid Checkout our AM+'
   const text3 = 'Enabling Sustainable Energy Management Solutions for Utilities, Commercial & Industries sectors'
 
-  const desc1 = 'Adya Smart metering solutions'
+  const desc1 = 'Adya Smart Metering Solutions'
   const videoRef = useRef()
     const navigate = useNavigate()
     const [isHovered, setIsHovered] = useState(false);
