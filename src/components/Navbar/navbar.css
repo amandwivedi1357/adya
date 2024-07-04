@@ -9,7 +9,7 @@
     background-color: #1f1e1e;
     height: 15px;
     width: 100%;
-  margin-bottom: 1rem;
+ 
 }
 .navbar{
     background: transparent;
@@ -127,6 +127,7 @@ transition: all  delay 0.3s ease ;
   display: none;
 }
 .navbar_div .logo{
+  margin-top: 20px;
   height: 40px;
 }
 @media only screen and (max-width: 600px) {

@@ -18,13 +18,13 @@
     
     width: 100%;
     position: absolute;
-    top: 5%;
-    
+    top: 0%;
+    /* border: 1px solid red; */
     z-index: 100;
 }
 .blend_nav .navbar{
     padding: 10px;
-    border: 1px solid red;
+   height: 120px;
     margin: auto;
     background: rgba( 255, 255, 255, 0.15 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -51,13 +51,14 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     pointer-events: none; /* Ensure text doesn't interfere with video controls */
 }
 .animated_text span {
+    /* border: 1px solid red; */
     margin-left: -5px;
     width: 60%;
     color: rgb(19, 1, 1); /* Change text color */
     font-size: 2rem; /* Adjust the font size as needed */
     font-weight: bold; /* You can add more styles here */
     font-family: 'Arial', sans-serif; /* Set the font family */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: Add a text shadow for better readability */
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); Optional: Add a text shadow for better readability */
      /* Optional: Add a background color with transparency */
     padding: 5px; /* Optional: Add some padding around the text */
     border-radius: 5px; /* Optional: Add rounded corners to the background */
@@ -71,7 +72,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
   .sol_banner {
     width: 100%;
-    height: 80vh; /* Make sure the image scales correctly */
+     /* Make sure the image scales correctly */
   }
   
   .inner_container {
@@ -265,7 +266,7 @@ letter-spacing: 0.25px;
 }
 .left{
     flex: 1;
-
+    /* border: 1px solid red; */
 }
 .left_content .head_text{
     margin: 40px 50px 12px;
@@ -343,18 +344,19 @@ transition: background-color 0.3s, color 0.3s;
 }
 .right{
     flex: 1;
+    /* border: 1px solid red; */
 }
 .mid_cont_2 .right img{
    margin: auto;
-   /* border: 1px solid red; */
-   height: 550px;
-   width: 80%;
-   margin-top: 8rem;
+   
+  margin-top: 8rem;
+   width: 100%;
+   
 }
 
 .mid_cont_3{
     
-    margin: -80px 50px 90px 30px;
+    margin: -40px 50px 90px 30px;
     /* border: 1px solid red; */
 }
 .mid_cont_3 .top_cont .head_text{
@@ -610,6 +612,8 @@ font-family: Poppins;
 .marquee_container {
     overflow: hidden;
     position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     width: 100%;
     height: 100px; /* Adjust height as needed */
   }
@@ -617,16 +621,18 @@ font-family: Poppins;
   .marquee {
     display: flex;
     width: 200%; /* Twice the width to allow continuous scrolling */
-    animation: marquee 12s linear infinite; /* Adjust duration as needed */
+    animation: marquee 15s linear infinite; /* Adjust duration as needed */
   }
   
   .marquee__group {
     display: flex;
+    
     flex-shrink: 0;
   }
   
   .marquee__image {
-    margin-right: 2rem; /* Adjust margin as needed */
+    /* border: 1px solid red; */
+    margin-right: 3rem; /* Adjust margin as needed */
   }
   
   @keyframes marquee {

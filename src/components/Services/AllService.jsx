@@ -12,7 +12,7 @@ export default function AllService() {
   return (
     <div className='allService_Container'>
         <div className="top_main">
-            <img className="sol_banner" src="images/Services/ServiceBanner.png" alt="" />
+            <img className="sol_banner" src="images/Homepage/Rectangle1.png" alt="" />
             <div className="img_cont">
                 <p className="head_text">
                 Services 

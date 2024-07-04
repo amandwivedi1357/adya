@@ -36,6 +36,7 @@ export default function Main() {
 
 <div className="hero_Section">
   <div className="blend_nav">
+    {/* <div className="blue_strip"></div> */}
   <div className="navbar">
         <div className="navbar_div" style={{cursor:'pointer'}} onClick={()=>navigate('/')}>
           <img  src="/images/Homepage/logo.svg" alt="" className="logo"/>
@@ -220,7 +221,7 @@ export default function Main() {
             </div>
         </div>
         <div className="right">
-            <img  src="/images/Homepage/api_2.png" alt="" />
+            <img  src="/images/Homepage/Rectangle.png" alt="" />
         </div>
       </div>
       <div className="mid_cont_3">
