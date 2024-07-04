@@ -396,7 +396,7 @@ export default function Main() {
         
       </div>
       <div className="right">
-            <img src="images/Homepage/test.png" alt="" />
+            <img src="images/Homepage/mid_66.png" alt="" />
         </div>
         </div>
         
