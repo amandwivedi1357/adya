@@ -1,5 +1,5 @@
 .mid_single{
-    margin: 46px 100px ;
+    margin: 50px 50px ;
     /* border: 1px solid red; */
 }
 .overview{
@@ -14,7 +14,7 @@ font-style: normal;
 font-weight: 600;
 line-height: 45px; /* 150% */
 letter-spacing: 0.25px;
-margin-bottom: 28px;
+margin-bottom: 20px;
 }
 .overview .desc_text{
     color: rgba(3, 3, 3, 0.80);
@@ -34,10 +34,12 @@ letter-spacing: 0.5px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     /* border: 2px solid rebeccapurple; */
+    column-gap: 5px;
+    row-gap: -15px;
 }
 .feature_container .single_feature{
     width: 90%;
-    margin-bottom: 58px;
+    margin-bottom: 25px;
     /* border: 2px solid red; */
 }
 .single_feature .head_feature{
@@ -62,8 +64,12 @@ font-weight: 600;
 line-height: 45px; /* 180% */
 letter-spacing: 0.25px;
 }
+.info_graphics{
+    margin-top: 20px;
+}
 .info_graphics .info_g{
-    width: 100%;
+    width: 60%;
+   height: 300px;
     margin-top: 30px;
     /* border: 1px solid red; */
 }
@@ -79,7 +85,7 @@ border: 1px solid #FAF3EF;
 background: rgba(128, 130, 133, 0.05);
 }
 .sols_links .head_text{
-    margin-top: 34px;
+    margin-top: 24px;
     color: #030303;
 text-align: center;
 font-family: Poppins;
@@ -106,6 +112,13 @@ background: #FFF;
 cursor: pointer;
     /* border: 1px solid red; */
     
+}
+.single_link.active {
+    background-color: #E85123;
+    color: #FFF; /* Background color when active */
+}
+.single_link.active .inner .link_text{
+    color: #fff;
 }
 .links  :hover{
     background: #E85123;

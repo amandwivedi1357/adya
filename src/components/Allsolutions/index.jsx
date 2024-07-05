@@ -17,22 +17,26 @@ export const Single_solution_data = [
         
         features: [
             {
-                feature_head: 'Cost Effective',
-                feature_desc: `Adya's RF-based smart metering cuts costs, making it an economical choice for long-term energy management.`,
+                feature_head: 'Comprehensive Suite of Products',
+                feature_desc: `Offers seamless integration and effortless plug-and-play devices for
+efficient installation.`,
             },
             {
-                feature_head: 'Future Ready',
-                feature_desc: `Adya leads in innovation, developing cutting-edge smart metering for evolving customer needs and future trends.`,
-            },
-            
-            {
-                feature_head: 'Future Ready',
-                feature_desc: `Adya leads in innovation, developing cutting-edge smart metering for evolving customer needs and future trends.`,
+                feature_head: 'Complete Ecosystem',
+                feature_desc: `Includes Smart Meters, Communication Networks, Head End Systems, and Meter
+Data Management for smooth operation.`,
             },
             
             {
-                feature_head: 'Future Ready',
-                feature_desc: `Adya leads in innovation, developing cutting-edge smart metering for evolving customer needs and future trends.`,
+                feature_head: 'Customization and Integration Services',
+                feature_desc: `Provides tailored services to meet specific AMI requirements,
+enhancing adaptability and effectiveness.`,
+            },
+            
+            {
+                feature_head: 'Enhanced Operational Efficiency',
+                feature_desc: `Streamlines processes with advanced tools for energy management,
+optimizing utility operations.`,
             },
             
             
@@ -55,12 +59,14 @@ With our Smart Prepaid System, you can say goodbye to hidden revenue losses asso
         features: [
             
             {
-                feature_head: 'Future Ready',
-                feature_desc: `Adya leads in innovation, developing cutting-edge smart metering for evolving customer needs and future trends.`,
+                feature_head: 'Time of Day Rates:',
+                feature_desc: `Enables different rates for various times of the day, encouraging off-peak usage and
+load balancing.`,
             },
             {
-                feature_head: 'Seamless Integration with existing Infrastructure',
-                feature_desc: `Ensures the system integrates easily with current digital metering systems`,
+                feature_head: 'Grace Period Feature:',
+                feature_desc: `Offers consumers extra time to top up their prepaid meters, adding flexibility to
+the system.`,
             },
             
             {
@@ -69,8 +75,9 @@ With our Smart Prepaid System, you can say goodbye to hidden revenue losses asso
             },
             
             {
-                feature_head: 'Grace Period Feature',
-                feature_desc: `Offers consumers extra time to top up their prepaid meters, adding flexibility to the system.`,
+                feature_head: 'Seamless Integration with Existing Infrastructure',
+                feature_desc: `Ensures the system integrates easily with current
+digital metering systems.`,
             },
             
             
@@ -139,14 +146,11 @@ With our Smart Prepaid System, you can say goodbye to hidden revenue losses asso
             },
             
             {
-                feature_head: 'Stable Standards',
-                feature_desc: `Less subject to changes in standards or technology compared to cellular networks.`,
-            },
-            
-            {
                 feature_head: 'Cost Efficiency',
                 feature_desc: `Operates at significantly lower costs than cellular networks.`,
             },
+            
+            
             
             
         ],
@@ -358,6 +362,53 @@ With our Smart Prepaid System, you can say goodbye to hidden revenue losses asso
             {
                 feature_head: 'Proof - of - concept initiative',
                 feature_desc: `Tests the DI technology's potential for future field deployment.`,
+            },
+            
+           
+            
+            
+        ],
+        solution_arch: 'images/Infograpics/info 1.jpg', //image
+        solution_img:'/images/Infograpics/perm_infoGraphics.png',
+    },
+    {
+        route: 'DERM',
+        sol_banner:'images/Homepage/all_solution.png',
+        tag:'solutions',
+         
+        overviewDesc: (
+            <>
+               Distributed Energy Resource Management (DERM) refers to the system and tools used for managing
+distributed energy resources (DERs) in a power grid. DERs include a variety of small-scale, decentralized
+energy sources such as solar panels, wind turbines, energy storage systems (like batteries), and
+controllable loads. These resources are often located close to the point of consumption, like residential
+solar panels or small wind farms. <br /> <br />
+Overall, DERM is a key component in the evolving landscape of energy management, particularly in the
+context of increasing adoption of renewable energy sources and the move towards more decentralized
+and interactive power systems.
+            </>
+        )
+,        
+        features: [
+            {
+                feature_head: 'Integration and Optimization',
+                feature_desc: `Efficiently integrates various types of DERs into the electrical grid.`,
+            },
+            {
+                feature_head: 'Balancing Supply and Demand',
+                feature_desc: `Helps balance electricity supply with demand, especially for intermittent
+DERs like solar and wind.`,
+            },
+            
+            {
+                feature_head: 'Enhancing Grid Reliability and Flexibility',
+                feature_desc: `Contributes to the grid's reliability and adds flexibility with
+additional power generation and consumption options.`,
+            },
+            {
+                feature_head: 'Economic Benefits',
+                feature_desc: `Offers economic benefits for consumers and utility companies by enabling better
+energy management.`,
             },
             
            

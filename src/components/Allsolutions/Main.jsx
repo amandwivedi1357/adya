@@ -15,7 +15,7 @@ export default function Main() {
   return (
     <div>
         <div className="top_main">
-            <img className="sol_banner" src="images/Homepage/all_solution.png" alt="" />
+            <img className="sol_banner" src="images/Homepage/singl_sol1.jpg" alt="" />
             <div className="img_cont">
                 <p className="head_text">
                 Solutions 

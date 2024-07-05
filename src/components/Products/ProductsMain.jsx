@@ -15,7 +15,7 @@ export default function ProductsMain() {
   return (
     <div className="products_container">
          <div className="top_main">
-            <img className="sol_banner" src="images/Homepage/careerBanner.png" alt="" />
+            <img className="sol_banner" src="images/Product/prod.png" alt="" />
             <div className="img_cont">
                 <p className="head_text">
                 Products 

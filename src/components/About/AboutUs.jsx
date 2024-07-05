@@ -123,10 +123,41 @@ export default function AboutUs() {
                 ))
             }
         </div>
-        <button style={{margin:"44px  0 0 36px "}} className="contact_btn">Contact us</button>
+        <button style={{margin:"84px  0 0 36px "}} className="contact_btn">Contact us</button>
       </div>
       <div className="mid_cont2">
-        <img src="images/About/mid2_ban.png" alt="" className="awards" />
+        <div className="left">
+
+        <img src="images/Services/awards.png" alt="" className="awards" />
+        </div>
+        <div className="right">
+            <p className="head_text">Awards & Recognitions</p>
+            <div className="btm_cont">
+                <div className="award1">
+                    <img src="/images/Services/aw1.svg" alt="" />
+                    <p className="head_text1">
+                    Electrical Research & Development Association
+                    </p>
+                </div>
+                <ul className="award_year">
+                        <li>Certificate of Life Membership</li>
+                        <li>Year of Issue - 29/10/2018</li>
+                        
+                    </ul>
+                <div className="award2">
+                    <img src="/images/Services/aw1.svg" alt="" />
+                    <p className="head_text1">
+                    Earth Care Award - 2012
+                    </p>
+                    
+                </div>
+                <ul className="award_year">
+                        <li>JSW - Time Of India</li>
+                        <li>Year of Issue - 29/10/2018</li>
+                        
+                    </ul>
+            </div>
+        </div>
       </div>
       <div className="mid_cont3">
         <div className="About_top">

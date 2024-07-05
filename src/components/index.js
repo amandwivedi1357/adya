@@ -116,7 +116,7 @@ export const cards1_Sectors = [
         explore:"explore"
     },
     {
-        im:"/images/sectors/industrial.svg",
+        img:"/images/sectors/industrial.svg",
         head:"Industrial",
         route:'Industrial',
         hover:"/images/sectors/industrial_fff.svg",

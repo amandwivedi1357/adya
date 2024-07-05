@@ -8,11 +8,12 @@ import { Single_sector_data } from ".";
 
 export default function SingleSector() {
     const [isHovered, setIsHovered] = useState(false);
-
     const { single } = useParams();
+    const decodedSingle = decodeURIComponent(single);
+    
     const navigate = useNavigate()
     const singleData = Single_sector_data.find(item => item.route === single);
-    console.log(single)
+   
 
     if (!singleData) {
         
@@ -22,7 +23,7 @@ export default function SingleSector() {
     return (
         <div>
             <div className="top_main">
-                <img className="sol_banner" src={singleData.sol_banner} alt="" />
+                <img className="sol_banner" src='/images/Homepage/sector_banner1.jpg' alt="" />
                 <div className="img_cont">
                     <p className="head_text">{singleData.route}</p>
                     <div className="bred">
@@ -64,10 +65,14 @@ export default function SingleSector() {
               <div className="links">
                 {
                   cards1_Sectors.map((data,idx)=>(
-                    <div className="single_link" key={idx} onClick={()=>navigate(`/sector/${data.head}`)} onMouseEnter={() => setIsHovered(idx)}
+                    <div className={`single_link ${singleData.route === data.head ? 'active' : ''}`} key={idx} onClick={()=>navigate(`/sector/${data.head}`)} onMouseEnter={() => setIsHovered(idx)}
                     onMouseLeave={() => setIsHovered(null)}>
                     <div className="inner">
-                      <img className="link_img" src={isHovered === idx ? data.hover : data.img} alt="" />
+                    <img 
+                                                    className="link_img" 
+                                                    src={isHovered === idx || decodedSingle === data.head ? data.hover : data.img} 
+                                                    alt="" 
+                                                />
                       <p className="link_text">{data.head}</p>
                     </div>
                     <p className="arrow-right">→</p>

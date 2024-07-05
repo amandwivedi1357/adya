@@ -26,7 +26,7 @@
     padding: 10px;
    height: 120px;
     margin: auto;
-    background: rgba( 255, 255, 255, 0.15 );
+    background: rgba( 255, 255, 255, 0.75 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 1px );
 -webkit-backdrop-filter: blur( 1px );
@@ -350,15 +350,15 @@ transition: background-color 0.3s, color 0.3s;
 .mid_cont_2 .right img{
    margin: auto;
    
-  margin-top: 8rem;
+  height: 600px;
    width: 100%;
    
 }
 
 .mid_cont_3{
     
-    margin: -40px 50px 90px 30px;
-    /* border: 1px solid red; */
+    margin: -20px 50px 90px 30px;
+   
 }
 .mid_cont_3 .top_cont .head_text{
     /* border: 1px solid red; */
@@ -376,10 +376,22 @@ transition: background-color 0.3s, color 0.3s;
     margin-left: 20px;
 }
 .mid_cont_4{
-    /* border: 1px solid red; */
+    
     display: flex;
 
     margin: -40px 25px 0 0;
+}
+.mid_cont_4 .right .right_content .head_text{
+    margin-right: 0;
+    /* border: 1px solid red; */
+}
+.mid_cont_4 .right .right_content .desc_text{
+    margin-right: 0;
+    /* border: 1px solid red; */
+}
+.mid_cont_4 .right .right_content .tabs{
+    margin-right: 0;
+    /* border: 1px solid red; */
 }
 .mid_cont_4 .left img{
     width: 125%;
@@ -388,6 +400,7 @@ transition: background-color 0.3s, color 0.3s;
 
 .left{
     flex: 1;
+    
 }
 .left.left4 {
     position: relative;
@@ -507,6 +520,7 @@ transition: background-color 0.3s, color 0.3s;
     
 }
 .mid_cont_5 .top_cont .head_text{
+    margin-top: 20px;
     font-size: 30px;
     line-height: 1.5;
 }
@@ -758,15 +772,17 @@ letter-spacing: 0.25px;
     }
     .mid_cont_3 .top_cont{
         margin: 0;
-        margin-top: -5rem;
-       
+        margin-top: -4rem;
+     
         margin-bottom: -18px;
         /* border: 1px solid red; */
     }
     .mid_cont_3 .top_cont .head_text{
         font-size: 20px; 
+        margin-left: 0;
     }
     .mid_cont_3 .top_cont .desc_text{
+        margin-left: 0;
         width: 80%;
         color: rgba(3, 3, 3, 0.90);
 font-family: Poppins;
@@ -775,7 +791,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 22px; /* 157.143% */
 letter-spacing: 0.5px;
-
+padding-bottom: 20px;
     }
     .mid_cont_3 .cards_container_11{
         display: none;
@@ -857,6 +873,7 @@ flex-shrink: 0;
     .mid_cont_5{
         /* border: 1px solid red; */
         margin: 0;
+        margin-bottom: 20px;
     }
     .mid_cont_5 .top_cont .head_text{
         margin: 0;
@@ -899,7 +916,7 @@ line-height: 20px; /* 111.111% */
 letter-spacing: 0.25px;
     }
     .mid_cont_5 .contact_btn{
-        margin: 36px 20px ;
+        margin: 36px 50px ;
         display: inline-flex;
 height: 36px;
 width: 125px;

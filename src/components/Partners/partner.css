@@ -1,7 +1,7 @@
 .partners_desc{
     /* border: 1px solid red; */
-    margin: 100px;
-   
+    margin: 50px;
+   margin-bottom: 5rem;
 }
 .partners_desc .head_text{
     color: #030303;
@@ -32,6 +32,7 @@ font-style: normal;
 font-weight: 600;
 line-height: 20px; /* 80% */
 letter-spacing: 0.5px;
+margin-bottom: 20px;
 }
 .partner_detail_container{
     display: flex;
@@ -39,12 +40,23 @@ letter-spacing: 0.5px;
     
 }
 .Partner_Banner_cont{
+    height: 452px;
+    margin-top: 20px;
     display: flex;
-    height: auto;
+    
+    /* border: 1px solid red; */
+    
+    
 }
 .Partner_Banner_cont .left{
+    padding-top: 2.5rem;
    flex: 1;
+   padding-left: 2rem;
+   
     background: #000;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+   
 }
 .Partner_Banner_cont .left .inner_left{
     margin: 35px 0 35px 35px;
@@ -105,10 +117,12 @@ transition: all  delay 0.3s ease ;
 }
 .Partner_Banner_cont .right{
 flex: 1;
-height: 422px;
+height: 452px;
 }
 .Partner_Banner_cont .right img{
-    height: 422px;
+    height: 452px;
+    
+    
 }
 
 @media only screen and (max-width: 600px){
@@ -145,6 +159,7 @@ height: 422px;
         text-transform: capitalize;
     }
     .Partner_Banner_cont{
+        margin-top: 25rem;
         flex-direction: column-reverse;
     }
     .Partner_Banner_cont .left{
@@ -177,8 +192,9 @@ text-transform: capitalize;
     .inner_left .search{
         /* border: 1px solid red; */
         margin-top: -20px;
+        margin-bottom: 30px;
     }
     .Partner_Banner_cont .right img{
-        border-radius: 0px;
+        border-radius: none;
     } 
 }

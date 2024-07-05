@@ -6,14 +6,15 @@
 
 .main{
 
-    margin: 100px;
+    margin: 50px;
     margin-top: 0;
     margin-bottom: 0;
 }
 .top_cont{
-    /* border: 1px solid red; */
+    
 }
 .top_cont .head_text{
+    margin-top: 40px;
     color: #030303;
     font-family: Poppins;
     font-size: 40px;
@@ -21,6 +22,7 @@
     font-weight: 700;
     line-height: 55px; /* 137.5% */
     letter-spacing: 1px;
+    
 }
 .top_cont .desc_text{
 width: 100%;
@@ -34,7 +36,7 @@ letter-spacing: 0.5px;
 margin-bottom: 0;
 }
 .mid_cont{
-    margin: 80px 0;
+    margin: 40px 0;
     position: relative;
     /* border: 1px solid red; */
 }
@@ -133,9 +135,11 @@ text-align: left;
     gap: 85px;
     grid-template-columns: repeat(4,1fr);
 }
-.mid_cont_5{
+.about_container .mid_cont_5{
+
+    margin: 50px;
     /* border: 1px solid red; */
-    width: 100;
+    width: 100%;
 }
 .about_members .single_member{
     /* border: 1px solid red; */
@@ -167,6 +171,66 @@ font-weight: 400;
 /* border: 1px solid red; */
 letter-spacing: 0.25px;
 }
+.about_container .mid_cont2{
+    display: flex;
+    width: 100%;
+    
+}
+.about_container .mid_cont2 .left{
+    flex: 1;
+    /* border: 1px solid red; */
+}
+.about_container .mid_cont2 .left img{
+    height: 600px;
+}
+.about_container .mid_cont2 .right{
+    flex: 1;
+}
+.about_container .mid_cont2 .right .head_text{
+    margin-top: 94px;
+    margin-bottom: 104px;
+    color: rgba(3, 3, 3, 0.90);
+text-align: right;
+font-family: Poppins;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 55px; /* 137.5% */
+letter-spacing: 1px;
+}
+.right .btm_cont .award1{
+    display: flex;
+    gap: 15px;
+    text-align: right;
+    float: right;
+/* border: 1px solid red; */
+}
+.right .btm_cont .award2{
+    display: flex;
+    gap: 15px;
+    text-align: right;
+    float: right;
+/* border: 1px solid red; */
+}
+.award2{
+    margin-top: 30px;
+}
+.award1,.award2 .head_text1{
+    color: #030303;
+text-align: right;
+font-family: Inter;
+font-size: 23px;
+font-style: normal;
+font-weight: 600;
+line-height: 40px; /* 173.913% */
+letter-spacing: 0.25px;
+}
+ .award_year{
+    list-style: disc;
+    float: right;
+    display: flex;
+    gap: 30px;
+}
 .mid_cont_5 .top_cont .head_text{
     width: 50%; 
  
@@ -179,7 +243,7 @@ letter-spacing: 0.25px;
 
     .main{
         margin: 0;
-        margin-top: -5rem;
+        margin-top: 3rem;
     }
     .top_cont{
         margin: 20px;
@@ -248,9 +312,13 @@ font-weight: 400;
 line-height: 19px; /* 146.154% */
 letter-spacing: 0.5px;
 }
+.about_container .mid_cont2{
+    flex-direction: column;
+    display: none;
+}
 .about_container .mid_cont_5{
     margin-left: 0;
-    margin-top: -40px;
+    margin-top: 40px;
     width: 100%;
 }
 .mid_cont_5 .top_cont .head_text{

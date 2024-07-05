@@ -8,8 +8,8 @@ export default function Navbar() {
   const navigate = useNavigate()
   
   return (
-    <div>
-      <div className="blue_strip"></div>
+    <div className="blend_nav">
+      
       <div className="navbar">
         <div className="navbar_div" style={{cursor:'pointer'}} onClick={()=>navigate('/')}>
           <img  src="/images/Homepage/logo.svg" alt="" className="logo"/>

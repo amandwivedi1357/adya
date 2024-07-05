@@ -8,7 +8,7 @@ export default function SectorMain() {
   return (
     <div className="sector_container">
        <div className="top_main">
-        <img className="sol_banner" src="images/sectors/sectorsbanner.png" alt="" />
+        <img className="sol_banner" src="images/Homepage/sector_banner1.jpg" alt="" />
         <div className="img_cont">
           <p className="head_text">Sectors</p>
           <div className="bred">

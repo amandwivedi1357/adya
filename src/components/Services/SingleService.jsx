@@ -22,7 +22,7 @@ export default function SingleService() {
     return (
         <div>
             <div className="top_main">
-                <img className="sol_banner" src={singleData.sol_Banner} alt="" />
+                <img className="sol_banner" src='/images/Services/serv.png' alt="" />
                 <div className="img_cont">
                     <p className="head_text">{singleData.route}</p>
                     <div className="bred">

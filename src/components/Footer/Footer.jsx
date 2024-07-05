@@ -31,7 +31,12 @@ export default function Footer() {
             info@adyasmartmetering.com 
             </p>
         </div>
-        <div className="contents">
+        
+      </div>
+      {/* <div className="footer_cont2">
+
+    
+      <div className="contents">
              <p className="list_head">
              Quick Links
             </p>
@@ -47,13 +52,12 @@ export default function Footer() {
             </div>  
            <div style={{marginTop:'20px'}} className='quick_links'>
             <p onClick={()=>navigate('/career')}>Career</p>
-            {/* <p style={{marginLeft:'-28px'}}>Products</p>
-            <p >Sectors</p> */}
+            <p style={{marginLeft:'-28px'}}>Products</p>
+            <p >Sectors</p> 
             </div>  
            
         </div>
-      </div>
-      
+        </div> */}
     </div>
     <p style={{paddingBottom:'2rem'}} className="list_head ray_formula">@2023Adya - Website by Ray Formula</p>
     </div>
