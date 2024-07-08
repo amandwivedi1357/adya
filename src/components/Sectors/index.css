@@ -3,13 +3,13 @@
 
 }
 .sector_2_inner{
-    margin: 100px;
+    margin: 50px;
     margin-bottom: 69px;
 }
 .sector_2_inner .head_text{
     color: #030303;
 font-family: Poppins;
-font-size: 40px;
+font-size: 30px;
 font-style: normal;
 font-weight: 700;
 line-height: 55px; /* 137.5% */

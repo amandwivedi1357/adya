@@ -5,13 +5,14 @@
 }
 
 .footer{
-    /* border: 1px solid red; */
+  
     margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .footer_cont{
+    border: 1px solid red;
     flex: 1;
     margin: auto;
     margin-top: 59px;
@@ -38,7 +39,7 @@ width: 80%;
 .contents .list_head{
     margin: 18px 0  18px 0;
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -49,7 +50,7 @@ width: 80%;
 }
 .contents .list_desc{
  font-family: Poppins;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
