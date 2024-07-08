@@ -42,6 +42,19 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     object-fit: cover;
 }
 
+.gsap_text{
+    margin-left: -5px;
+    width: 60%;
+    color: rgb(19, 1, 1); /* Change text color */
+    font-size: 2rem; /* Adjust the font size as needed */
+    font-weight: bold; /* You can add more styles here */
+    font-family: 'Arial', sans-serif; /* Set the font family */
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); Optional: Add a text shadow for better readability */
+     /* Optional: Add a background color with transparency */
+    padding: 5px; /* Optional: Add some padding around the text */
+    border-radius: 5px; /* Optional: Add rounded corners to the background */
+    
+}
 .animated_text {
     position: absolute;
     top: 25%;
@@ -64,10 +77,12 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     border-radius: 5px; /* Optional: Add rounded corners to the background */
     
 }
-.animated_text p{
+.animated_text .desc_text{
+    position: absolute;
+    top: 15%;
     color: #030303;
     font-size: 24px;
-    margin-top: 30px;
+   
     
 }
   .sol_banner {

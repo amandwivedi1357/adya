@@ -1,6 +1,7 @@
 
 import { useNavigate } from "react-router-dom"
 import "./Footer.css"
+import { card1_services, cards1_AllSolutions, cards1_Sectors, products_Card } from ".."
 export default function Footer() {
   const navigate = useNavigate()
   return (
@@ -33,6 +34,65 @@ export default function Footer() {
         </div>
         
       </div>
+      <div className="footer_cont">
+      
+        <ul className="serve_list">
+        <p className="list_head">
+                All Solutions
+            </p>
+          {
+            cards1_AllSolutions.map((data,idx)=>(
+              <li key={idx} onClick={()=>navigate(`/${data.head}`)}>
+                {data.head}
+              </li>
+            ))
+          }
+        </ul>
+        
+      </div>
+      <div className="footer_cont">
+      <ul className="serve_list">
+        <p className="list_head">
+               Products
+            </p>
+          {
+            products_Card.map((data,idx)=>(
+              <li key={idx} onClick={()=>navigate(`/${data.route}`)}>
+                {data.head}
+              </li>
+            ))
+          }
+        </ul>
+        
+      </div>
+      <div className="footer_cont">
+      <ul className="serve_list">
+        <p className="list_head">
+                Services
+            </p>
+          {
+            card1_services.map((data,idx)=>(
+              <li key={idx} onClick={()=>navigate(`/services/${data.route}`)}>
+                {data.head}
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div className="footer_cont">
+      <ul className="serve_list">
+        <p className="list_head">
+                Sectors
+            </p>
+          {
+            cards1_Sectors.map((data,idx)=>(
+              <li key={idx} onClick={()=>navigate(`/sector/${data.route}`)}>
+                {data.head}
+              </li>
+            ))
+          }
+        </ul>
+      </div>
       {/* <div className="footer_cont2">
 
     
@@ -59,7 +119,7 @@ export default function Footer() {
         </div>
         </div> */}
     </div>
-    <p style={{paddingBottom:'2rem'}} className="list_head ray_formula">@2023Adya - Website by Ray Formula</p>
+    <p style={{paddingBottom:'2rem'}} className="list_head ray_formula">@2024Adya - Website by Ray Formula</p>
     </div>
     
   )
