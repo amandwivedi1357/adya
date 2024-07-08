@@ -32,45 +32,45 @@ export default function Main() {
 
     const img = [{img:'img1'},{img:'img2'},{img:'img3'},{img:'img4'},{img:'img5'},{img:'img6'},{img:'img7'},{img:'img8'},{img:'img9'},{img:'img10'}]
     const textRef = useRef(null);
-    // useEffect(() => {
-    //   const texts = [text1, text2, text3];
-    //   let currentTextIndex = 0;
-    
-    //   const animateText = () => {
-    //     const tl = gsap.timeline({ onComplete: animateText });
-    //     tl.fromTo(
-    //       textRef.current,
-    //       { y: '-100%', opacity: 0 },
-    //       { y: '0%', opacity: 1, duration: 1, ease: "bounce.out" }
-    //     )
-    //       .to(textRef.current, { opacity: 1, duration: 2 })
-    //       .to(textRef.current, { y: '100%', opacity: 0, duration: 1, ease: "bounce.in" })
-    //       .call(() => {
-    //         currentTextIndex = (currentTextIndex + 1) % texts.length;
-    //         textRef.current.innerText = texts[currentTextIndex];
-    //         textRef.current.style.opacity = 0; // Reset opacity before starting the next animation
-    //       })
-    //       .set(textRef.current, { y: '-100%', opacity: 0 });
-    //   };
-    
-    //   animateText();
-    // }, [text1, text2,text3])
     useEffect(() => {
       const texts = [text1, text2, text3];
       let currentTextIndex = 0;
-  
+    
       const animateText = () => {
         const tl = gsap.timeline({ onComplete: animateText });
-        tl.to(textRef.current, { opacity: 0, duration: 1 })
+        tl.fromTo(
+          textRef.current,
+          { y: '-100%', opacity: 0 },
+          { y: '0%', opacity: 1, duration: 1, ease: "bounce.out" }
+        )
+          .to(textRef.current, { opacity: 1, duration: 2 })
+          .to(textRef.current, { y: '100%', opacity: 0, duration: 1, ease: "bounce.in" })
           .call(() => {
-            textRef.current.innerText = texts[currentTextIndex];
             currentTextIndex = (currentTextIndex + 1) % texts.length;
+            textRef.current.innerText = texts[currentTextIndex];
+            textRef.current.style.opacity = 0; // Reset opacity before starting the next animation
           })
-          .to(textRef.current, { opacity: 1, duration: 1, delay: 0.5 });
+          .set(textRef.current, { y: '-100%', opacity: 0 });
       };
-  
+    
       animateText();
-    }, [text1, text2, text3]);
+    }, [text1, text2,text3])
+    // useEffect(() => {
+    //   const texts = [text1, text2, text3];
+    //   let currentTextIndex = 0;
+  
+    //   const animateText = () => {
+    //     const tl = gsap.timeline({ onComplete: animateText });
+    //     tl.to(textRef.current, { opacity: 0, duration: 1 })
+    //       .call(() => {
+    //         textRef.current.innerText = texts[currentTextIndex];
+    //         currentTextIndex = (currentTextIndex + 1) % texts.length;
+    //       })
+    //       .to(textRef.current, { opacity: 1, duration: 1, delay: 0.5 });
+    //   };
+  
+    //   animateText();
+    // }, [text1, text2, text3]);
 
   return (
     <div className="red_home">
@@ -131,23 +131,11 @@ export default function Main() {
                 Your browser does not support the video tag.
             </video>
             <div className="animated_text">
-            {/* <ReactTyped
-             typedRef={setTyped}
-      strings={[
-        text1,text2,text3
-      ]}
-      typeSpeed={50}
-      backSpeed={80}
-      
-      loop
-    /> */}
-
+           
 <div ref={textRef} className="gsap_text">
           {text1}
         </div>
-    {/* <p className="desc_text">
-      {desc1}
-    </p> */}
+    
             </div>
         </div>
 

@@ -54,12 +54,23 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     border-radius: 5px; /* Optional: Add rounded corners to the background */
     
 }
+.animated_text{
+    display: flex;
+    justify-content: center;
+}
 .animated_text .gsap_text{
-    width: 100%;
+    background: rgba( 255, 255, 255, 0.1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 10px );
+-webkit-backdrop-filter: blur( 10px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 60%;
     position: absolute;
-    top: 35%;
+    top: 50%;
+    margin: auto;
     text-align: center;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     font-size: 2rem; /* Adjust the font size as needed */
     pointer-events: none; /* Ensure text doesn't interfere with video controls */
 }
