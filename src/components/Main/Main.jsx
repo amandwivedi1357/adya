@@ -14,7 +14,7 @@ import gsap from "gsap";
 export default function Main() {
   const text1 = 'Committed to sustainable energy through Adya innovation'
   const text2 = 'Upgrade your Digital Meters to Smart Prepaid Checkout our AM+'
-  const text3 = 'Enabling Sustainable Energy Management Solutions for Utilities, Commercial & Industries sectors'
+  const text3 = 'Enabling Sustainable Energy Solutions for Utilities, Commercial & Industrial Sectors'
 
   const desc1 = 'Adya Smart Metering Solutions'
   const videoRef = useRef()
@@ -32,30 +32,45 @@ export default function Main() {
 
     const img = [{img:'img1'},{img:'img2'},{img:'img3'},{img:'img4'},{img:'img5'},{img:'img6'},{img:'img7'},{img:'img8'},{img:'img9'},{img:'img10'}]
     const textRef = useRef(null);
+    // useEffect(() => {
+    //   const texts = [text1, text2, text3];
+    //   let currentTextIndex = 0;
+    
+    //   const animateText = () => {
+    //     const tl = gsap.timeline({ onComplete: animateText });
+    //     tl.fromTo(
+    //       textRef.current,
+    //       { y: '-100%', opacity: 0 },
+    //       { y: '0%', opacity: 1, duration: 1, ease: "bounce.out" }
+    //     )
+    //       .to(textRef.current, { opacity: 1, duration: 2 })
+    //       .to(textRef.current, { y: '100%', opacity: 0, duration: 1, ease: "bounce.in" })
+    //       .call(() => {
+    //         currentTextIndex = (currentTextIndex + 1) % texts.length;
+    //         textRef.current.innerText = texts[currentTextIndex];
+    //         textRef.current.style.opacity = 0; // Reset opacity before starting the next animation
+    //       })
+    //       .set(textRef.current, { y: '-100%', opacity: 0 });
+    //   };
+    
+    //   animateText();
+    // }, [text1, text2,text3])
     useEffect(() => {
       const texts = [text1, text2, text3];
       let currentTextIndex = 0;
-    
+  
       const animateText = () => {
         const tl = gsap.timeline({ onComplete: animateText });
-        tl.fromTo(
-          textRef.current,
-          { y: '-100%', opacity: 0 },
-          { y: '0%', opacity: 1, duration: 1, ease: "bounce.out" }
-        )
-          .to(textRef.current, { opacity: 1, duration: 2 })
-          .to(textRef.current, { y: '100%', opacity: 0, duration: 1, ease: "bounce.in" })
+        tl.to(textRef.current, { opacity: 0, duration: 1 })
           .call(() => {
-            currentTextIndex = (currentTextIndex + 1) % texts.length;
             textRef.current.innerText = texts[currentTextIndex];
-            textRef.current.style.opacity = 0; // Reset opacity before starting the next animation
+            currentTextIndex = (currentTextIndex + 1) % texts.length;
           })
-          .set(textRef.current, { y: '-100%', opacity: 0 });
+          .to(textRef.current, { opacity: 1, duration: 1, delay: 0.5 });
       };
-    
+  
       animateText();
-    }, [text1, text2,text3])
-    
+    }, [text1, text2, text3]);
 
   return (
     <div className="red_home">
@@ -417,7 +432,7 @@ export default function Main() {
             <p className="desc_text">Empowering Journeys, Empowered Words</p>
         </div>
         <img src="images/Homepage/test.png" alt="" className="mid_m_6"/>
-        <img src="images/Homepage/quote.svg" alt="quote" className="quote"/>
+        {/* <img src="images/Homepage/quote.svg" alt="quote" className="quote"/> */}
         <div className="testimonial">
             <p>We are Immensely satisfied and delighted on the Installation, Commissioning of end to end smart meter project awarded to ADYA Smart Metering Pvt. Ltd., We also hereby certify that the plug & play project was delivered to our satisfactory levels.</p>
             <p className="desc_text_2">

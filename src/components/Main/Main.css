@@ -43,8 +43,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .gsap_text{
-    margin-left: -5px;
-    width: 60%;
+    text-align: center;
     color: rgb(19, 1, 1); /* Change text color */
     font-size: 2rem; /* Adjust the font size as needed */
     font-weight: bold; /* You can add more styles here */
@@ -55,18 +54,19 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     border-radius: 5px; /* Optional: Add rounded corners to the background */
     
 }
-.animated_text {
+.animated_text .gsap_text{
+    width: 100%;
     position: absolute;
-    top: 25%;
-    left: 5%;
-    color: white;
+    top: 35%;
+    text-align: center;
+    /* border: 1px solid red; */
     font-size: 2rem; /* Adjust the font size as needed */
     pointer-events: none; /* Ensure text doesn't interfere with video controls */
 }
 .animated_text span {
     /* border: 1px solid red; */
-    margin-left: -5px;
-    width: 60%;
+    
+    
     color: rgb(19, 1, 1); /* Change text color */
     font-size: 2rem; /* Adjust the font size as needed */
     font-weight: bold; /* You can add more styles here */
@@ -393,12 +393,12 @@ transition: background-color 0.3s, color 0.3s;
 .mid_cont_4{
     
     display: flex;
-
-    margin: -40px 25px 0 0;
+/* border: 1px solid red; */
+    margin: -80px 25px 0 0;
 }
 .mid_cont_4 .right .right_content .head_text{
     margin-right: 0;
-    /* border: 1px solid red; */
+    
 }
 .mid_cont_4 .right .right_content .desc_text{
     margin-right: 0;
@@ -468,7 +468,7 @@ transition: background-color 0.3s, color 0.3s;
     flex-direction: column;
     gap: 28px;
     float: right;
-    margin-top: 54px;
+    margin-top: 34px;
     margin-right: 37px;
 }
 .right_content .tabs .tab{
@@ -540,6 +540,8 @@ transition: background-color 0.3s, color 0.3s;
     line-height: 1.5;
 }
 .bottom_cont{
+    margin-top: -40px;
+    /* border: 1px solid red; */
     width: 80%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -596,15 +598,17 @@ transition: background-color 0.3s, color 0.3s;
 }
 .mid_cont_6 .left{
     flex: 1;
-    /* border: 1px solid red; */
+   
 }
 .mid_cont_6 .left .top_cont{
+
     margin-top: -4rem;
     padding-top: 0;
 }
 .mid_cont_6 .left .top_cont .desc_text{
-    width: 53%;
-    
+    width: 58%;
+    /* border: 1px solid red; */
+    margin-bottom: 10px;
 }
 .mid_cont_6 .left .top_cont .head_text{
    font-size: 30px;
