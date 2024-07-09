@@ -5,14 +5,15 @@
 }
 
 .footer{
-  
+    /* border: 1px solid red; */
+   
     margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .footer_cont{
-    border: 1px solid red;
+    
     flex: 1;
     margin: auto;
     margin-top: 59px;
@@ -24,6 +25,11 @@
   
     justify-content: center;
     align-items: center;
+}
+.footer_cont .serve_cont{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .footer_cont2{
     flex: 1;
@@ -114,6 +120,7 @@ gap: 10px;
 }
 @media screen and (max-width: 767px) {
     .footer{
+        padding-top:30px ;
         height: auto;
         display: block;
     }

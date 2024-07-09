@@ -610,10 +610,11 @@ transition: background-color 0.3s, color 0.3s;
 .mid_cont_6 .left{
     flex: 1;
    
+   /* border: 1px solid red; */
 }
 .mid_cont_6 .left .top_cont{
 
-    margin-top: -4rem;
+    margin-top: -2rem;
     padding-top: 0;
 }
 .mid_cont_6 .left .top_cont .desc_text{
@@ -1049,7 +1050,7 @@ font-style: normal;
 font-weight: 500;
 line-height: 20px; /* 133.333% */
 letter-spacing: 1px;
-text-transform: capitalize;
+
     }
     .mid_cont_5 .bottom_cont .single_list{
         margin-bottom: 0;

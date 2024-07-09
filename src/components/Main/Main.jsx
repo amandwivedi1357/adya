@@ -10,6 +10,7 @@ import { useNavigate } from "react-router-dom";
 import { ReactTyped, } from "react-typed";
 import RespNav from "../Responsive/RespNav";
 import gsap from "gsap";
+import FadeUpAnimation from "../../Routes/FadeUp";
 
 export default function Main() {
   const text1 = 'Committed to sustainable energy through Adya innovation'
@@ -146,6 +147,7 @@ export default function Main() {
 </div> */}
 
       {/* <MySlider/> */}
+      <FadeUpAnimation>
       <div className="mid_cont_1">
         <div className="top_cont">
             <p className="head_text">
@@ -173,9 +175,13 @@ export default function Main() {
             ))}
         </div>
       </div>
+      </FadeUpAnimation>
+      <FadeUpAnimation>
       <div className="solutions_Slider">
         <SolutionsSlider/>
       </div>
+      </FadeUpAnimation>
+      <FadeUpAnimation>
       <div className="mid_cont_2">
         <div className="left">
             <div className="left_content">
@@ -257,6 +263,8 @@ export default function Main() {
             <img  src="/images/Homepage/Rectangle.png" alt="" />
         </div>
       </div>
+      </FadeUpAnimation>
+      <FadeUpAnimation>
       <div className="mid_cont_3">
       <div className="top_cont">
             <p className="head_text">
@@ -283,9 +291,14 @@ export default function Main() {
             ))}
         </div>
       </div>
+      </FadeUpAnimation>
+      <FadeUpAnimation>
+
       <div className="solutions_Slider">
         <ProductsSlider item={cards2_data}/>
       </div>
+      </FadeUpAnimation>
+      <FadeUpAnimation>
       <div className="mid_cont_4">
       <div className="left left4">
             <img src="/images/Homepage/sectorss.jpeg" alt="" />
@@ -366,6 +379,8 @@ export default function Main() {
         </div>
         
       </div>
+      </FadeUpAnimation>
+      <FadeUpAnimation>
       <div className="sectors_mob">
       <div className="sols_links">
              
@@ -385,6 +400,8 @@ export default function Main() {
               </div>
             </div>
       </div>
+      </FadeUpAnimation>
+      <FadeUpAnimation>
       <div className="mid_cont_5">
       <div className="top_cont">
             <p className="head_text">
@@ -411,6 +428,8 @@ export default function Main() {
         </div>
         <button className="contact_btn">Contact us</button>
       </div>
+      </FadeUpAnimation>
+      <FadeUpAnimation>
       <div className="mid_cont_6">
         <div className="left">
         <div className="top_cont">
@@ -433,7 +452,8 @@ export default function Main() {
             <img src="images/Homepage/mid_66.png" alt="" />
         </div>
         </div>
-        
+        </FadeUpAnimation>
+       
         <div className="marquee_container">
       <div className="marquee">
         <div className="marquee__group">
@@ -458,6 +478,8 @@ export default function Main() {
         </div>
       </div>
     </div>
+
+   
     </div>
   );
 }

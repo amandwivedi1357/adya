@@ -3,6 +3,24 @@ import { useNavigate } from "react-router-dom"
 import "./Footer.css"
 import { card1_services, cards1_AllSolutions, cards1_Sectors, products_Card } from ".."
 export default function Footer() {
+  const quick = [
+    {
+      name:'Home',
+      link:'/'
+    },
+    {
+      name:'About Us',
+      link:'/about-us'
+    },
+    {
+      name:'Careers',
+      link:'/career'
+    },
+    {
+      name:'Contact us',
+      link:'/contact-us'
+    },
+  ]
   const navigate = useNavigate()
   return (
    <div className="foot">
@@ -35,6 +53,9 @@ export default function Footer() {
         
       </div>
       <div className="footer_cont">
+        <div className="serve_cont">
+
+        
       
         <ul className="serve_list">
         <p className="list_head">
@@ -47,11 +68,9 @@ export default function Footer() {
               </li>
             ))
           }
+
         </ul>
-        
-      </div>
-      <div className="footer_cont">
-      <ul className="serve_list">
+        <ul className="serve_list">
         <p className="list_head">
                Products
             </p>
@@ -63,9 +82,12 @@ export default function Footer() {
             ))
           }
         </ul>
-        
+        </div>
       </div>
+     
       <div className="footer_cont">
+        <div className="serve_cont">
+
       <ul className="serve_list">
         <p className="list_head">
                 Services
@@ -78,9 +100,7 @@ export default function Footer() {
             ))
           }
         </ul>
-      </div>
-      <div className="footer_cont">
-      <ul className="serve_list">
+        <ul className="serve_list">
         <p className="list_head">
                 Sectors
             </p>
@@ -92,6 +112,26 @@ export default function Footer() {
             ))
           }
         </ul>
+          </div>
+      </div>
+      <div className="footer_cont">
+        <div className="serve_cont">
+
+     
+            <ul className="serve_list">
+            <p className="list_head">
+                Quick Links
+            </p>
+            {
+               quick.map((data,idx)=>(
+                <li key={idx} onClick={()=>navigate(data.link)}>
+                  {data.name}
+                </li>
+              ))
+
+            }
+            </ul>
+        </div>
       </div>
       {/* <div className="footer_cont2">
 
