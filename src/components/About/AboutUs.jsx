@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { listData } from "..";
 
 import "./About.css";
+import FadeUpAnimation from "../../Routes/FadeUp";
 const board = [
     {
         img:"images/About/VP.png",
@@ -30,6 +31,7 @@ export default function AboutUs() {
   const navigate = useNavigate()
   return (
     <div className="about_container">
+        <FadeUpAnimation>
       <div className="top_main">
         <img className="sol_banner" src="images/About/Banner.png" alt="" />
         <div className="img_cont">
@@ -40,6 +42,8 @@ export default function AboutUs() {
             </div>
         </div>
       </div>
+      </FadeUpAnimation>
+      <FadeUpAnimation>
       <div className="main">
         <div className="top_cont">
           <p className="head_text">Who We Are</p>
@@ -74,6 +78,9 @@ export default function AboutUs() {
         </div>
         
       </div>
+      </FadeUpAnimation>
+      <FadeUpAnimation>
+
       <div className="mid_cont">
         <div className="mill_div">
             <img className="mid_banner" src="images/About/mid_banner.png" alt="" />
@@ -99,6 +106,9 @@ export default function AboutUs() {
         </div>
     </div>
         </div>
+      </FadeUpAnimation>
+      <FadeUpAnimation>
+
         <div className="mid_cont_5" >
       <div className="top_cont">
             <p className="head_text">
@@ -125,6 +135,9 @@ export default function AboutUs() {
         </div>
         <button style={{margin:"84px  0 0 36px "}} className="contact_btn">Contact us</button>
       </div>
+      </FadeUpAnimation>
+      <FadeUpAnimation>
+
       <div className="mid_cont2">
         <div className="left">
 
@@ -159,6 +172,8 @@ export default function AboutUs() {
             </div>
         </div>
       </div>
+      </FadeUpAnimation>
+      <FadeUpAnimation>
       <div className="mid_cont3">
         <div className="About_top">
             <p className="head_text">
@@ -182,6 +197,7 @@ export default function AboutUs() {
             ))}
         </div>
       </div>
+      </FadeUpAnimation>
     </div>
   );
 }

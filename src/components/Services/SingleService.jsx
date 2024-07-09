@@ -4,6 +4,7 @@ import "../Allsolutions/Single.css";
 import { card1_services, cards1_AllSolutions } from "../index";
 import { useState } from "react";
 import {  Single_service_data } from ".";
+import FadeUpAnimation from "../../Routes/FadeUp";
 
 
 export default function SingleService() {
@@ -21,6 +22,8 @@ export default function SingleService() {
 
     return (
         <div>
+            <FadeUpAnimation>
+
             <div className="top_main">
                 <img className="sol_banner" src='/images/Services/serv.png' alt="" />
                 <div className="img_cont">
@@ -31,6 +34,9 @@ export default function SingleService() {
                         </div>
                 </div>
             </div>
+            </FadeUpAnimation>
+            <FadeUpAnimation>
+
             <div className="mid_single">
                 <div className="overview">
                     <p className="head_text">Overview</p>
@@ -56,6 +62,9 @@ export default function SingleService() {
                     <img className="perm_img" src='/images/Infograpics/perm_infoGraphics.png' alt="" />
                 </div>
             </div>
+            </FadeUpAnimation>
+            <FadeUpAnimation>
+
             <div className="sols_links">
               <p className="head_text">
                 List of Solutions
@@ -75,6 +84,7 @@ export default function SingleService() {
                 }
               </div>
             </div>
+            </FadeUpAnimation>
         </div>
     );
 }

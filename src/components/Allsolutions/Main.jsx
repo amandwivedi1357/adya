@@ -3,6 +3,7 @@ import { useState } from "react";
 import { cards1_AllSolutions } from ".."
 import "./Main.css"
 import { useNavigate } from "react-router-dom";
+import FadeUpAnimation from "../../Routes/FadeUp";
 export default function Main() {
     
     const [isHovered5, setIsHovered5] = useState(false);
@@ -14,6 +15,8 @@ export default function Main() {
     }
   return (
     <div>
+        <FadeUpAnimation>
+
         <div className="top_main">
             <img className="sol_banner" src="images/Homepage/singl_sol1.jpg" alt="" />
             <div className="img_cont">
@@ -28,6 +31,9 @@ export default function Main() {
                
             </div>
         </div>
+        </FadeUpAnimation>
+        <FadeUpAnimation>
+
        <div className="mid_cont_1">
         <div className="top_cont">
             <p className="head_text">
@@ -55,6 +61,9 @@ export default function Main() {
         </div>
         
       </div>
+        </FadeUpAnimation>
+        <FadeUpAnimation>
+
       <div className="tab_cont_mob">
         <div className="tabs">
         {
@@ -79,6 +88,7 @@ export default function Main() {
       
       </div>
         </div>
+        </FadeUpAnimation>
     </div>
   )
 }

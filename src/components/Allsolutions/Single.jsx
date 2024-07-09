@@ -3,6 +3,7 @@ import { Single_solution_data } from "./index";
 import "./Single.css";
 import { cards1_AllSolutions, cards1_Sectors } from "../index"; // Import cards1_Sectors
 import { useState } from "react";
+import FadeUpAnimation from "../../Routes/FadeUp";
 
 export default function Single() {
     const [isHovered, setIsHovered] = useState(false);
@@ -18,6 +19,8 @@ console.log(singleData)
 
     return (
         <div>
+            <FadeUpAnimation>
+                
             <div className="top_main">
                 <img className="sol_banner" src='images/Homepage/singl_sol1.jpg' alt="" />
                 <div className="img_cont">
@@ -28,6 +31,9 @@ console.log(singleData)
                     </div>
                 </div>
             </div>
+            </FadeUpAnimation>
+            <FadeUpAnimation>
+
             <div className="mid_single">
                 <div className="overview">
                     <p className="head_text">Overview</p>
@@ -62,6 +68,9 @@ console.log(singleData)
                     )
                 } */}
             </div>
+            </FadeUpAnimation>
+            <FadeUpAnimation>
+
             <div className="sols_links">
                 {
                     singleData.tag === 'solutions' ? (
@@ -105,6 +114,7 @@ console.log(singleData)
                     )
                 }
             </div>
+            </FadeUpAnimation>
         </div>
     );
 }

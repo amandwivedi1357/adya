@@ -2,11 +2,14 @@ import { useState } from "react";
 import { cards1_Sectors } from ".."
 import "./index.css"
 import { useNavigate } from "react-router-dom";
+import FadeUpAnimation from "../../Routes/FadeUp";
 export default function SectorMain() {
     const [isHovered, setIsHovered] = useState();
     const navigate = useNavigate()
   return (
     <div className="sector_container">
+      <FadeUpAnimation>
+
        <div className="top_main">
         <img className="sol_banner" src="images/Homepage/sector_banner1.jpg" alt="" />
         <div className="img_cont">
@@ -17,6 +20,9 @@ export default function SectorMain() {
           </div>
         </div>
       </div>
+      </FadeUpAnimation>
+      <FadeUpAnimation>
+
       <div className="sector_2">
         <div className="sector_2_inner">
             <p className="head_text">
@@ -47,6 +53,7 @@ export default function SectorMain() {
               </div>
             </div>
       </div>
+      </FadeUpAnimation>
     </div>
   )
 }

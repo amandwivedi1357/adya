@@ -4,6 +4,7 @@ import Footer from '../../Footer/Footer'
 import { useNavigate } from 'react-router-dom';
 import { D2S, Measurement, prepayMeter } from '..';
 import ProductsSlider from '../../Sliders/ProductsSlider';
+import FadeUpAnimation from '../../../Routes/FadeUp';
 
 export default function MeasureMentDevice() {
     const navigate = useNavigate();
@@ -14,6 +15,7 @@ export default function MeasureMentDevice() {
   return (
     <div>
       <Navbar/>
+      <FadeUpAnimation>
       <div className="top_main">
             <img className="sol_banner" src="images/Homepage/careerBanner.png" alt="" />
             <div className="img_cont">
@@ -27,6 +29,9 @@ export default function MeasureMentDevice() {
                 </div>
             </div>
     </div> 
+    </FadeUpAnimation>
+    <FadeUpAnimation>
+
     <div className="mid_cont_1">
         <div className="top_cont">
             <p className="head_text">
@@ -56,9 +61,15 @@ export default function MeasureMentDevice() {
             ))}
         </div>
         </div> 
+    </FadeUpAnimation>
+    <FadeUpAnimation>
+
         <div className="solutions_Slider">
         <ProductsSlider item={Measurement}/>
       </div>
+    </FadeUpAnimation>
+    <FadeUpAnimation>
+        
     <div className="mid_cont_1">
         <div className="top_cont">
             <p className="head_text">
@@ -87,9 +98,15 @@ export default function MeasureMentDevice() {
             ))}
         </div>
         </div> 
+    </FadeUpAnimation>
+    <FadeUpAnimation>
+
         <div className="solutions_Slider">
         <ProductsSlider item={prepayMeter}/>
       </div>
+    </FadeUpAnimation>
+    <FadeUpAnimation>
+
     <div className="mid_cont_1">
         <div className="top_cont">
             <p className="head_text">
@@ -119,6 +136,9 @@ export default function MeasureMentDevice() {
             ))}
         </div>
         </div> 
+    </FadeUpAnimation>
+    <FadeUpAnimation>
+
         <div className="D2S_Mob">
             {
                 D2S.map((data,idx)=>(
@@ -139,6 +159,7 @@ export default function MeasureMentDevice() {
                 ))
             }
         </div>
+    </FadeUpAnimation>
       <Footer/>
     </div>
   )

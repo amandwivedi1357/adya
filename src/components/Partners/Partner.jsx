@@ -1,10 +1,12 @@
 
 import { useNavigate } from "react-router-dom"
 import "./partner.css"
+import FadeUpAnimation from "../../Routes/FadeUp"
 export default function PartnerMain() {
     const navigate = useNavigate()
   return (
     <div>
+        <FadeUpAnimation>
        <div className="top_main">
                 <img className="sol_banner" src='/images/Services/Partners.png' alt="" />
                 <div className="img_cont">
@@ -15,6 +17,9 @@ export default function PartnerMain() {
                         </div>
                 </div>
             </div>
+            </FadeUpAnimation>
+            <FadeUpAnimation>
+
             <div className="partners_desc">
                 <p className="head_text">
                 Seeking Strategic Partnerships to Revolutionize Energy Management.
@@ -76,6 +81,7 @@ export default function PartnerMain() {
                     </div>
                </div>
             </div>
+            </FadeUpAnimation>
     </div>
   )
 }

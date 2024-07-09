@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { card1_services } from "..";
+import FadeUpAnimation from "../../Routes/FadeUp";
 
 
 export default function AllService() {
@@ -11,6 +12,9 @@ export default function AllService() {
     }
   return (
     <div className='allService_Container'>
+
+      <FadeUpAnimation>
+
         <div className="top_main">
             <img className="sol_banner" src="/images/Services/serv.png" alt="" />
             <div className="img_cont">
@@ -24,6 +28,9 @@ export default function AllService() {
                 </div>
             </div>
     </div> 
+      </FadeUpAnimation>
+    <FadeUpAnimation>
+
     <div className="sector_2">
         <div className="sector_2_inner">
             <p className="head_text">
@@ -54,6 +61,7 @@ export default function AllService() {
               </div>
             </div>
       </div>
+    </FadeUpAnimation>
     </div>
   )
 }

@@ -3,6 +3,7 @@ import "./Products.css"
 import { useState } from "react";
 import { products_Card } from "..";
 import ProductsSlider from "../Sliders/ProductsSlider";
+import FadeUpAnimation from "../../Routes/FadeUp";
 
 export default function ProductsMain() {
     
@@ -14,6 +15,7 @@ export default function ProductsMain() {
   }
   return (
     <div className="products_container">
+         <FadeUpAnimation>
          <div className="top_main">
             <img className="sol_banner" src="images/Product/prod.png" alt="" />
             <div className="img_cont">
@@ -28,6 +30,9 @@ export default function ProductsMain() {
                 </div>
             </div>
     </div> 
+    </FadeUpAnimation>
+    <FadeUpAnimation>
+
     <div className="mid_cont_1">
         <div className="top_cont">
             <p className="head_text">
@@ -57,7 +62,8 @@ export default function ProductsMain() {
             ))}
         </div>
         </div> 
-        
+    </FadeUpAnimation>
+    <FadeUpAnimation>
         <div className="tab_cont_mob">
         <div className="tabs">
         {
@@ -82,6 +88,7 @@ export default function ProductsMain() {
       
       </div>
         </div>
+        </FadeUpAnimation>
     </div>
 
   )

@@ -4,6 +4,7 @@ import "../Allsolutions/Single.css";
 import { cards1_AllSolutions, cards1_Sectors } from "../index";
 import { useState } from "react";
 import { Single_sector_data } from ".";
+import FadeUpAnimation from "../../Routes/FadeUp";
 
 
 export default function SingleSector() {
@@ -22,6 +23,7 @@ export default function SingleSector() {
 
     return (
         <div>
+            <FadeUpAnimation>
             <div className="top_main">
                 <img className="sol_banner" src='/images/Homepage/sector_banner1.jpg' alt="" />
                 <div className="img_cont">
@@ -33,6 +35,8 @@ export default function SingleSector() {
                     </div>
                 </div>
             </div>
+            </FadeUpAnimation>
+            <FadeUpAnimation>
             <div className="mid_single">
                 <div className="overview">
                     <p className="head_text">Overview</p>
@@ -58,6 +62,8 @@ export default function SingleSector() {
                     <img className="perm_img" src='/images/Infograpics/perm_infoGraphics.png' alt="" />
                 </div> */}
             </div>
+            </FadeUpAnimation>
+            <FadeUpAnimation>
             <div className="sols_links">
               <p className="head_text">
                 List of Sectors
@@ -81,6 +87,7 @@ export default function SingleSector() {
                 }
               </div>
             </div>
+            </FadeUpAnimation>
         </div>
     );
 }

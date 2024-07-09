@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import  './Contact.css'
 import {City, Country, State} from 'country-state-city';
 import { useNavigate } from 'react-router-dom';
+import FadeUpAnimation from '../../Routes/FadeUp';
 const style = {width:'20px',
 marginRight:'15px',
 }
@@ -83,6 +84,7 @@ export default function Contact() {
   
   return (
     <div className='contact-us_container'>
+      <FadeUpAnimation>
       <div className="top_main">
             <img className="sol_banner" src="images/About/Contact_banner.png" alt="" />
             <div className="img_cont">
@@ -98,7 +100,9 @@ export default function Contact() {
                
             </div>
         </div>
-        <div className="contact_2">
+      </FadeUpAnimation>
+      <FadeUpAnimation>
+      <div className="contact_2">
             <div className="contact_2_inner">
                 <div className="inner_contact_2 grey">
                     <div className="office_info">
@@ -135,7 +139,9 @@ export default function Contact() {
                 </div>
             </div>
         </div>
-
+      </FadeUpAnimation>
+        
+      <FadeUpAnimation>
         <div className="mid_text">
             <p className="head_text">Share Your Requirements</p>
         </div>
@@ -308,6 +314,7 @@ export default function Contact() {
             </form>
         </div>
         </div>
+        </FadeUpAnimation>
     </div>
   )
 }

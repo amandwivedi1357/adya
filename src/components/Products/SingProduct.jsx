@@ -2,6 +2,7 @@ import { useNavigate, useParams } from "react-router-dom"
 import "./SingProd.css"
 import { list_measurement, singleProdInfo } from ".";
 import { useState } from "react";
+import FadeUpAnimation from "../../Routes/FadeUp";
 
 export default function SingProduct() {
     const [isHovered, setIsHovered] = useState(false);
@@ -17,6 +18,8 @@ export default function SingProduct() {
     }
   return (
     <div className="Single_prod_container">
+<FadeUpAnimation>
+
       <div className="top_main">
                 <img className="sol_banner" src='/images/Services/Partners.png' alt="" />
                 <div className="img_cont">
@@ -27,6 +30,9 @@ export default function SingProduct() {
                         </div>
                 </div>
             </div>
+</FadeUpAnimation>
+<FadeUpAnimation>
+
       <div className="inner1">
         <div className="overview_cont">
 
@@ -140,6 +146,9 @@ export default function SingProduct() {
         </div>
         
       </div>
+</FadeUpAnimation>
+      <FadeUpAnimation>
+
       <div className="sols_links">
               <p className="head_text">
               List Of Measurement Devices
@@ -159,6 +168,7 @@ export default function SingProduct() {
                 }
               </div>
             </div>
+      </FadeUpAnimation>
     </div>
   )
 }
