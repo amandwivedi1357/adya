@@ -17,7 +17,7 @@
     margin-top: 40px;
     color: #030303;
     font-family: Poppins;
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: 55px; /* 137.5% */
@@ -48,9 +48,10 @@ margin-bottom: 0;
     width: 100%;
 }
 .mid_cont .head_text{
+   
     color: #030303;
 font-family: Poppins;
-font-size: 40px;
+font-size: 30px;
 font-style: normal;
 font-weight: 700;
 line-height: 55px; /* 137.5% */
@@ -105,22 +106,29 @@ text-align: left;
 .mid_cont2{
     width: 100%;
 }
+.mid_cont2 .right .head_text{
+    margin-right: 50px;
+    font-size: 30px;
+}
 .about_container .mid_cont_5{
     margin-left: 100px;
 }
+.mid_cont2 .right .btm_cont{
+    margin-right: 50px;
 
+}
 .mid_cont2 .awards{
     /* border: 1px solid red; */
     margin-right: 12rem;
     width: 100%;
 }
 .mid_cont3 {
-    margin: 200px 100px 89px 100px;
+    margin: 50px 50px 50px 50px;
 }
 .mid_cont3 .About_top .head_text{
     color: rgba(3, 3, 3, 0.90);
     font-family: Poppins;
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: 55px; /* 137.5% */
@@ -314,7 +322,22 @@ letter-spacing: 0.5px;
 }
 .about_container .mid_cont2{
     flex-direction: column;
-    display: none;
+    margin: 0; 
+    display: none;   
+}
+
+.about_container .mid_cont2 .right .head_text{
+   margin-left: 20px;
+    float: left;
+    
+    
+    font-size: 18px;
+    text-align: left;
+}
+
+.about_container .mid_cont2 .right .btm_cont .award1{
+    margin: 0;
+    border: 1px solid red;
 }
 .about_container .mid_cont_5{
     margin-left: 0;
@@ -339,8 +362,7 @@ letter-spacing: 0.5px;
     margin-left: -5px; 
 }
 .about_container .mid_cont3{
-    margin: 20px;
-    width: 100%;
+    margin: 10px;
 }
 .mid_cont3 .About_top .head_text{
     color: rgba(3, 3, 3, 0.90);
@@ -351,6 +373,8 @@ font-weight: 700;
 line-height: 29px; /* 161.111% */
 letter-spacing: 0.09px;
 text-transform: capitalize;
+/* border: 1px solid red; */
+margin-top: 30px;
 }
 .mid_cont3 .About_top .desc_text{
     color: rgba(3, 3, 3, 0.90);
@@ -364,10 +388,16 @@ letter-spacing: 0.5px;
 .mid_cont3 .about_members{
     width: 100%;
 
-    margin-top: 89px;
+    margin-top: 39px;
     /* border: 1px solid red; */
-    display: none;
-    gap: 85px;
-    grid-template-columns: repeat(1,1fr);
+   margin-left: 0;
+    gap: 25px;
+    grid-template-columns: repeat(2,1fr);
+}
+.about_members .single_member .name{
+    font-size: 15px;
+}
+.about_members .single_member .post{
+    font-size: 12px;
 }
 }

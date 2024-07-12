@@ -29,7 +29,7 @@ export default function Navbar() {
   <li onClick={()=>navigate('/all-solutions')}>Solutions</li>
     <li onClick={()=>navigate('/sector')}>Sectors</li>
     <li onClick={()=>navigate('/products')}>Products</li>
-    <li onClick={()=>navigate('/services')}>Service</li>
+    <li onClick={()=>navigate('/services')}>Services</li>
     <li onClick={()=>navigate('/partners')}>Partners</li>
     <li onClick={()=>navigate('/about-us')}>About us</li>
     <li onClick={()=>navigate('/career')}>Career</li>

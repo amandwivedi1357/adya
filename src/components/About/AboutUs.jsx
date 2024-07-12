@@ -5,26 +5,78 @@ import { listData } from "..";
 
 import "./About.css";
 import FadeUpAnimation from "../../Routes/FadeUp";
-const board = [
+import Carousel from "./Slider";
+ const board = [
     {
-        img:"images/About/VP.png",
+        img:"/images/About/VP.png",
         name:'Viraj  Pathi',
         post:'Founder & CEO'
     },
     {
-        img:"images/About/viru.png",
+        img:"/staff/Virupakshi-removebg-preview (1).png",
         name:'Virupakshi',
         post:'VP Engineering (Products)'
     },
+    
     {
-        img:"",
-        name:'',
-        post:''
+        img:"/staff/Vimala-removebg-preview (1).png",
+        name:'Vimala',
+        post:'VP Engineering'
     },
     {
-        img:"",
-        name:'',
-        post:''
+        img:"/staff/Srinivas-removebg-preview.png",
+        name:'Srinivas',
+        post:'VP Engineering'
+    },
+    {
+        img:"/staff/Sindhu-removebg-preview.png",
+        name:'Sindhu',
+        post:'VP Engineering'
+    },
+    {
+        img:"/staff/Shaik-removebg-preview.png",
+        name:'Shaik',
+        post:'VP Engineering'
+    },
+    {
+        img:"/staff/Satish-removebg-preview.png",
+        name:'Satish',
+        post:'VP Engineering'
+    },
+    {
+        img:"/staff/Nagamani-removebg-preview.png",
+        name:'Nagamani',
+        post:'VP Engineering'
+    },
+    // {
+    //     img:"/staff/mudda-removebg-preview.png",
+    //     name:'',
+    //     post:'VP Engineering'
+    // },
+    // {
+    //     img:"/staff/.png",
+    //     name:'',
+    //     post:'VP Engineering'
+    // },
+    {
+        img:"/staff/Mannar-removebg-preview.png",
+        name:'Mannar',
+        post:'VP Engineering'
+    },
+    {
+        img:"/staff/J_Hari-removebg-preview (1).png",
+        name:'J_Hari',
+        post:'VP Engineering'
+    },
+    {
+        img:"/staff/Anitha-removebg-preview.png",
+        name:'Anitha',
+        post:'VP Engineering'
+    },
+    {
+        img:"/staff/Anil-removebg-preview.png",
+        name:'Anil',
+        post:'VP Engineering'
     },
 ]
 export default function AboutUs() {
@@ -173,7 +225,7 @@ export default function AboutUs() {
         </div>
       </div>
       </FadeUpAnimation>
-      <FadeUpAnimation>
+      
       <div className="mid_cont3">
         <div className="About_top">
             <p className="head_text">
@@ -192,12 +244,13 @@ export default function AboutUs() {
                     </p>
                     <p className="post">
                         {data.post}
-                    </p>
+                   </p>
                 </div>
             ))}
         </div>
+        {/* <Carousel/> */}
       </div>
-      </FadeUpAnimation>
+      
     </div>
   );
 }
