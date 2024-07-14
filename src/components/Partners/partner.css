@@ -95,7 +95,7 @@ text-transform: capitalize;
     
   }
 .search button{
-  display: inline-flex;
+ 
   cursor: pointer;
 height: 44px;
 padding: 10px 26px;

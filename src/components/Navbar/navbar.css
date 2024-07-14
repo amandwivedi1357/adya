@@ -92,11 +92,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    /* border: 1px solid red; */
     /* margin-top: 1rem; */
    
   }
-.search button{
+.navbar .search button{
+  
   display: inline-flex;
   cursor: pointer;
 height: 44px;
