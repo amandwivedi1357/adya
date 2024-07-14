@@ -41,10 +41,10 @@ export default function Navbar() {
         
 
         <div className='search'>
-          <butto  onClick={()=>navigate('/contact-us')}>
+          <button  onClick={()=>navigate('/contact-us')}>
 
        Contact us
-          </butto>
+          </button>
 
         </div>
       </div>
