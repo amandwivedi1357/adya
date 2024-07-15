@@ -387,7 +387,7 @@ letter-spacing: 0.5px;
 }
 .mid_cont3 .about_members{
     width: 100%;
-
+    display: none;
     margin-top: 39px;
     /* border: 1px solid red; */
    margin-left: 0;

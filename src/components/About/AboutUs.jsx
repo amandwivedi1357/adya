@@ -248,7 +248,7 @@ export default function AboutUs() {
                 </div>
             ))}
         </div>
-        {/* <Carousel/> */}
+        <Carousel/>
       </div>
       
     </div>
