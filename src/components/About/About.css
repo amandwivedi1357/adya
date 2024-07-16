@@ -3,7 +3,9 @@
     /* border: 2px solid rebeccapurple; */
     overflow-x: hidden;
 }
-
+.mob_carousel{
+    display: none;
+}
 .main{
 
     margin: 50px;
@@ -288,6 +290,9 @@ letter-spacing: 0.5px;
     flex-direction: column;
     top: 55%;
     gap: 23px;
+}
+.mob_carousel{
+    display: block;
 }
 .img_cont .img_cards{
     width: 90%;

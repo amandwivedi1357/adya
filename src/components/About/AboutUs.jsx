@@ -248,7 +248,10 @@ export default function AboutUs() {
                 </div>
             ))}
         </div>
+        <div className="mob_carousel">
+
         <Carousel/>
+        </div>
       </div>
       
     </div>
