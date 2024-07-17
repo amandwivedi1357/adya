@@ -159,14 +159,15 @@ text-align: left;
    
 }
 .about_members .single_member .name{
+    margin-top: 12px;
     text-align: left;
     color: rgba(3, 3, 3, 0.90);
 font-family: Poppins;
-font-size: 24px;
+font-size: 20px;
 font-style: normal;
 font-weight: 500;
 /* 125% */ 
-margin-bottom: 4px;
+margin-bottom: 2px;
 letter-spacing: 0.25px;
 }
 .about_members .single_member .post{

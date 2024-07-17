@@ -20,6 +20,10 @@ export default function Footer() {
       name:'Contact us',
       link:'/contact-us'
     },
+    {
+      name:'Partners',
+      link:'/partners'
+    },
   ]
   const navigate = useNavigate()
   return (
