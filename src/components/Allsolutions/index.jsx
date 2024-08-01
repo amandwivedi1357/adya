@@ -41,7 +41,7 @@ optimizing utility operations.`,
             
             
         ],
-        solution_arch: 'images/Infograpics/info 1.jpg', //image
+        solution_arch: 'images/Infograpics/perm_infoGraphics.png', //image
         solution_img:'/images/Infograpics/perm_infoGraphics.png',
     },
     {
@@ -154,7 +154,7 @@ digital metering systems.`,
             
             
         ],
-        solution_arch: 'images/Infograpics/info 1.jpg', //image
+        solution_arch: 'images/Infograpics/info 3.jpg', //image
         solution_img:'/images/Infograpics/perm_infoGraphics.png',
     },
     {
@@ -225,7 +225,7 @@ digital metering systems.`,
             
             
         ],
-        solution_arch: 'images/Infograpics/info 1.jpg', //image
+        solution_arch: 'images/Infograpics/info 6.jpg', //image
         solution_img:'/images/Infograpics/perm_infoGraphics.png',
     },
     {
@@ -269,7 +269,7 @@ digital metering systems.`,
             
             
         ],
-        solution_arch: 'images/Infograpics/info 1.jpg', //image
+        solution_arch: 'images/Infograpics/info 7.jpg', //image
         solution_img:'/images/Infograpics/perm_infoGraphics.png',
     },
     {
@@ -368,7 +368,7 @@ digital metering systems.`,
             
             
         ],
-        solution_arch: 'images/Infograpics/info 1.jpg', //image
+        solution_arch: 'images/Infograpics/info 4.jpg', //image
         solution_img:'/images/Infograpics/perm_infoGraphics.png',
     },
     {
@@ -415,7 +415,7 @@ energy management.`,
             
             
         ],
-        solution_arch: 'images/Infograpics/info 1.jpg', //image
+        solution_arch: 'images/Infograpics/info 5.jpg', //image
         solution_img:'/images/Infograpics/perm_infoGraphics.png',
     },
 

@@ -53,14 +53,14 @@ export default function SingleService() {
                         ))}
                     </div>
                 </div>
-                <div className="info_graphics">
+                {/* <div className="info_graphics">
                 <p className="head_text">Solution Architecture</p>
                     <img className="info_g" src={singleData.solution_arch} alt="" />
-                </div>
-                <div className="permanent">
+                </div> */}
+                {/* <div className="permanent">
                     <p className="head_text">Services</p>
                     <img className="perm_img" src='/images/Infograpics/perm_infoGraphics.png' alt="" />
-                </div>
+                </div> */}
             </div>
             </FadeUpAnimation>
             <FadeUpAnimation>
