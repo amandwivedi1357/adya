@@ -21,11 +21,7 @@ export default function AllService() {
                 <p className="head_text">
                 Services 
                 </p>
-                <div className="bred">
-
-                <img src="/images/Homepage/Home.svg" alt="" />
-                <p><span onClick={()=>navigate('/')}>Home</span> / <span onClick={()=>navigate('/services')}>Services</span></p>
-                </div>
+                
             </div>
     </div> 
       </FadeUpAnimation>
@@ -33,6 +29,11 @@ export default function AllService() {
 
     <div className="sector_2">
         <div className="sector_2_inner">
+    <div className="bred">
+
+               
+<p><span onClick={()=>navigate('/')}>Home</span> / <span onClick={()=>navigate('/services')}>Services</span></p>
+</div>
             <p className="head_text">
             Services We Offer
             </p>

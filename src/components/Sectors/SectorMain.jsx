@@ -14,17 +14,19 @@ export default function SectorMain() {
         <img className="sol_banner" src="images/Homepage/sector_banner1.jpg" alt="" />
         <div className="img_cont">
           <p className="head_text">Sectors</p>
-          <div className="bred">
-            <img src="images/Homepage/Home.svg" alt="" />
-            <p><span onClick={()=>navigate('/')}>Home</span> / <span onClick={()=>navigate('/sector')}>Sectors</span></p>
-          </div>
+          
         </div>
       </div>
       </FadeUpAnimation>
       <FadeUpAnimation>
 
       <div className="sector_2">
+        
         <div className="sector_2_inner">
+        <div className="bred">
+             
+             <p><span onClick={()=>navigate('/')}>Home</span> {">"} <span onClick={()=>navigate('/sector')}>Sectors</span></p>
+           </div>
             <p className="head_text">
             Sectors We Offer
             </p>

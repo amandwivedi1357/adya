@@ -3,6 +3,7 @@ import "./SingProd.css"
 import { list_measurement, singleProdInfo } from ".";
 import { useState } from "react";
 import FadeUpAnimation from "../../Routes/FadeUp";
+import { products_Card } from "..";
 
 export default function SingProduct() {
     const [isHovered, setIsHovered] = useState(false);
@@ -24,16 +25,18 @@ export default function SingProduct() {
                 <img className="sol_banner" src='/images/Services/Partners.png' alt="" />
                 <div className="img_cont">
                     <p className="head_text">{singleData.head}</p>
-                    <div className="bred">
-                        <img src="/images/Homepage/Home.svg" alt="" />
-                        <p><span onClick={()=>navigate('/')}>Home</span> / <span onClick={()=>navigate('/products')}>Sectors</span></p>
-                        </div>
+                   
                 </div>
             </div>
 </FadeUpAnimation>
 <FadeUpAnimation>
 
       <div className="inner1">
+      <div className="bred">
+
+                 
+<p><span onClick={()=>navigate('/')}>Home</span> {">"} <span onClick={()=>navigate('/products')}>Products</span> {">"} <span onClick={()=>navigate('/Measurement-Device')}>Measurement-Device</span> {">"} <span onClick={()=>navigate('/Measurement-Device')}>{singleData.head}</span></p>
+</div>
         <div className="overview_cont">
 
         <p className="prod_head_text">
@@ -155,8 +158,8 @@ export default function SingProduct() {
               </p>
               <div className="links">
                 {
-                  list_measurement.map((data,idx)=>(
-                    <div className="single_link" key={idx} onClick={()=>navigate(`/products/${data.head}`)} onMouseEnter={() => setIsHovered(idx)}
+                  products_Card.map((data,idx)=>(
+                    <div className="single_link" key={idx} onClick={()=>navigate(`/${data.route}`)} onMouseEnter={() => setIsHovered(idx)}
                     onMouseLeave={() => setIsHovered(null)}>
                     <div className="inner">
                       <img className="link_img" src={isHovered === idx ? data.hover : data.img} alt="" />

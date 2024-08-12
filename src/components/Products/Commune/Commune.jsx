@@ -21,14 +21,15 @@ export default function Commune() {
                 <p className="head_text">
                 Communication Module 
                 </p>
-                <div className="bred">
-
-                <img src="images/Homepage/Home.svg" alt="" />
-                <p><span onClick={()=>navigate('/')}>Home</span> / <span onClick={()=>navigate('/products')}>Products</span></p>
-                </div>
+                
             </div>
     </div>
     <div className="mid_cont_1">
+    <div className="bred">
+
+                 
+<p><span onClick={()=>navigate('/')}>Home</span> {">"} <span onClick={()=>navigate('/products')}>Products</span> {">"} <span onClick={()=>navigate('')}>Communication Modules</span> </p>
+</div>
         <div className="top_cont">
             <p className="head_text">
             Communication Module

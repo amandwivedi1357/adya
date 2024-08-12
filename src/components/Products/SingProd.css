@@ -3,7 +3,7 @@
     
 }
 .Single_prod_container .inner1{
-    margin: 50px 100px;
+    margin: 0px 100px;
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;

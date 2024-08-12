@@ -11,16 +11,17 @@ export default function PartnerMain() {
                 <img className="sol_banner" src='/images/Services/Partners.png' alt="" />
                 <div className="img_cont">
                     <p className="head_text">Partners</p>
-                    <div className="bred">
-                        <img src="images/Homepage/Home.svg" alt="" />
-                        <p><span onClick={()=>navigate('/')}>Home</span> / <span onClick={()=>navigate('/partners')}>Partners</span></p>
-                        </div>
+                    
                 </div>
             </div>
             </FadeUpAnimation>
             <FadeUpAnimation>
 
             <div className="partners_desc">
+            <div className="bred">
+                         
+                         <p><span onClick={()=>navigate('/')}>Home</span> {">"} <span onClick={()=>navigate('/partners')}>Partners</span></p>
+                         </div>
                 <p className="head_text">
                 Seeking Strategic Partnerships to Revolutionize Energy Management.
                 </p>

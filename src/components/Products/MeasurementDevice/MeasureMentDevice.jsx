@@ -22,17 +22,18 @@ export default function MeasureMentDevice() {
                 <p className="head_text">
                 Products 
                 </p>
-                <div className="bred">
-
-                <img src="images/Homepage/Home.svg" alt="" />
-                <p><span onClick={()=>navigate('/')}>Home</span> / <span onClick={()=>navigate('/products')}>Products</span></p>
-                </div>
+               
             </div>
     </div> 
     </FadeUpAnimation>
     <FadeUpAnimation>
 
     <div className="mid_cont_1">
+    <div className="bred">
+
+                 
+<p><span onClick={()=>navigate('/')}>Home</span> {">"} <span onClick={()=>navigate('/products')}>Products</span> {">"} <span onClick={()=>navigate('')}>Measurement-Device</span> </p>
+</div>
         <div className="top_cont">
             <p className="head_text">
             Products We Offer

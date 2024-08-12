@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 export const Measurement = [
     {
         img:"images/Product/Measurement/SinglePhase.svg",
@@ -93,7 +94,7 @@ export const Communicate = [
     {
         img:"images/Product/Commune/NIC.svg",
         head:"NIC",
-        route:'Communication-modules/NIC',
+        route:'Communication-Module/NIC',
         hover:"images/Product/Commune/NIC_fff.svg",
         desc:"Adya has developed products and solutions that are “ORIGINAL” which support the entire smart grid chain.",
         explore:"explore"  
@@ -101,7 +102,7 @@ export const Communicate = [
     {
         img:"images/Product/Commune/Gateway.svg",
         head:"Gateways",
-        route:'Communication-modules/Gateways',
+        route:'Communication-Module/Gateways',
         hover:"images/Product/Commune/Gateway_fff.svg",
         desc:"Adya has developed products and solutions that are “ORIGINAL” which support the entire smart grid chain.",
         explore:"explore"  
@@ -109,7 +110,7 @@ export const Communicate = [
     {
         img:"images/Product/Commune/Coord.svg",
         head:"Coordinators",
-        route:'Communication-modules/Coordinators',
+        route:'Communication-Module/Coordinators',
         hover:"images/Product/Commune/Coord_fff.svg",
         desc:"Adya has developed products and solutions that are “ORIGINAL” which support the entire smart grid chain.",
         explore:"explore"  
@@ -411,6 +412,267 @@ export const singleProdInfo = [
             startingCurrent : "0.2% LB",
             voltageRange : '5V',
             securityReliability : 'AES GCM 128 Bit, AES 256 Encryption'
+        },
+        additionalFeatures: 'Load survey parameters, programmable parameters, self-diagnostic features, & a provision for real-time clock.',
+        physicalCharacteristics: ' IP51 protection against dust and moisture, LCD display with guaranteed life of 10 years.',
+        images: [
+            "/images/Product/Measurement/SinglePhase.svg",
+            "/images/Product/Measurement/SinglePhase.svg",
+            "/images/Product/Measurement/SinglePhase.svg"
+        ]
+    },
+    {   single:'MDAS',
+        head:'MDAS',
+        sol_banner:'',
+        overview:(<>
+       MDAS (Meter Data Acquisition System) provides seamless data collection from smart meters, ensuring accurate and timely data for utility operations. 
+
+        </>),
+        standard:{
+             IEC:'Complies with global standards like DLMS/COSEM and IEC 62056.',
+             IS:'Ensuring compatibility and interoperability across diverse systems.'
+        },
+        variant:{
+            var1:'Residential, Commercial	',
+            var2:'Industrial applications'
+        },
+        communicationSupported:[
+            ' GPRS',
+            'RF Mesh',
+            'NB-IoT'
+            
+        ],
+        applications: [
+            
+            "Data analytics",
+            "billing",
+            "energy management ",
+            
+        ],
+        keyFeatures: {
+            "Range": "upto 500,000 meters",
+           "Data Integrity":"Supported",
+           "Interval Data ":"Supported upto 5 minutes",
+           "Advanced Validation":"Supported"
+
+        },
+        additionalFeatures: 'Load survey parameters, programmable parameters, self-diagnostic features, & a provision for real-time clock.',
+        physicalCharacteristics: ' IP51 protection against dust and moisture, LCD display with guaranteed life of 10 years.',
+        images: [
+            "/images/Product/Measurement/SinglePhase.svg",
+            "/images/Product/Measurement/SinglePhase.svg",
+            "/images/Product/Measurement/SinglePhase.svg"
+        ]
+    },
+    {   single:'MDM',
+        head:'MDM',
+        sol_banner:'',
+        overview:(<>
+       MDM provides centralized data management and storage for meter data, ensuring accurate and reliable data for billing, analytics, and operational decision-making. 
+
+        </>),
+        standard:{
+             IEC:'Adheres to international standards like CIM and IEC 61968.',
+             IS:'Ensuring seamless integration and compliance across various utility systems.'
+        },
+        variant:{
+            var1:'Residential, Commercial	',
+            var2:'Industrial applications'
+        },
+        communicationSupported:[
+            ' GPRS',
+            'RF Mesh',
+            'NB-IoT'
+            
+        ],
+        applications: [
+            
+            "Load forecasting",
+            "Billing",
+            "Energy auditing ",
+            "Enhancing utility efficiency"," Customer engagement"
+        ],
+        keyFeatures: {
+            "Range": "more than 500,000+ meters",
+           "Realtime data processing":"Supported",
+         
+           "Comprehensive analytics ":"Supported"
+
+        },
+        additionalFeatures: 'Load survey parameters, programmable parameters, self-diagnostic features, & a provision for real-time clock.',
+        physicalCharacteristics: ' IP51 protection against dust and moisture, LCD display with guaranteed life of 10 years.',
+        images: [
+            "/images/Product/Measurement/SinglePhase.svg",
+            "/images/Product/Measurement/SinglePhase.svg",
+            "/images/Product/Measurement/SinglePhase.svg"
+        ]
+    },
+    {   single:'NIC',
+        head:'NIC',
+        sol_banner:'',
+        overview:(<>
+      The NIC (Network Interface Card) enables seamless communication between smart meters and utility systems, facilitating data exchange and remote management.
+
+        </>),
+        standard:{
+             IEC:'IEEE 802.15.4 and DLMS/COSEM.',
+             IS:'Ensuring interoperability and secure data transmission.'
+        },
+        variant:{
+            var1:'RF Mesh, GPRS',
+            var2:'PLC'
+        },
+        communicationSupported:[
+            'RF Mesh',
+            'GPRS',
+            'PLC',
+            "NB-IoT"
+            
+        ],
+        applications: [
+            
+            "smart metering",
+            "demand response",
+            "remote monitoring applications",
+            "enhancing connectivity",
+            "Data Accuracy"
+        ],
+        keyFeatures: {
+           "Data encryption": "Supported",
+           "Low power consumption":"Supported",
+           "Reliable performance":"Supported",
+           "Continuous communication":"Supported",
+        },
+        additionalFeatures: 'Load survey parameters, programmable parameters, self-diagnostic features, & a provision for real-time clock.',
+        physicalCharacteristics: ' IP51 protection against dust and moisture, LCD display with guaranteed life of 10 years.',
+        images: [
+            "/images/Product/Measurement/SinglePhase.svg",
+            "/images/Product/Measurement/SinglePhase.svg",
+            "/images/Product/Measurement/SinglePhase.svg"
+        ]
+    },
+    {   single:'Gateways',
+        head:'Gateways',
+        sol_banner:'',
+        overview:(<>
+       Gateways act as central hubs for aggregating data from multiple smart meters, facilitating communication between field devices and utility systems.
+
+        </>),
+        standard:{
+             IEC:'IEC 61850 and IEEE 802.3',
+             IS:'Ensuring reliable data transmission and integration with existing infrastructure.'
+        },
+        variant:{
+            var1:'Available in various configurations to support different scales of deployment',
+           
+        },
+        communicationSupported:[
+            'RF Mesh',
+            'Wi-Fi',
+            'Ethernet',
+            'Cellular networks'
+            
+            
+        ],
+        applications: [
+            
+            "Data aggregation",
+            "Remote Monitoring",
+            "Smart grid",
+            "Smart metering systems"
+            
+        ],
+        keyFeatures: {
+            "high data throughput": "Supported",
+           "secure encryption ":"Supported",
+           "rugged design ":"Supported",
+           
+        },
+        additionalFeatures: 'Load survey parameters, programmable parameters, self-diagnostic features, & a provision for real-time clock.',
+        physicalCharacteristics: ' IP51 protection against dust and moisture, LCD display with guaranteed life of 10 years.',
+        images: [
+            "/images/Product/Measurement/SinglePhase.svg",
+            "/images/Product/Measurement/SinglePhase.svg",
+            "/images/Product/Measurement/SinglePhase.svg"
+        ]
+    },
+    {   single:'Coordinators',
+        head:'Coordinators',
+        sol_banner:'',
+        overview:(<>
+      Coordinators manage and synchronize communication between smart meters and the utility's network, ensuring efficient data routing and collection.
+
+        </>),
+        standard:{
+             IEC:'Compliant with international standards such as IEEE 802.15.4 and DLMS/COSEM.',
+             IS:'Providing reliable interoperability and data security.'
+        },
+        variant:{
+            var1:'iOS, Android',
+            var2:'user-friendly interface'
+        },
+        communicationSupported:[
+            ' Zigbee',
+            'RF Mesh',
+            'NB-IoT'
+            
+        ],
+        applications: [
+            
+            "Bill payments",
+            "Real-time usage monitoring",
+            "Outage notifications",
+            "Customer service interactions"
+            
+        ],
+        keyFeatures: {
+            "Features intuitive dashboards": "upto 500,000 meters",
+           "Customizable alerts":"Supported",
+           "Multi-language ":"Supported upto 5 minutes",
+           "Enhanced user experience":"Supported",
+        },
+        additionalFeatures: 'Load survey parameters, programmable parameters, self-diagnostic features, & a provision for real-time clock.',
+        physicalCharacteristics: ' IP51 protection against dust and moisture, LCD display with guaranteed life of 10 years.',
+        images: [
+            "/images/Product/Measurement/SinglePhase.svg",
+            "/images/Product/Measurement/SinglePhase.svg",
+            "/images/Product/Measurement/SinglePhase.svg"
+        ]
+    },
+    {   single:'Mobile-Applications',
+        head:'Mobile-Applications',
+        sol_banner:'',
+        overview:(<>
+       Mobile applications provide users with real-time access to their energy consumption data, billing information, and personalized energy-saving tips.
+
+        </>),
+        standard:{
+             IEC:'Compliant with industry standards for data security and privacy.',
+             IS:'ensuring safe and secure access to personal energy data.'
+        },
+        variant:{
+            var1:'iOS, Android',
+            var2:'user-friendly interface'
+        },
+        communicationSupported:[
+            ' Wi-fi',
+            'cellular networks',
+            'API integrations'
+            
+        ],
+        applications: [
+            
+            "Bill payments",
+            "Real-time usage monitoring",
+            "Outage notifications",
+            "Customer service interactions"
+            
+        ],
+        keyFeatures: {
+            "Features intuitive dashboards": "upto 500,000 meters",
+           "Customizable alerts":"Supported",
+           "Multi-language ":"Supported upto 5 minutes",
+           "Enhanced user experience":"Supported",
         },
         additionalFeatures: 'Load survey parameters, programmable parameters, self-diagnostic features, & a provision for real-time clock.',
         physicalCharacteristics: ' IP51 protection against dust and moisture, LCD display with guaranteed life of 10 years.',

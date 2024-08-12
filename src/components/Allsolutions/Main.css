@@ -22,8 +22,12 @@
    /* Adjust as needed */
 }
 
-.top_main .img_cont .bred{
-height: 2rem;
+ .bred{
+margin-top: 40px;
+/* border: 1px solid red; */
+color: rgb(14, 161, 247);
+text-align: left;
+cursor: pointer;
 }
 .bred img{
   margin-bottom: -10px;
@@ -165,7 +169,7 @@ letter-spacing: 0.25px;
   display: flex;
   gap: 10px;
   /* border: 1px solid red; */
-  justify-content: center;
+ 
 }
 .top_main .img_cont .bred img{
   width: 20px;

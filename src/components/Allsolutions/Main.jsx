@@ -23,11 +23,7 @@ export default function Main() {
                 <p className="head_text">
                 Solutions 
                 </p>
-                <div className="bred">
-
-                <img  src="images/Homepage/Home.svg" alt="" />
-                <p onClick={()=>navigate('/')}>Home/Solutions</p>
-                </div>
+               
                
             </div>
         </div>
@@ -35,6 +31,9 @@ export default function Main() {
         <FadeUpAnimation>
 
        <div className="mid_cont_1">
+       <div className="bred">
+                <p onClick={()=>navigate('/')}>Home{" > "}Solutions</p>
+                </div>
         <div className="top_cont">
             <p className="head_text">
             Solutions We Offer

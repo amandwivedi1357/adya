@@ -88,16 +88,17 @@ export default function AboutUs() {
         <img className="sol_banner" src="images/About/Banner.png" alt="" />
         <div className="img_cont">
           <p className="head_text">About Us</p>
-          <div className="bred">
-            <img src="/images/Homepage/Home.svg" alt="" />
-            <p><span onClick={()=>navigate('/')}>Home</span> / <span onClick={()=>navigate('/about-us')}>About us</span></p>
-            </div>
+          
         </div>
       </div>
       </FadeUpAnimation>
       <FadeUpAnimation>
       <div className="main">
+        
         <div className="top_cont">
+        <div className="bred">
+            <p><span onClick={()=>navigate('/')}>Home</span> / <span onClick={()=>navigate('/about-us')}>About us</span></p>
+            </div>
           <p className="head_text">Who We Are</p>
           <p className="desc_text">
             Adya is a Sanskrit term meaning "Original," reflecting our core

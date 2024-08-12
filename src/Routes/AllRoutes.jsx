@@ -42,6 +42,8 @@ export default function AllRoutes() {
       <Route path="/Softwares" element={<Softwares/>}/>
       <Route path="/Communication-Module" element={<Commune/>}/>
       <Route path="/Measurement-Device/:single" element={<SingleProduct/>}/>
+      <Route path="/Softwares/:single" element={<SingleProduct/>}/>
+      <Route path="/Communication-Module/:single" element={<SingleProduct/>}/>
       {/* <Route path="/products/single" element={<Products/>}/> */}
     </Routes>
   )

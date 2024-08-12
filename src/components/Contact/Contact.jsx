@@ -91,18 +91,18 @@ export default function Contact() {
                 <p className="head_text">
                 Connect With Adya
                 </p>
-                <div className="bred">
-
-                <img  src="/images/Homepage/Home.svg" alt="" />
-                <p><span onClick={()=>navigate('/')}>Home</span> / <span onClick={()=>navigate('/contact-us')}>Contact us</span></p>
-
-                </div>
+                
                
             </div>
         </div>
       </FadeUpAnimation>
       <FadeUpAnimation>
       <div className="contact_2">
+            <div className="bred">
+
+<p><span onClick={()=>navigate('/')}>Home</span> {">"} <span onClick={()=>navigate('/contact-us')}>Contact us</span></p>
+
+</div>
             <div className="contact_2_inner">
                 <div className="inner_contact_2 grey">
                     <div className="office_info">
@@ -170,7 +170,9 @@ export default function Contact() {
                </div>
                <div className="outer_single_line">
                 <div className='inner_fields' style={{ position: 'relative' }}>
-                    <p className='inner_lables' htmlFor="industry">Industry <span style={{color:'red'}}>*</span></p>
+                    <p className='inner_lables' htmlFor="industry">Industry 
+                      {/* <span style={{color:'red'}}>*</span> */}
+                      </p>
                     <select value={formData.industry} onChange={handleChange} name='industry'  type="text" className='inner_inputs' id='industry' >
                         <option className='option' value="">1</option>
                         <option className='option' value="">2</option>
