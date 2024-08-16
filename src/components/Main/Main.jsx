@@ -11,6 +11,7 @@ import { ReactTyped, } from "react-typed";
 import RespNav from "../Responsive/RespNav";
 import gsap from "gsap";
 import FadeUpAnimation from "../../Routes/FadeUp";
+import Testimonials from "./HomeSlider2";
 
 export default function Main() {
   const text1 = 'Committed to sustainable energy through Adya innovation'
@@ -78,7 +79,7 @@ export default function Main() {
 
 <div className="hero_Section">
   <div className="blend_nav">
-    {/* <div className="blue_strip"></div> */}
+    
   <div className="navbar">
         <div className="navbar_div" style={{cursor:'pointer'}} onClick={()=>navigate('/')}>
           <img  src="/images/Homepage/logo.svg" alt="" className="logo"/>
@@ -118,26 +119,7 @@ export default function Main() {
         </div>
       </div>
   </div>
-            {/* <img className="sol_banner" src="images/Homepage/ban1.png" />
-            <div className="inner_container">
-                <p className="head_text">
-                    Enabling Sustainable Energy Management Solutions for Utilities, Commercial & Industries sectors.
-                </p>
-                <p className="desc_text">Adya Smart metering solutions</p>
-                <button className="contact_btn">Contact Us</button>
-            </div> */}
-
-            <video className="video_height" ref={videoRef} autoPlay loop muted>
-                <source src="/videos/homeVideo.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-            <div className="animated_text">
            
-<div ref={textRef} className="gsap_text">
-          {text1}
-        </div>
-    
-            </div>
         </div>
 
 
@@ -146,7 +128,47 @@ export default function Main() {
     
 </div> */}
 
-      {/* <MySlider/> */}
+      <MySlider/>
+
+
+       {/* products start */}
+       <FadeUpAnimation>
+      <div className="mid_cont_3">
+      <div className="top_cont">
+            <p className="head_text">
+            Products We Offer
+            </p>
+            <p style={{marginBottom:'68px'}} className="desc_text">Enabling collection of high quality data for AMI 2.0 rollouts.</p>
+        </div> 
+        <div className="cards_container_11">
+            {cards2_data.map((data,idx)=>(
+                <div className="card" key={idx} onMouseEnter={() => setIsHovered(idx)} onClick={()=>navigate(data.route)}
+                onMouseLeave={() => setIsHovered(null)}>
+                   <img src={isHovered === idx ? data.hover : data.img} alt="" className="card_vect"/>
+                    <div className="redd" style={{display:"flex"}}>
+                    <p className="head_text">
+                        {data.head}{" "}
+                        
+                    </p>
+                    <span className="follow-up">{data?.followUp}</span>
+                    </div>
+                    <p className="desc_text">{data.desc}</p>
+
+                    <p className="explore">Explore{"    "}  <span style={{marginLeft:"1rem"}}>→</span></p>
+                </div>
+            ))}
+        </div>
+      </div>
+      </FadeUpAnimation>
+      <FadeUpAnimation>
+
+      <div className="solutions_Slider">
+        <ProductsSlider item={cards2_data}/>
+      </div>
+      </FadeUpAnimation>
+
+{/* products end */}
+    {/* solution starts */}
       <FadeUpAnimation>
       <div className="mid_cont_1">
         <div className="top_cont">
@@ -176,11 +198,19 @@ export default function Main() {
         </div>
       </div>
       </FadeUpAnimation>
+    
+      
+      
       <FadeUpAnimation>
+
       <div className="solutions_Slider">
         <SolutionsSlider/>
       </div>
       </FadeUpAnimation>
+        {/* solution ends */}
+
+
+        {/* services starts */}
       <FadeUpAnimation>
       <div className="mid_cont_2">
         <div className="left">
@@ -264,40 +294,11 @@ export default function Main() {
         </div>
       </div>
       </FadeUpAnimation>
-      <FadeUpAnimation>
-      <div className="mid_cont_3">
-      <div className="top_cont">
-            <p className="head_text">
-            Products We Offer
-            </p>
-            <p style={{marginBottom:'68px'}} className="desc_text">Enabling collection of high quality data for AMI 2.0 rollouts.</p>
-        </div> 
-        <div className="cards_container_11">
-            {cards2_data.map((data,idx)=>(
-                <div className="card" key={idx} onMouseEnter={() => setIsHovered(idx)} onClick={()=>navigate(data.route)}
-                onMouseLeave={() => setIsHovered(null)}>
-                   <img src={isHovered === idx ? data.hover : data.img} alt="" className="card_vect"/>
-                    <div className="redd" style={{display:"flex"}}>
-                    <p className="head_text">
-                        {data.head}{" "}
-                        
-                    </p>
-                    <span className="follow-up">{data?.followUp}</span>
-                    </div>
-                    <p className="desc_text">{data.desc}</p>
+      {/* services ends */}
 
-                    <p className="explore">Explore{"    "}  <span style={{marginLeft:"1rem"}}>→</span></p>
-                </div>
-            ))}
-        </div>
-      </div>
-      </FadeUpAnimation>
-      <FadeUpAnimation>
 
-      <div className="solutions_Slider">
-        <ProductsSlider item={cards2_data}/>
-      </div>
-      </FadeUpAnimation>
+    
+      
       <FadeUpAnimation>
       <div className="mid_cont_4">
       <div className="left left4">
@@ -306,7 +307,7 @@ export default function Main() {
       <div className="right">
             <div className="right_content">
                 <p className="head_text">
-                Sectors We Serve
+                Whom do we serve
                 </p>
                 <img src="/images/Homepage/mid_4_m.png" className="mid_2_mob" alt="" />
                 <p className="desc_text">
@@ -323,7 +324,7 @@ export default function Main() {
                         : "images/Homepage/energy.svg"
                     }  alt="" />
                             <p className="tab_text">
-                           Energy & Utilities 
+                            Power Distribution and Management Companies
                             </p>
                         </div>
                         <p style={{marginTop:'5px',fontWeight:'bold'}}
@@ -338,7 +339,7 @@ export default function Main() {
                         : "images/Homepage/industrial.svg"
                     }  alt="" />
                             <p className="tab_text">
-                            Industrial Sector
+                            Commercial and Industrial Power Consumers
                             </p>
                         </div>
                         <p style={{marginTop:'5px',fontWeight:'bold'}}
@@ -353,13 +354,13 @@ export default function Main() {
                         : "images/Homepage/commerce.svg"
                     }  alt="" />
                             <p className="tab_text">
-                            Commercial Sector
+                            Residential Power Consumers
                             </p>
                         </div>
                         <p style={{marginTop:'5px',fontWeight:'bold'}}
                         className="tab_text">→</p>
                     </div>
-                    <div className="tab" onMouseEnter={() => setIsHovered8(true)}
+                    {/* <div className="tab" onMouseEnter={() => setIsHovered8(true)}
                 onMouseLeave={() => setIsHovered8(false)}>
                         <div className="in_tab">
                             <img src={
@@ -373,7 +374,7 @@ export default function Main() {
                         </div>
                         <p style={{marginTop:'5px',fontWeight:'bold'}}
                         className="tab_text">→</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
@@ -430,7 +431,7 @@ export default function Main() {
       </div>
       </FadeUpAnimation>
       <FadeUpAnimation>
-      <div className="mid_cont_6">
+      {/* <div className="mid_cont_6">
         <div className="left">
         <div className="top_cont">
             <p className="head_text">
@@ -439,7 +440,7 @@ export default function Main() {
             <p className="desc_text">Empowering Journeys, Empowered Words</p>
         </div>
         <img src="images/Homepage/test.png" alt="" className="mid_m_6"/>
-        {/* <img src="images/Homepage/quote.svg" alt="quote" className="quote"/> */}
+        
         <div className="testimonial">
             <p>We are Immensely satisfied and delighted on the Installation, Commissioning of end to end smart meter project awarded to ADYA Smart Metering Pvt. Ltd., We also hereby certify that the plug & play project was delivered to our satisfactory levels.</p>
             <p className="desc_text_2">
@@ -451,7 +452,8 @@ export default function Main() {
       <div className="right">
             <img src="images/Homepage/mid_66.png" alt="" />
         </div>
-        </div>
+        </div> */}
+        <Testimonials/>
         </FadeUpAnimation>
        
         <div className="marquee_container">
@@ -483,3 +485,23 @@ export default function Main() {
     </div>
   );
 }
+ {/* <img className="sol_banner" src="images/Homepage/ban1.png" />
+            <div className="inner_container">
+                <p className="head_text">
+                    Enabling Sustainable Energy Management Solutions for Utilities, Commercial & Industries sectors.
+                </p>
+                <p className="desc_text">Adya Smart metering solutions</p>
+                <button className="contact_btn">Contact Us</button>
+            </div> */}
+
+            {/* <video className="video_height" ref={videoRef} autoPlay loop muted>
+                <source src="/videos/homeVideo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <div className="animated_text">
+           
+<div ref={textRef} className="gsap_text">
+          {text1}
+        </div>
+    
+            </div> */}

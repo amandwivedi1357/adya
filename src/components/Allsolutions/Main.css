@@ -86,7 +86,7 @@ letter-spacing: 0.25px;
     .cards_container_11 .card{
             padding-bottom: 25px;
            cursor: pointer;
-           height: 299px;
+           height: 349px;
             margin: auto;
             width: 100%;
             border-radius: 10px;
@@ -145,7 +145,7 @@ letter-spacing: 0.25px;
         font-size: 16px;
         font-weight: 500;
        margin-left: 34px;
-       margin-top: 20px;
+       margin-top: 70px;
     }
     
     .card:hover{

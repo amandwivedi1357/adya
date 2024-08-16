@@ -32,10 +32,11 @@
     line-height: 1.7;
     letter-spacing: 0.25px;
     text-align: left;
-    color: rgba(3, 3, 3, 0.9);
+    color: rgba(255, 254, 254, 0.9);
   }
   .Advanced-Energy-Management .text-style-1 {
     color: #e85122;
+    font-weight: 600;
   }
 
   .nav_list {
@@ -59,7 +60,7 @@
   }
   .navlist_ul li {
     margin: auto;
-    color: #000; 
+    color: #ffffff; 
     cursor: pointer;
     display: inline-block;
     position: relative;

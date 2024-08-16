@@ -10,17 +10,32 @@ import Slide3 from './Slide3';
 function MySlider() {
   const slides = [
     {
-      image: 'images/Homepage/slid1.png',
-      headText: 'Committed to sustainable energy through Adya innovation.',
+      image: 'images/Homepage/slide1.jpg',
+      headText: 'India’s only home made end-to-end energy monitoring and management solution',
       descText: 'Adya Smart metering solutions'
     },
     {
-      image: 'images/Homepage/slid2.png',
+      image: 'images/Homepage/slid2.jpg',
       headText: 'Upgrade your Digital Meters to Smart Prepaid Chekout our AM+',
       descText: 'Adya Smart metering solutions'
     },
     {
-      image: 'images/Homepage/ban3.png',
+      image: 'images/Homepage/slid3.jpg',
+      headText: 'Enabling Sustainable Energy Management Solutions for Utilities, Commercial & Industries sectors',
+      descText: 'Adya Smart metering solutions'
+    },
+    {
+      image: 'images/Homepage/slid4.jpg',
+      headText: 'Committed to sustainable energy through Adya innovation.',
+      descText: 'Adya Smart metering solutions'
+    },
+    {
+      image: 'images/Homepage/slid5.jpg',
+      headText: 'Upgrade your Digital Meters to Smart Prepaid Chekout our AM+',
+      descText: 'Adya Smart metering solutions'
+    },
+    {
+      image: 'images/Homepage/slid6.jpg',
       headText: 'Enabling Sustainable Energy Management Solutions for Utilities, Commercial & Industries sectors',
       descText: 'Adya Smart metering solutions'
     },
@@ -42,28 +57,27 @@ function MySlider() {
     { id:3,component: <Slide3 /> },  
   ];
   return (
-    // <Slider {...settings}>
-    //   {slides.map((data,idx)=>(
-    //      <div key={idx} className="hero_Section">
-    //      <img className="sol_banner" src={data.image}/>
-    //      <div className="inner_container">
-    //          <p className="head_text">
-    //              {data.headText}
-    //          </p>
-    //          <p className="desc_text">{data.descText}</p>
-    //          <button className="contact_btn">Contact Us</button>
-    //      </div>
-    //      </div>
-    //   ))}
-    
-    // </Slider>
-    <div>
     <Slider {...settings}>
-      {slidesData.map((component) => (
-        <div className="" key={component.id}>{component.component}</div>
+      {slides.map((data,idx)=>(
+         <div key={idx} className="hero_Section">
+         <img className="sol_banner" src={data.image}/>
+         <div className="inner_container">
+             <p className="head_text">
+                 {data.headText}
+             </p>
+             
+         </div>
+         </div>
       ))}
+    
     </Slider>
-    </div>
+    // <div>
+    // <Slider {...settings}>
+    //   {slidesData.map((component) => (
+    //     <div className="" key={component.id}>{component.component}</div>
+    //   ))}
+    // </Slider>
+    // </div>
   );
 }
 

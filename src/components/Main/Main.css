@@ -7,11 +7,11 @@
     display: none;
 }
 .hero_Section {
-    position: relative;
+   position: relative;
     width: 100%;
-    height: 600px; /* Adjust the height as needed */
-    overflow: hidden;
-    
+     /* Adjust the height as needed */
+   
+    /* border: 1px solid red; */
 }
 
 .blend_nav{
@@ -26,7 +26,7 @@
     padding: 10px;
    height: 120px;
     margin: auto;
-    background: rgba( 255, 255, 255, 0.75 );
+    background: rgba( 255, 255, 255, 0.25 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 1px );
 -webkit-backdrop-filter: blur( 1px );
@@ -323,6 +323,9 @@ letter-spacing: 0.25px;
 .left_content .mid_2_mob{
     display: none;
 }
+.right .mid_2_mob{
+    display: none;
+}
 .tabs{
     display: flex;
     flex-direction: column;
@@ -405,7 +408,7 @@ transition: background-color 0.3s, color 0.3s;
     
     display: flex;
 /* border: 1px solid red; */
-    margin: -80px 25px 0 0;
+    margin: 40px 25px 0 0;
 }
 .mid_cont_4 .right .right_content .head_text{
     margin-right: 0;
@@ -483,7 +486,7 @@ transition: background-color 0.3s, color 0.3s;
     margin-right: 37px;
 }
 .right_content .tabs .tab{
-    width: 445px;
+    width: 505px;
   padding: 13px 24px 12px 19px;
   border-radius: 5px;
   display: flex;
@@ -601,64 +604,12 @@ transition: background-color 0.3s, color 0.3s;
     margin-left: 36px;
     font-size: 15px;
 }
-.mid_cont_6{
-    margin: -40px 0 0 50px ;
-    padding-bottom: 35px;
-    
-    display: flex;
-}
-.mid_cont_6 .left{
-    flex: 1;
-   
-   /* border: 1px solid red; */
-}
-.mid_cont_6 .left .top_cont{
-
-    margin-top: -2rem;
-    padding-top: 0;
-}
-.mid_cont_6 .left .top_cont .desc_text{
-    width: 58%;
-    /* border: 1px solid red; */
-    margin-bottom: 10px;
-}
-.mid_cont_6 .left .top_cont .head_text{
-   font-size: 30px;
-    
-}
-.mid_cont_6 .right{
-    flex: 1;
-    float: left;
-    /* border: 1px solid red; */
-}
-
-
-/* .testimonial{
-    width: 76%;
-} */
-.testimonial .desc_text_2{
-font-family: Poppins;
-  font-size: 16px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.22;
-  letter-spacing: 0.25px;
-  text-align: left;
-  color: rgba(3, 3, 3, 0.9);
-}
-.mid_cont_4 .right .right_content .mid_2_mob{
-    display: none;
-}
-.mid_cont_6 .left  .mid_m_6{
-    display: none;
-}
 
 /* Marquee.css */
 .marquee_container {
     overflow: hidden;
     position: relative;
-    margin-top: 2rem;
+    margin-top: 8rem;
     margin-bottom: 2rem;
     width: 100%;
     height: 100px; /* Adjust height as needed */
@@ -1043,6 +994,7 @@ line-height: 19px; /* 146.154% */
 letter-spacing: 0.5px;
     }
     .card .explore{
+        margin-top: 40px;
         color: #FFF;
 font-family: Poppins;
 font-size: 15px;

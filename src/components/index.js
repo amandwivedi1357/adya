@@ -5,7 +5,7 @@ export const cards1_data = [
         route:'',
         hover:"/images/Homepage/d1_fff.svg",
         followUp:"( Advance Metering Infrastructure )",
-        desc:"Curtail your revenue leakages by upgrading your legacy prepayment system with Smart prepayment.",
+        desc:"Adya's indigenous end-to-end AMI protocol delivers seamless two-way communication and real-time data for efficient energy management and enhanced utility-customer interaction.",
         explore:"explore"
     },
     {
@@ -13,7 +13,7 @@ export const cards1_data = [
         head:"Smart Prepayment",
         route:'',
         hover:"/images/Homepage/smart_fff.svg",
-        desc:"Upgrade your existing Digital Meter to Smart Meter or smart prepayment at fractional cost.",
+        desc:"Adya’s comprehensive and user-centric features offers seamless integration with advanced metering infrastructure, allowing for real-time monitoring and convenient prepayment for consumers.",
         explore:"explore"
     },
     {
@@ -21,7 +21,7 @@ export const cards1_data = [
         head:"Digi2smart",
        route:'',
         hover:"/images/Homepage/digi2_fff.svg",
-        desc:"Upgrade your existing Digital Meter to Smart Meter or smart prepayment at fractional cost.",
+        desc:"Adya's “Digi2Smart” device transforms traditional digital meters into advanced smart meters compliant with IS 16444, enabling real-time monitoring and comprehensive data analytics.",
         explore:"explore"
     },
     {
@@ -29,7 +29,7 @@ export const cards1_data = [
         head:"RF Mesh Network",
       route:'',
         hover:"/images/Homepage/mesh_fff.svg",
-        desc:"Scalable and secured networks which enable self-healing and get your alerts, notifications in seconds.",
+        desc:"Adya's patented RF Mesh Network offers resilient and secure communication for smart meters, ensuring efficient data collection and transmission with 80% savings in operational costs.",
         explore:"explore"
     },
     {
@@ -37,7 +37,7 @@ export const cards1_data = [
         head:"Interoperability",
         route:'',
         hover:"/images/Homepage/icon_fff.svg",
-        desc:"Connect any Smart Meter, Digital Meter or any communication with one Head End System.",
+        desc:"Adya’s hardware and software solutions are meticulously designed to effortlessly connect with various brands of Smart Meters, Communication, HES and MDM  protocols.",
         explore:"explore"
     },
     {
@@ -45,7 +45,7 @@ export const cards1_data = [
         head:"Microgrid",
         route:'',
         hover:"/images/Homepage/micro_fff.svg",
-        desc:"As pioneers we offer a comprehensive plug-and-play smart metering solutions for our costumers.",
+        desc:"Adya’s system allows you to create a microgrid comprising of localized users enabling  localized energy generation, ensuring energy independence and enhancing grid resilience",
         explore:"explore"
     },
 ]

@@ -17,7 +17,7 @@ export default function ProductsMain() {
     <div className="products_container">
          <FadeUpAnimation>
          <div className="top_main">
-            <img className="sol_banner" src="images/Product/prod.png" alt="" />
+            <img className="sol_banner" src="/images/Homepage/products.jpg" alt="" />
             <div className="img_cont">
                 <p className="head_text">
                 Products 
