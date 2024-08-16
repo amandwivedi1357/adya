@@ -134,3 +134,14 @@ padding-left: 10px;
     color: rgba(240, 240, 240, 0.9);
   
 }
+
+@media only screen and (max-width: 600px){
+    .inner_container .head_text{
+        font-size: 20px;
+        margin-top: 150px;
+    }
+    .sol_banner {
+        
+        /* Ensures that the image still looks good on mobile */
+      }
+}
