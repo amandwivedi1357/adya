@@ -9,37 +9,37 @@ import { useEffect, useRef, useState } from 'react';
 function MySlider() {
   const slides = [
     {
-      image: 'images/Homepage/slide1.jpg',
+      image: 'images/Homepage/slide1.webp',
       headText: 'India’s only indegenious end-to-end energy monitoring and management solution',
       descText: 'Adya Smart metering solutions'
     },
     {
-      image: 'images/Homepage/slid2.jpg',
+      image: 'images/Homepage/slid2.webp',
       headText: 'Adya uses advanced technology to enhance energy efficiency and cut costs',
       descText: 'Adya Smart metering solutions'
     },
     {
-      image: 'images/Homepage/slid3.jpg',
+      image: 'images/Homepage/slid3.webp',
       headText: 'Our products are designed for long-lasting, consistent performance and ensure precise billing for fair energy charges',
       descText: 'Adya Smart metering solutions'
     },
     {
-      image: 'images/Homepage/slid4.jpg',
+      image: 'images/Homepage/slid4.webp',
       headText: 'Our advanced data analytics offer actionable insights, empowering customers to make informed energy decisions while keeping the customer data protected and secure',
       descText: 'Adya Smart metering solutions'
     },
     {
-      image: 'images/Homepage/slid5.jpg',
+      image: 'images/Homepage/slid5.webp',
       headText: 'We provide flexible solutions for residential, commercial, and industrial customers with easy-to-use mobile apps for real-time energy monitoring and payments',
       
       descText: 'Adya Smart metering solutions'
     },
     // {
-    //   image: 'images/Homepage/slid6.jpg',
+    //   image: 'images/Homepage/slid6.webp',
     //   headText: ''
     // },
     {
-      image: 'images/Homepage/slid7.jpg',
+      image: 'images/Homepage/slid7.webp',
       headText: 'Our solutions help customers manage and reduce their energy expenses'
     },
     
