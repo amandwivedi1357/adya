@@ -4,9 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
  // You can define your own styles for the slider
 import "./slider.css"
-import Slide1 from './Slide1';
-import Slide2 from './Slide2';
-import Slide3 from './Slide3';
+
 import { useEffect, useRef, useState } from 'react';
 function MySlider() {
   const slides = [
@@ -27,19 +25,19 @@ function MySlider() {
     },
     {
       image: 'images/Homepage/slid4.jpg',
-      headText: 'Committed to sustainable energy through Adya innovation.',
-      descText: 'Adya Smart metering solutions'
-    },
-    {
-      image: 'images/Homepage/slid5.jpg',
       headText: 'Our advanced data analytics offer actionable insights, empowering customers to make informed energy decisions while keeping the customer data protected and secure',
       descText: 'Adya Smart metering solutions'
     },
     {
-      image: 'images/Homepage/slid6.jpg',
+      image: 'images/Homepage/slid5.jpg',
       headText: 'We provide flexible solutions for residential, commercial, and industrial customers with easy-to-use mobile apps for real-time energy monitoring and payments',
+      
       descText: 'Adya Smart metering solutions'
     },
+    // {
+    //   image: 'images/Homepage/slid6.jpg',
+    //   headText: ''
+    // },
     {
       image: 'images/Homepage/slid7.jpg',
       headText: 'Our solutions help customers manage and reduce their energy expenses'
@@ -67,11 +65,11 @@ function MySlider() {
     autoplay: false,
    
   };
-  const slidesData = [
-    { id:1,component: <Slide1 /> },
-    { id:2,component: <Slide2 /> },  
-    { id:3,component: <Slide3 /> },  
-  ];
+  // const slidesData = [
+  //   { id:1,component: <Slide1 /> },
+  //   { id:2,component: <Slide2 /> },  
+  //   { id:3,component: <Slide3 /> },  
+  // ];
   return (
     <Slider {...settings} ref={sliderRef}>
       {slides.map((data,idx)=>(
