@@ -7,6 +7,7 @@ import "./slider.css"
 import Slide1 from './Slide1';
 import Slide2 from './Slide2';
 import Slide3 from './Slide3';
+import { useEffect, useRef, useState } from 'react';
 function MySlider() {
   const slides = [
     {
@@ -45,15 +46,26 @@ function MySlider() {
     },
     
   ];
+  const sliderRef = useRef(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const nextSlide = (currentSlide + 1) % slides.length;
+      setCurrentSlide(nextSlide);
+      sliderRef.current.slickGoTo(nextSlide);
+    }, 6000); // 4 seconds
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, [currentSlide, slides.length]);
   const settings = {
     dots: false,
     infinite: true,
-    speed: 4000,
+    speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    
+    autoplay: false,
+   
   };
   const slidesData = [
     { id:1,component: <Slide1 /> },
@@ -61,7 +73,7 @@ function MySlider() {
     { id:3,component: <Slide3 /> },  
   ];
   return (
-    <Slider {...settings}>
+    <Slider {...settings} ref={sliderRef}>
       {slides.map((data,idx)=>(
          <div key={idx} className="hero_Section">
          <img className="sol_banner" src={data.image}/>
