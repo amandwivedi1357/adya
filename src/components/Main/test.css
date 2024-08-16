@@ -73,7 +73,7 @@
   
   .desc_text_2 {
     font-size: 1em;
-    color: #8748F4;
+    color: #e85123;
     font-weight: 600;
     margin-top: 15px;
   }
@@ -83,11 +83,11 @@
     margin-top: 10px;
    
     font-size: 12px;
-    color: #8748F4;
+    color: #e85123;
   }
   
   .slick-dots li.slick-active button:before {
-    color: #8748F4;
+    color: #e85123;
   }
   
   /* Smooth Scroll Effect */
