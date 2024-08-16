@@ -211,7 +211,7 @@ export default function Main() {
 
 
         {/* services starts */}
-      <FadeUpAnimation>
+      {/* <FadeUpAnimation>
       <div className="mid_cont_2">
         <div className="left">
             <div className="left_content">
@@ -293,7 +293,7 @@ export default function Main() {
             <img  src="/images/Homepage/Rectangle.png" alt="" />
         </div>
       </div>
-      </FadeUpAnimation>
+      </FadeUpAnimation> */}
       {/* services ends */}
 
 
