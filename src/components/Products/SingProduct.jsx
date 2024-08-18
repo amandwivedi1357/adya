@@ -22,7 +22,7 @@ export default function SingProduct() {
 <FadeUpAnimation>
 
       <div className="top_main">
-                <img className="sol_banner" src='/images/Services/Partners.png' alt="" />
+                <img className="sol_banner" src='/images/Homepage/products.jpg' alt="" />
                 <div className="img_cont">
                     <p className="head_text">{singleData.head}</p>
                    
