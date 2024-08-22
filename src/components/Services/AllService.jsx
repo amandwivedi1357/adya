@@ -13,7 +13,7 @@ export default function AllService() {
   return (
     <div className='allService_Container'>
 
-      <FadeUpAnimation>
+       
 
         <div className="top_main">
             <img className="sol_banner" src="/images/Services/serv.png" alt="" />
@@ -24,8 +24,8 @@ export default function AllService() {
                 
             </div>
     </div> 
-      </FadeUpAnimation>
-    <FadeUpAnimation>
+       
+     
 
     <div className="sector_2">
         <div className="sector_2_inner">
@@ -62,7 +62,7 @@ export default function AllService() {
               </div>
             </div>
       </div>
-    </FadeUpAnimation>
+     
     </div>
   )
 }

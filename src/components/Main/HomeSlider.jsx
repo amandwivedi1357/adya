@@ -25,15 +25,15 @@ function MySlider() {
       headText: 'Our advanced data analytics offer actionable insights, empowering customers to make informed energy decisions while keeping the customer data protected and secure',
       descText: 'Adya Smart metering solutions'
     },
-    {
-      image: 'images/Homepage/slid5.webp',
-      headText: 'We provide flexible solutions for residential, commercial, and industrial customers with easy-to-use mobile apps for real-time energy monitoring and payments',
-      descText: 'Adya Smart metering solutions'
-    },
-    {
-      image: 'images/Homepage/slid7.webp',
-      headText: 'Our solutions help customers manage and reduce their energy expenses'
-    },
+    // {
+    //   image: 'images/Homepage/slid5.webp',
+    //   headText: 'We provide flexible solutions for residential, commercial, and industrial customers with easy-to-use mobile apps for real-time energy monitoring and payments',
+    //   descText: 'Adya Smart metering solutions'
+    // },
+    // {
+    //   image: 'images/Homepage/slid7.webp',
+    //   headText: 'Our solutions help customers manage and reduce their energy expenses'
+    // },
   ];
 
   const settings = {

@@ -84,7 +84,7 @@ export default function Contact() {
   
   return (
     <div className='contact-us_container'>
-      <FadeUpAnimation>
+       
       <div className="top_main">
             <img className="sol_banner" src="images/About/Contact_banner.png" alt="" />
             <div className="img_cont">
@@ -95,8 +95,8 @@ export default function Contact() {
                
             </div>
         </div>
-      </FadeUpAnimation>
-      <FadeUpAnimation>
+       
+       
       <div className="contact_2">
             <div className="bred">
 
@@ -139,9 +139,9 @@ export default function Contact() {
                 </div>
             </div>
         </div>
-      </FadeUpAnimation>
+       
         
-      <FadeUpAnimation>
+       
         <div className="mid_text">
             <p className="head_text">Share Your Requirements</p>
         </div>
@@ -316,7 +316,7 @@ export default function Contact() {
             </form>
         </div>
         </div>
-        </FadeUpAnimation>
+         
     </div>
   )
 }

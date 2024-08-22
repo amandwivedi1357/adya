@@ -8,7 +8,7 @@ export default function SectorMain() {
     const navigate = useNavigate()
   return (
     <div className="sector_container">
-      <FadeUpAnimation>
+       
 
        <div className="top_main">
         <img className="sol_banner" src="images/Homepage/sector_banner1.jpg" alt="" />
@@ -17,8 +17,8 @@ export default function SectorMain() {
           
         </div>
       </div>
-      </FadeUpAnimation>
-      <FadeUpAnimation>
+       
+       
 
       <div className="sector_2">
         
@@ -55,7 +55,7 @@ export default function SectorMain() {
               </div>
             </div>
       </div>
-      </FadeUpAnimation>
+       
     </div>
   )
 }

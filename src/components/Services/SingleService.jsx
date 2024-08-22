@@ -22,7 +22,7 @@ export default function SingleService() {
 
     return (
         <div>
-            <FadeUpAnimation>
+             
 
             <div className="top_main">
                 <img className="sol_banner" src='/images/Services/serv.png' alt="" />
@@ -34,8 +34,8 @@ export default function SingleService() {
                         </div>
                 </div>
             </div>
-            </FadeUpAnimation>
-            <FadeUpAnimation>
+             
+             
 
             <div className="mid_single">
                 <div className="overview">
@@ -62,8 +62,8 @@ export default function SingleService() {
                     <img className="perm_img" src='/images/Infograpics/perm_infoGraphics.png' alt="" />
                 </div> */}
             </div>
-            </FadeUpAnimation>
-            <FadeUpAnimation>
+             
+             
 
             <div className="sols_links">
               <p className="head_text">
@@ -84,7 +84,7 @@ export default function SingleService() {
                 }
               </div>
             </div>
-            </FadeUpAnimation>
+             
         </div>
     );
 }

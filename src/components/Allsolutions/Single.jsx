@@ -19,7 +19,7 @@ console.log(singleData)
 
     return (
         <div>
-            <FadeUpAnimation>
+             
                 
             <div className="top_main">
                 <img className="sol_banner" src='images/Homepage/singl_sol1.jpg' alt="" />
@@ -31,8 +31,8 @@ console.log(singleData)
                     </div>
                 </div>
             </div>
-            </FadeUpAnimation>
-            <FadeUpAnimation>
+             
+             
 
             <div className="mid_single">
                 <div className="overview">
@@ -68,8 +68,8 @@ console.log(singleData)
                     )
                 } */}
             </div>
-            </FadeUpAnimation>
-            <FadeUpAnimation>
+             
+             
 
             <div className="sols_links">
                 {
@@ -114,7 +114,7 @@ console.log(singleData)
                     )
                 }
             </div>
-            </FadeUpAnimation>
+             
         </div>
     );
 }

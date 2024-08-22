@@ -19,7 +19,7 @@ export default function SingProduct() {
     }
   return (
     <div className="Single_prod_container">
-<FadeUpAnimation>
+ 
 
       <div className="top_main">
                 <img className="sol_banner" src='/images/Homepage/products.jpg' alt="" />
@@ -28,8 +28,8 @@ export default function SingProduct() {
                    
                 </div>
             </div>
-</FadeUpAnimation>
-<FadeUpAnimation>
+ 
+ 
 
       <div className="inner1">
       <div className="bred">
@@ -149,8 +149,8 @@ export default function SingProduct() {
         </div>
         
       </div>
-</FadeUpAnimation>
-      <FadeUpAnimation>
+ 
+       
 
       <div className="sols_links">
               <p className="head_text">
@@ -171,7 +171,7 @@ export default function SingProduct() {
                 }
               </div>
             </div>
-      </FadeUpAnimation>
+       
     </div>
   )
 }

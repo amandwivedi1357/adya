@@ -12,10 +12,10 @@ function App() {
   return (
     <div className='App'>
       <SmoothScroll>
-        <FadeUpAnimation>
+         
       <ScrollToTop/>
       <AllRoutes/>
-      </FadeUpAnimation>
+       
       </SmoothScroll>
     </div>
   )

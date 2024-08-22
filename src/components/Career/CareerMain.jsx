@@ -13,7 +13,7 @@ export default function CareerMain() {
   }
   return (
     <div>
-      <FadeUpAnimation>
+       
       <div className="top_main">
             <img className="sol_banner" src="images/Homepage/careerBanner.png" alt="" />
             <div className="img_cont">
@@ -24,8 +24,8 @@ export default function CareerMain() {
                
             </div>
     </div>
-      </FadeUpAnimation>
-      <FadeUpAnimation>
+       
+       
     <div className="mid_cont_1">
     <div className="bred">
                 <p><span onClick={()=>navigate('/')}>Home</span> {">"} <span onClick={()=>navigate('/career')}>Career</span></p>
@@ -36,7 +36,7 @@ export default function CareerMain() {
             </p>
             <p className="desc_text">Are you willing to be the change? Create a smarter world? Come join us at Adya and make a difference.</p>
         </div>
-        <FadeUpAnimation>
+         
         {positionsData.map((position, index) => (
                 <Positions
                     key={index}
@@ -47,10 +47,10 @@ export default function CareerMain() {
                 />
             ))}
 
-</FadeUpAnimation>
+ 
     </div>
-      </FadeUpAnimation>
-      <FadeUpAnimation>
+       
+       
     <div className="tab_cont_mob">
         <div className="tabs">
         {
@@ -70,7 +70,7 @@ export default function CareerMain() {
       
       </div>
         </div>
-        </FadeUpAnimation>
+         
     </div>
   )
 }

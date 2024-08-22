@@ -143,7 +143,7 @@ text-align: left;
     /* border: 1px solid red; */
     display: grid;
     gap: 85px;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
 }
 .about_container .mid_cont_5{
 

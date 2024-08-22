@@ -15,7 +15,7 @@ export default function Main() {
     }
   return (
     <div>
-        <FadeUpAnimation>
+         
 
         <div className="top_main">
             <img className="sol_banner" src="images/Homepage/singl_sol1.jpg" alt="" />
@@ -27,8 +27,8 @@ export default function Main() {
                
             </div>
         </div>
-        </FadeUpAnimation>
-        <FadeUpAnimation>
+         
+         
 
        <div className="mid_cont_1">
        <div className="bred">
@@ -60,8 +60,8 @@ export default function Main() {
         </div>
         
       </div>
-        </FadeUpAnimation>
-        <FadeUpAnimation>
+         
+         
 
       <div className="tab_cont_mob">
         <div className="tabs">
@@ -87,7 +87,7 @@ export default function Main() {
       
       </div>
         </div>
-        </FadeUpAnimation>
+         
     </div>
   )
 }
