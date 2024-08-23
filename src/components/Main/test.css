@@ -1,169 +1,106 @@
-/* Main Container */
-.testimonial-slider {
-    
-    max-width: 1200px;
-    margin: auto;
-    padding: 40px 0;
-    margin-bottom: 20px;
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    /* border: 1px solid red; */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Left Section */
-  .mid_cont_6 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .left {
-    flex: 1;
-    padding-right: 20px;
-  }
-  
-  .top_cont {
-    margin-bottom: 20px;
-  }
-  
-  .head_text {
-    font-size: 1.8em;
-    color: #333;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  
-  .desc_text {
-    font-size: 1.2em;
-    color: #666;
-    margin-bottom: 30px;
-  }
-  
-  /* Right Section */
-  .right {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .right img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  /* Testimonial Section */
-  .testimonial {
-    background-color: #fff;
-  
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    
-  }
-  
-  .testimonial p {
-    font-size: 1.1em;
-    color: #555;
-    padding: 10px;
-    line-height: 1.6em;
-  }
-  
-  .desc_text_2 {
-    font-size: 1em;
-    color: #e85123;
-    font-weight: 600;
-    margin-top: 15px;
-  }
-  
-  /* Slick Slider Custom Dots */
-  .slick-dots li button:before {
-    margin-top: 10px;
-   
-    font-size: 12px;
-    color: #e85123;
-  }
-  
-  .slick-dots li.slick-active button:before {
-    color: #e85123;
-  }
-  
-  /* Smooth Scroll Effect */
-  .slick-slide {
-    transition: transform 0.5s ease;
-  }
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 768px) {
-    .mid_cont_6 {
-      flex-direction: column;
-      
-    }
-    .testimonial{
-        padding: 20px;
-    }
-    .left {
-      padding-right: 0;
-      margin-bottom: 20px;
-    }
-  
-    .testimonial-slider {
-      padding: 20px;
-    }
-  }
-  
-
-
-  /* .mid_cont_6{
-    margin: 40px 0 0 50px ;
-    padding-bottom: 35px;
-    
-    display: flex;
-}
-.mid_cont_6 .left{
-    flex: 1;
-   
-   border: 1px solid red;
-}
-.mid_cont_6 .left .top_cont{
-
-    margin-top: -2rem;
-    padding-top: 0;
-}
-.mid_cont_6 .left .top_cont .desc_text{
-    width: 58%;
-  
-    margin-bottom: 10px;
-}
-.mid_cont_6 .left .top_cont .head_text{
-   font-size: 30px;
-    
-}
-.mid_cont_6 .right{
-    flex: 1;
-    float: left;
-   
+.test-slider-cont {
+  padding: 40px 0;
+  /* border: 1px solid red; */
+  margin: auto;
 }
 
+.top-cont {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
+.head-text-client {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
 
-.testimonial .desc_text_2{
-font-family: Poppins;
-  font-size: 16px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.22;
-  letter-spacing: 0.25px;
+.desc-text {
+  font-size: 18px;
+  color: #555;
+}
+
+.testimonial-slider .slick-slide {
+  
+ 
+  /* border: 1px solid red; */
+  padding: 0 10px; /* Adds space between slides */
+}
+
+.testimonial-card {
+  
+  
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ height: 20rem;
+ width: 20rem;
+}
+
+.testimonial-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
   text-align: left;
-  color: rgba(3, 3, 3, 0.9);
 }
-.mid_cont_4 .right .right_content .mid_2_mob{
-    display: none;
+
+.testimonial-detail {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+
 }
-.mid_cont_6 .left  .mid_m_6{
-    display: none;
+
+.testimonial-customer {
+  font-size: 18px;
+  color: #111111;
+  font-weight: 500;
+  text-align: left;
+  margin-top: 10px;
 }
- */
+
+/* Customizing dots */
+.slick-dots li button:before {
+  color: #E85123; /* Change dot color */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #E85123;
+}
+
+/* Adding responsiveness */
+@media (max-width: 768px) {
+  .test-slider-cont{
+    margin: 0;
+    margin-top: -30px;
+    margin-bottom: -30px;
+    padding: 0;
+  }
+  .top-cont {
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  .testimonial-card {
+      padding: 15px;
+  }
+
+  .head-text-client {
+      font-size: 24px;
+  }
+
+  .desc-text {
+      font-size: 16px;
+  }
+}

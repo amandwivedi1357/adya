@@ -12,6 +12,7 @@ import RespNav from "../Responsive/RespNav";
 import gsap from "gsap";
 import FadeUpAnimation from "../../Routes/FadeUp";
 import Testimonials from "./HomeSlider2";
+import Navbar from "../Navbar";
 
 export default function Main() {
   const text1 = 'Committed to sustainable energy through Adya innovation'
@@ -77,7 +78,7 @@ export default function Main() {
   return (
     <div className="red_home">
 
-<div className="hero_Section">
+{/* <div className="hero_Section">
   <div className="blend_nav">
     
   <div className="navbar">
@@ -120,13 +121,14 @@ export default function Main() {
       </div>
   </div>
            
-        </div>
+        </div> */}
 
 
      {/* <div className="banner">
    
     
 </div> */}
+<Navbar/>
 
       <MySlider/>
 

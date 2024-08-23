@@ -12,11 +12,12 @@
  
 }
 .navbar{
-    background: transparent;
+    background: #fff;
     
     display: flex;
     width: 100%;
     justify-content: space-around;
+    
 } 
 
 .Advanced-Energy-Management {
@@ -32,7 +33,7 @@
     line-height: 1.7;
     letter-spacing: 0.25px;
     text-align: left;
-    color: rgba(255, 254, 254, 0.9);
+    color: rgba(0, 0, 0, 0.9);
   }
   .Advanced-Energy-Management .text-style-1 {
     color: #e85122;
@@ -60,7 +61,7 @@
   }
   .navlist_ul li {
     margin: auto;
-    color: #ffffff; 
+    color: #111111; 
     cursor: pointer;
     display: inline-block;
     position: relative;

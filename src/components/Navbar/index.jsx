@@ -8,7 +8,7 @@ export default function Navbar() {
   const navigate = useNavigate()
   
   return (
-    <div className="blend_nav">
+    <div className="">
       
       <div className="navbar">
         <div className="navbar_div" style={{cursor:'pointer'}} onClick={()=>navigate('/')}>

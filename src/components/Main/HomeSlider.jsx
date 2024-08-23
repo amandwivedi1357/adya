@@ -1,9 +1,13 @@
+import React, { useRef } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import "./slider.css";
+import { FaLongArrowAltLeft, FaLongArrowAltRight } from 'react-icons/fa';
 
 function MySlider() {
+  const sliderRef = useRef(null); // Create a ref to access the slider's methods
+
   const slides = [
     {
       image: 'images/Homepage/slide1.webp',
@@ -24,41 +28,48 @@ function MySlider() {
       image: 'images/Homepage/slid4.webp',
       headText: 'Our advanced data analytics offer actionable insights, empowering customers to make informed energy decisions while keeping the customer data protected and secure',
       descText: 'Adya Smart metering solutions'
-    },
-    // {
-    //   image: 'images/Homepage/slid5.webp',
-    //   headText: 'We provide flexible solutions for residential, commercial, and industrial customers with easy-to-use mobile apps for real-time energy monitoring and payments',
-    //   descText: 'Adya Smart metering solutions'
-    // },
-    // {
-    //   image: 'images/Homepage/slid7.webp',
-    //   headText: 'Our solutions help customers manage and reduce their energy expenses'
-    // },
+    }
   ];
 
   const settings = {
     dots: false,
-    infinite: true, // Enables continuous looping of slides
-    speed: 2000, // Speed of the slide transition
-    slidesToShow: 1, // Number of slides to show at once
-    slidesToScroll: 1, // Number of slides to scroll at once
-    autoplay: true, // Enables automatic sliding
-    autoplaySpeed: 6000, // Delay between each slide transition
+    infinite: true,
+    speed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 6000,
+  };
+
+  const handlePrev = () => {
+    sliderRef.current.slickPrev(); // Navigate to the previous slide
+  };
+
+  const handleNext = () => {
+    sliderRef.current.slickNext(); // Navigate to the next slide
   };
 
   return (
-    <Slider {...settings}>
-      {slides.map((data, idx) => (
-        <div key={idx} className="hero_Section">
-          <img className="sol_banner" src={data.image} alt={`Slide ${idx + 1}`} />
-          <div className="inner_container">
-            <p className="head_text">
-              {data.headText}
-            </p>
+    <div className="slider-container">
+      <Slider ref={sliderRef} {...settings}>
+        {slides.map((data, idx) => (
+          <div key={idx} className="hero_Section">
+            <img className="sol_banner_home" src={data.image} alt={`Slide ${idx + 1}`} />
+            <div className="inner_container_home">
+              <p className="head_text">{data.headText}</p>
+            </div>
           </div>
+        ))}
+      </Slider>
+      <div className='controls'>
+        <div className='nav-icons' onClick={handlePrev}>
+          <FaLongArrowAltLeft color='#fff' />
         </div>
-      ))}
-    </Slider>
+        <div className='nav-icons' onClick={handleNext}>
+          <FaLongArrowAltRight color='#fff' />
+        </div>
+      </div>
+    </div>
   );
 }
 
