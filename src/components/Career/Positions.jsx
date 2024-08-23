@@ -1,12 +1,15 @@
 
 import PropTypes from 'prop-types';
 import './Career.css'; 
+import { useState } from 'react';
 
 function Positions({ data, index, expandedIndex, setExpandedIndex }) {
+    const [Clicked, setClicked] = useState(false);
     const isExpanded = index === expandedIndex;
 
     const expandMainReqContainer = () => {
         setExpandedIndex(isExpanded ? null : index); 
+        setClicked(!Clicked)
     };
 
     return (
@@ -15,7 +18,7 @@ function Positions({ data, index, expandedIndex, setExpandedIndex }) {
                 <p className="post_name">{data.postName}  </p>
                 <button className="Apply_button">Apply Now</button>
             </div>
-            <p className="post_desc pd">{data.postDesc} <span onClick={expandMainReqContainer} className='read_more'>Read more</span></p>
+            <p className="post_desc pd">{data.postDesc} <span onClick={expandMainReqContainer} className='read_more'>{Clicked? 'Read Less' :'Read more'}</span></p>
             <div className="main_req_container">
                 <p className="topic">Required Skills</p>
                 <ul>
