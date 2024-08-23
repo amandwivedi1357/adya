@@ -25,16 +25,17 @@ console.log(singleData)
                 <img className="sol_banner" src='images/Homepage/singl_sol1.jpg' alt="" />
                 <div className="img_cont">
                     <p className="head_text">{singleData.route}</p>
-                    <div className="bred">
-                         
-                        <p><span onClick={()=>navigate('/')}>Home</span>/<span onClick={()=>navigate('/all-solutions')}>Solutions</span></p>
-                    </div>
+                  
                 </div>
             </div>
              
              
 
             <div className="mid_single">
+            <div className="bred">
+                         
+                         <p><span onClick={()=>navigate('/')}>Home</span> {'>'} <span onClick={()=>navigate('/all-solutions')}>Solutions</span></p>
+                     </div>
                 <div className="overview">
                     <p className="head_text">Overview</p>
                     <p className="desc_text">{singleData.overviewDesc}</p>
