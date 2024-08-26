@@ -277,85 +277,112 @@ export const cards1_AllSolutions = [
 ]
 
 export const positionsData = [
-    {   route:'',  
-        postName: "Senior Data Engineer",
-        postDesc: "We are looking for Senior Data Engineer with MS or BS in Computer Science or a related field OR equivalent practical experience in data engineering.",
-        requiredSkills: [
-            "4+ years of industry experience working with distributed data technologies (e.g.Hadoop, MapReduce, Spark, Flink, Kafka, etc.) for building efficient & large-scale data pipelines.",
-            "Software Engineering proficiency in at least one high-level programming language (Java, Scala, Python or equivalent).",
-            "Experience required in building batch data processing pipelines curating data for data science consumers.",
-            "Experience strongly preferred building stream-processing applications using Apache Flink, Spark-Streaming, Apache Storm, Kafka Streams or others."
-        ],
-        onsiteRemote: "Onsite/Remote",
-        yearsExp: "+ 4  Years of exp.",
-        fullTime: "Full Time"
+    {   
+      route: '',
+      postName: "Data Engineer",
+      postDesc: "We are looking for a Mid-Level Data Engineer with a Bachelor's degree in Computer Science, Engineering, or a related field OR equivalent practical experience in data engineering.",
+      requiredSkills: [
+        "4 to 6 years of experience in a Data Engineering role.",
+        "Proficiency in SQL and experience with relational databases.",
+        "Experience with big data tools (e.g., Hadoop, Spark, Kafka).",
+        "Strong programming skills in Python, Java, or Scala."
+      ],
+      preferredSkills: [
+        "Experience with cloud services (AWS, Azure, Google Cloud).",
+        "Knowledge of machine learning pipelines and data integration.",
+        "Familiarity with data visualization tools and techniques."
+      ],
+      keyResponsibilities: [
+        "Design and construct high-performance data architectures.",
+        "Develop batch and real-time data pipelines.",
+        "Implement data storage solutions and manage data retrieval systems.",
+        "Collaborate with data scientists and analysts to improve data collection and usage.",
+        "Ensure data privacy and security compliance in all processes."
+      ],
+      onsiteRemote: "Onsite/Remote",
+      yearsExp: "4 – 6 Years",
+      fullTime: "Full Time",
+      workingConditions: "Full-time position. On-site work environment."
     },
-    {   route:'',
-        postName: "Cloud Infrastructure Engineer",
-        postDesc: "We are looking for a Cloud Infrastructure Engineer with experience in managing cloud infrastructure, deploying and scaling applications, and ensuring system reliability and performance.",
-        requiredSkills: [
-            "Strong understanding of cloud computing platforms such as AWS, Azure, or Google Cloud Platform.",
-            "Experience with infrastructure-as-code tools like Terraform or CloudFormation.",
-            "Proficiency in scripting and automation using languages such as Python, Bash, or PowerShell.",
-            "Knowledge of containerization technologies such as Docker and container orchestration tools like Kubernetes."
-        ],
-        onsiteRemote: "Onsite/Remote",
-        yearsExp: "+ 3 Years of exp.",
-        fullTime: "Full Time"
+    {   
+      route: '',
+      postName: "Full Stack Developer",
+      postDesc: "We are looking for a Mid-Level Full Stack Developer with a BS in Computer Science or a related field OR equivalent practical experience in full stack development.",
+      requiredSkills: [
+        "4 to 6 years of industry experience working with both frontend and backend technologies (e.g., JavaScript, HTML, CSS, Node.js, Python, etc.) for building robust and scalable applications.",
+        "Proficiency in developing and maintaining database technologies such as MySQL, MongoDB.",
+        "Strong understanding of the full software development lifecycle, including code quality, organization, and automation.",
+        "Experience in integrating user-facing elements with server-side logic.",
+        "Solid knowledge of implementing security and data protection in applications."
+      ],
+      preferredSkills: [
+        "Experience with cloud services (AWS, Microsoft Azure).",
+        "Familiarity with code versioning tools such as Git.",
+        "Knowledge of user authentication and authorization between multiple systems, servers, and environments."
+      ],
+      keyResponsibilities: [
+        "Develop and maintain full stack applications, ensuring their robustness and scalability.",
+        "Integrate user-facing elements with server-side logic.",
+        "Ensure code quality, organization, and automation across the development lifecycle.",
+        "Implement security and data protection measures in applications."
+      ],
+      onsiteRemote: "Onsite/Remote",
+      yearsExp: "4+ Years",
+      fullTime: "Full Time"
     },
-    {   route:'',
-        postName: "Full Stack Engineer",
-        postDesc: "We are seeking a Full Stack Engineer with experience in both front-end and back-end development to join our dynamic team.",
-        requiredSkills: [
-            "Proficiency in modern front-end frameworks such as React, Angular, or Vue.js.",
-            "Experience with server-side languages and frameworks like Node.js, Express, Django, or Spring Boot.",
-            "Strong understanding of databases and SQL, with experience working with both relational and NoSQL databases.",
-            "Familiarity with Git version control and agile development methodologies."
-        ],
-        onsiteRemote: "Onsite/Remote",
-        yearsExp: "+ 2 Years of exp.",
-        fullTime: "Full Time"
+    {   
+      route: '',
+      postName: "Full Stack Developer (Senior Level)",
+      postDesc: "We are looking for a Senior Full Stack Developer with a BS in Computer Science, Engineering, or a related field OR equivalent practical experience in full stack development.",
+      requiredSkills: [
+        "8-10 years of industry experience as a Full Stack Developer, with a strong foundation in both front-end and back-end technologies.",
+        "Proficiency in fundamental front-end languages such as HTML, CSS, and JavaScript.",
+        "Familiarity with JavaScript frameworks such as AngularJS, React, and Ember.",
+        "Proficiency in server-side languages such as Python, Ruby, Java, PHP, and .Net.",
+        "Strong problem-solving skills and attention to detail.",
+        "Excellent verbal communication skills."
+      ],
+      preferredSkills: [
+        "Experience with cloud environments (AWS, Azure).",
+        "Experience in developing IoT applications.",
+        "Knowledge of smart meter technologies or similar IoT devices."
+      ],
+      keyResponsibilities: [
+        "Develop, test, and implement new software programs for both front-end and back-end applications.",
+        "Maintain and improve the performance of existing software.",
+        "Design and update software databases, including software applications, websites, data communication processes, and user interfaces.",
+        "Test, maintain, and recommend software improvements to ensure strong functionality and optimization.",
+        "Resolve complex technical design issues and facilitate root cause analysis of system issues."
+      ],
+      onsiteRemote: "Onsite",
+      yearsExp: "8+ Years",
+      fullTime: "Full Time"
     },
-    {   route:'',
-        postName: ".NET Sr. Developer",
-        postDesc: "We are looking for a skilled .NET Senior Developer to join our team and help build high-quality, innovative software solutions.",
-        requiredSkills: [
-            "Extensive experience with .NET framework and C# programming language.",
-            "Proficiency in ASP.NET MVC or ASP.NET Core for building web applications.",
-            "Experience with front-end technologies such as HTML, CSS, JavaScript, and modern JavaScript frameworks/libraries.",
-            "Strong understanding of software design patterns, SOLID principles, and best practices for writing clean, maintainable code."
-        ],
-        onsiteRemote: "Onsite/Remote",
-        yearsExp: "+ 5 Years of exp.",
-        fullTime: "Full Time"
-    },
-    {   route:'',
-        postName: "Hardware Engineer",
-        postDesc: "We are seeking a Hardware Engineer with expertise in designing, testing, and optimizing hardware systems.",
-        requiredSkills: [
-            "Proficiency in schematic capture and PCB layout design using tools like Altium Designer or Eagle.",
-            "Experience with hardware description languages (HDL) such as Verilog or VHDL for FPGA and ASIC design.",
-            "Knowledge of analog and digital circuit design principles, including signal processing and power management.",
-            "Familiarity with embedded systems development and debugging using microcontrollers and SoCs."
-        ],
-        onsiteRemote: "Onsite/Remote",
-        yearsExp: "+ 3 Years of exp.",
-        fullTime: "Full Time"
-    },
-    {   route:'',
-        postName: "Data Quality Engineer",
-        postDesc: "We are looking for a Data Quality Engineer to ensure the accuracy, completeness, and reliability of data used for analysis and decision-making.",
-        requiredSkills: [
-            "Experience with data quality assessment and validation techniques, including data profiling, cleansing, and normalization.",
-            "Proficiency in SQL for querying and manipulating data in relational databases.",
-            "Knowledge of ETL (Extract, Transform, Load) processes and tools for data integration and migration.",
-            "Experience with data quality monitoring and reporting using tools such as Informatica, Talend, or Apache Nifi."
-        ],
-        onsiteRemote: "Onsite/Remote",
-        yearsExp: "+ 2 Years of exp.",
-        fullTime: "Full Time"
+    {   
+      route: '',
+      postName: "Senior Data Engineer",
+      postDesc: "We are looking for a Senior Data Engineer with an MS or BS in Computer Science, Engineering, or a related field OR equivalent practical experience in data engineering.",
+      requiredSkills: [
+        "6+ years of industry experience working with distributed data technologies (e.g., Hadoop, MapReduce, Spark, Flink, Kafka, etc.) for building efficient and large-scale data pipelines.",
+        "Proven ability to design, build, and maintain scalable and efficient data pipelines that handle large volumes of data.",
+        "Software engineering proficiency in at least one high-level programming language (Java, Python, or equivalent).",
+        "Experience in building batch data processing pipelines specifically curated for data science applications.",
+        "Strongly preferred experience in developing stream-processing applications using technologies like Apache Flink, Spark-Streaming, Apache Storm, Kafka Streams, Apache Druid, Apache Iceberg, or similar."
+      ],
+      keyResponsibilities: [
+        "Design, build, and maintain scalable and efficient data pipelines to handle large volumes of data using distributed data technologies.",
+        "Develop batch and real-time data processing applications to support the analytical and operational needs of the business.",
+        "Optimize data engineering tools and processes to improve data reliability, efficiency, and quality.",
+        "Collaborate with data scientists and business stakeholders to understand data requirements and implement systems for complex data analytics.",
+        "Lead the evaluation, implementation, and deployment of cutting-edge data processing technologies.",
+        "Mentor junior data engineers and promote best practices in data engineering and software development within the team."
+      ],
+      onsiteRemote: "Onsite/Remote",
+      yearsExp: "6+ Years",
+      fullTime: "Full Time"
     }
-];
+  ];
+  
 
 
 export const products_Card = [
