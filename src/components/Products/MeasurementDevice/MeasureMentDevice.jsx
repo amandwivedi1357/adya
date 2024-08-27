@@ -13,6 +13,7 @@ export default function MeasureMentDevice() {
         navigate(`/${route}`)
     }
   return (
+    <FadeUpAnimation>
     <div>
       <Navbar/>
        
@@ -27,7 +28,7 @@ export default function MeasureMentDevice() {
     </div> 
      
      
-
+    <FadeUpAnimation>
     <div className="mid_cont_1">
     <div className="bred">
 
@@ -62,15 +63,15 @@ export default function MeasureMentDevice() {
             ))}
         </div>
         </div> 
+        </FadeUpAnimation>
      
-     
-
+        <FadeUpAnimation>
         <div className="solutions_Slider">
         <ProductsSlider item={Measurement}/>
       </div>
+      </FadeUpAnimation>
      
-     
-        
+      <FadeUpAnimation>   
     <div className="mid_cont_1">
         <div className="top_cont">
             <p className="head_text">
@@ -99,15 +100,15 @@ export default function MeasureMentDevice() {
             ))}
         </div>
         </div> 
+        </FadeUpAnimation>
      
-     
-
+        <FadeUpAnimation>
         <div className="solutions_Slider">
         <ProductsSlider item={prepayMeter}/>
       </div>
+      </FadeUpAnimation>
      
-     
-
+      <FadeUpAnimation>
     <div className="mid_cont_1">
         <div className="top_cont">
             <p className="head_text">
@@ -137,9 +138,9 @@ export default function MeasureMentDevice() {
             ))}
         </div>
         </div> 
+        </FadeUpAnimation>
      
-     
-
+        <FadeUpAnimation>
         <div className="D2S_Mob">
             {
                 D2S.map((data,idx)=>(
@@ -160,8 +161,9 @@ export default function MeasureMentDevice() {
                 ))
             }
         </div>
-     
+        </FadeUpAnimation>
       <Footer/>
     </div>
+    </FadeUpAnimation>
   )
 }

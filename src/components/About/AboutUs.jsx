@@ -82,6 +82,7 @@ import Carousel from "./Slider";
 export default function AboutUs() {
   const navigate = useNavigate()
   return (
+    <FadeUpAnimation>
     <div className="about_container">
          
       <div className="top_main">
@@ -92,7 +93,7 @@ export default function AboutUs() {
         </div>
       </div>
        
-       
+      <FadeUpAnimation>
       <div className="main">
         
         <div className="top_cont">
@@ -131,9 +132,9 @@ export default function AboutUs() {
         </div>
         
       </div>
+      </FadeUpAnimation>
        
-       
-
+      <FadeUpAnimation>
       <div className="mid_cont">
         <div className="mill_div">
             <img className="mid_banner" src="images/About/mid_banner.png" alt="" />
@@ -159,9 +160,9 @@ export default function AboutUs() {
         </div>
     </div>
         </div>
+        </FadeUpAnimation>
        
-       
-
+        <FadeUpAnimation>
         <div className="mid_cont_5" >
       <div className="top_cont">
             <p className="head_text">
@@ -188,9 +189,9 @@ export default function AboutUs() {
         </div>
         <button style={{margin:"84px  0 0 36px "}} className="contact_btn">Contact us</button>
       </div>
+      </FadeUpAnimation>
        
-       
-
+      <FadeUpAnimation>
       <div className="mid_cont2">
         <div className="left">
 
@@ -225,8 +226,8 @@ export default function AboutUs() {
             </div>
         </div>
       </div>
-       
-      
+      </FadeUpAnimation>
+      <FadeUpAnimation>
       <div className="mid_cont3">
         <div className="About_top">
             <p className="head_text">
@@ -254,7 +255,8 @@ export default function AboutUs() {
         <Carousel/>
         </div>
       </div>
-      
+      </FadeUpAnimation>
     </div>
+    </FadeUpAnimation>
   );
 }

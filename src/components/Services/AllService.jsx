@@ -11,6 +11,7 @@ export default function AllService() {
         navigate(`/${route}`)
     }
   return (
+    <FadeUpAnimation>
     <div className='allService_Container'>
 
        
@@ -26,7 +27,7 @@ export default function AllService() {
     </div> 
        
      
-
+    <FadeUpAnimation>
     <div className="sector_2">
         <div className="sector_2_inner">
     <div className="bred">
@@ -62,7 +63,8 @@ export default function AllService() {
               </div>
             </div>
       </div>
-     
+      </FadeUpAnimation>
     </div>
+    </FadeUpAnimation>
   )
 }

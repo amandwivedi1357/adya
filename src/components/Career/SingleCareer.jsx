@@ -29,15 +29,17 @@ export default function SingleCareer() {
                 <p className="head_text">
                 Join Our Team 
                 </p>
-                <div className="bred">
-
-                <img src="/images/Homepage/Home.svg" alt="" />
-                <p>Home/Career</p>
-                </div>
+                
                
             </div>
     </div>
+    
         <div className="overview">
+        <div className="bred">
+
+                
+<p>Home/Career</p>
+</div>
                     <p className="head_text">{singleData.postName}</p>
                     <p className="desc_text">{singleData.postDesc}</p>
 

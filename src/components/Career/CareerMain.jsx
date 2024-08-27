@@ -12,6 +12,7 @@ export default function CareerMain() {
       navigate(`/career/${route}`)
   }
   return (
+    <FadeUpAnimation>
     <div>
        
       <div className="top_main">
@@ -25,7 +26,7 @@ export default function CareerMain() {
             </div>
     </div>
        
-       
+    <FadeUpAnimation>
     <div className="mid_cont_1">
     <div className="bred">
                 <p><span onClick={()=>navigate('/')}>Home</span> {">"} <span onClick={()=>navigate('/career')}>Career</span></p>
@@ -49,8 +50,8 @@ export default function CareerMain() {
 
  
     </div>
-       
-       
+    </FadeUpAnimation> 
+    <FadeUpAnimation> 
     <div className="tab_cont_mob">
         <div className="tabs">
         {
@@ -70,7 +71,8 @@ export default function CareerMain() {
       
       </div>
         </div>
-         
+        </FadeUpAnimation>   
     </div>
+    </FadeUpAnimation>
   )
 }

@@ -83,6 +83,7 @@ export default function Contact() {
     const navigate = useNavigate()
   
   return (
+    <FadeUpAnimation>
     <div className='contact-us_container'>
        
       <div className="top_main">
@@ -96,7 +97,7 @@ export default function Contact() {
             </div>
         </div>
        
-       
+        <FadeUpAnimation>
       <div className="contact_2">
             <div className="bred">
 
@@ -139,12 +140,14 @@ export default function Contact() {
                 </div>
             </div>
         </div>
-       
+        </FadeUpAnimation>
         
-       
+        <FadeUpAnimation>
         <div className="mid_text">
             <p className="head_text">Share Your Requirements</p>
         </div>
+        </FadeUpAnimation>
+        <FadeUpAnimation>
         <div className="contact_form_div">
         <div className="contact_form_outer">
             <form className="contact_form" onSubmit={handleSubmit}>
@@ -316,8 +319,9 @@ export default function Contact() {
             </form>
         </div>
         </div>
-         
+        </FadeUpAnimation>
     </div>
+    </FadeUpAnimation>
   )
 }
 

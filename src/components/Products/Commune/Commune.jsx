@@ -3,6 +3,7 @@ import Navbar from "../../Navbar";
 import { useState } from "react";
 import { Communicate, Software } from "..";
 import Footer from "../../Footer/Footer";
+import FadeUpAnimation from "../../../Routes/FadeUp";
 
 
 
@@ -13,6 +14,7 @@ export default function Commune() {
         navigate(`/${route}`)
     }
   return (
+    <FadeUpAnimation>
     <div>
        <Navbar/>
       <div className="top_main">
@@ -24,6 +26,7 @@ export default function Commune() {
                 
             </div>
     </div>
+    <FadeUpAnimation>
     <div className="mid_cont_1">
     <div className="bred">
 
@@ -58,7 +61,9 @@ export default function Commune() {
             ))}
         </div>
         </div>  
+        </FadeUpAnimation>
         <Footer/>
     </div>
+    </FadeUpAnimation>
   )
 }

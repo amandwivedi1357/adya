@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 import "./Products.css"
 import { useState } from "react";
 import { products_Card } from "..";
-import ProductsSlider from "../Sliders/ProductsSlider";
 import FadeUpAnimation from "../../Routes/FadeUp";
 
 export default function ProductsMain() {
@@ -14,6 +13,7 @@ export default function ProductsMain() {
       navigate(`/${route}`)
   }
   return (
+    <FadeUpAnimation>
     <div className="products_container">
           
          <div className="top_main">
@@ -27,7 +27,7 @@ export default function ProductsMain() {
     </div> 
      
      
-
+    <FadeUpAnimation>
     <div className="mid_cont_1">
     <div className="bred">
 
@@ -35,6 +35,8 @@ export default function ProductsMain() {
 <p><span onClick={()=>navigate('/')}>Home</span> / <span onClick={()=>navigate('/products')}>Products</span></p>
 
 </div>
+
+
         <div className="top_cont">
             <p className="head_text">
             Products We Offer
@@ -44,7 +46,8 @@ export default function ProductsMain() {
             </p>
         </div>
         
-        
+       
+
         <div className="cards_container_11">
             {products_Card.map((data,idx)=>(
                 <div onClick={()=>handleClick(data.route)} className="card" key={idx}   onMouseEnter={() => setIsHovered(idx)}
@@ -63,8 +66,9 @@ export default function ProductsMain() {
             ))}
         </div>
         </div> 
+        </FadeUpAnimation>
      
-     
+        <FadeUpAnimation>
         <div className="tab_cont_mob">
         <div className="tabs">
         {
@@ -89,8 +93,8 @@ export default function ProductsMain() {
       
       </div>
         </div>
-         
+        </FadeUpAnimation>
     </div>
-
+    </FadeUpAnimation>
   )
 }

@@ -29,7 +29,7 @@ export default function Main() {
         </div>
          
          
-
+    <FadeUpAnimation>
        <div className="mid_cont_1">
        <div className="bred">
                 <p onClick={()=>navigate('/')}>Home{" > "}Solutions</p>
@@ -61,8 +61,11 @@ export default function Main() {
         
       </div>
          
-         
+      </FadeUpAnimation> 
 
+        <FadeUpAnimation>
+
+        
       <div className="tab_cont_mob">
         <div className="tabs">
         {
@@ -87,7 +90,7 @@ export default function Main() {
       
       </div>
         </div>
-         
+        </FadeUpAnimation> 
     </div>
   )
 }

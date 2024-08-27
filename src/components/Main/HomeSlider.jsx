@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import  { useRef } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -11,22 +11,22 @@ function MySlider() {
   const slides = [
     {
       image: 'images/Homepage/slide1.webp',
-      headText: 'India’s only indigenous end-to-end energy monitoring and management solution',
+      headText: 'End-to-End smart metering solution provider for Power Distribution Companies and Consumers',
       descText: 'Adya Smart metering solutions'
     },
     {
       image: 'images/Homepage/slid2.webp',
-      headText: 'Adya uses advanced technology to enhance energy efficiency and cut costs',
+      headText: 'Our products are designed for long-lasting, high accuracy and consistent performance',
       descText: 'Adya Smart metering solutions'
     },
     {
       image: 'images/Homepage/slid3.webp',
-      headText: 'Our products are designed for long-lasting, consistent performance and ensure precise billing for fair energy charges',
+      headText: 'Our advanced data analytics offer actionable insights, empowering all stakeholders to make informed decisions',
       descText: 'Adya Smart metering solutions'
     },
     {
       image: 'images/Homepage/slid4.webp',
-      headText: 'Our advanced data analytics offer actionable insights, empowering customers to make informed energy decisions while keeping the customer data protected and secure',
+      headText: 'Upgrade your existing digital meter to a smart meter using our Digi2Smart (™) IoT plug-in device ',
       descText: 'Adya Smart metering solutions'
     }
   ];

@@ -5,6 +5,7 @@ import FadeUpAnimation from "../../Routes/FadeUp"
 export default function PartnerMain() {
     const navigate = useNavigate()
   return (
+    <FadeUpAnimation>
     <div>
          
        <div className="top_main">
@@ -16,7 +17,7 @@ export default function PartnerMain() {
             </div>
              
              
-
+            <FadeUpAnimation>
             <div className="partners_desc">
             <div className="bred">
                          
@@ -60,6 +61,7 @@ export default function PartnerMain() {
                
 
                <div className="Partner_Banner_cont">
+                
                     <div className="left">
                         <div className="inner_left">
                             <p className="top_text">
@@ -77,12 +79,16 @@ export default function PartnerMain() {
         </div>
                         </div>
                     </div>
+                    
                     <div className="right">
                         <img src="images/Services/lightning.png" alt="" />
                     </div>
+                   
                </div>
+              
             </div>
-             
+            </FadeUpAnimation>
     </div>
+    </FadeUpAnimation>
   )
 }

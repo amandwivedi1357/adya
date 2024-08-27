@@ -19,19 +19,19 @@ export default function Main() {
   const text2 = 'Upgrade your Digital Meters to Smart Prepaid Checkout our AM+'
   const text3 = 'Enabling Sustainable Energy Solutions for Utilities, Commercial & Industrial Sectors'
 
-  const desc1 = 'Adya Smart Metering Solutions'
-  const videoRef = useRef()
+  // const desc1 = 'Adya Smart Metering Solutions'
+  // const videoRef = useRef()
     const navigate = useNavigate()
     const [isHovered, setIsHovered] = useState(false);
-    const [isHovered1, setIsHovered1] = useState(false);
-    const [isHovered2, setIsHovered2] = useState(false);
-    const [isHovered3, setIsHovered3] = useState(false);
-    const [isHovered4, setIsHovered4] = useState(false);
+    // const [isHovered1, setIsHovered1] = useState(false);
+    // const [isHovered2, setIsHovered2] = useState(false);
+    // const [isHovered3, setIsHovered3] = useState(false);
+    // const [isHovered4, setIsHovered4] = useState(false);
     const [isHovered5, setIsHovered5] = useState(false);
     const [isHovered6, setIsHovered6] = useState(false);
     const [isHovered7, setIsHovered7] = useState(false);
-    const [isHovered8, setIsHovered8] = useState(false);
-    const [typed,setTyped] = useState()
+    // const [isHovered8, setIsHovered8] = useState(false);
+    // const [typed,setTyped] = useState()
 
     const img = [{img:'img1'},{img:'img2'},{img:'img3'},{img:'img4'},{img:'img5'},{img:'img6'},{img:'img7'},{img:'img8'},{img:'img9'},{img:'img10'}]
     const textRef = useRef(null);
@@ -134,6 +134,8 @@ export default function Main() {
 
 
        {/* products start */}
+        <FadeUpAnimation>
+
         
       <div className="mid_cont_3">
       <div className="top_cont">
@@ -161,17 +163,17 @@ export default function Main() {
             ))}
         </div>
       </div>
-       
-       
-
+      </FadeUpAnimation>
+       <FadeUpAnimation>
       <div className="solutions_Slider">
         <ProductsSlider item={cards2_data}/>
       </div>
+      </FadeUpAnimation>
        
 
 {/* products end */}
     {/* solution starts */}
-       
+       <FadeUpAnimation>
       <div className="mid_cont_1">
         <div className="top_cont">
             <p className="head_text">
@@ -199,16 +201,16 @@ export default function Main() {
             ))}
         </div>
       </div>
-       
+      </FadeUpAnimation>
     
       
       
        
-
+<FadeUpAnimation>
       <div className="solutions_Slider">
         <SolutionsSlider/>
       </div>
-       
+      </FadeUpAnimation>
         {/* solution ends */}
 
 
@@ -301,7 +303,7 @@ export default function Main() {
 
     
       
-       
+       <FadeUpAnimation>
       <div className="mid_cont_4">
       <div className="left left4">
             <img src="/images/Homepage/sectorss.jpeg" alt="" />
@@ -382,8 +384,8 @@ export default function Main() {
         </div>
         
       </div>
-       
-       
+      </FadeUpAnimation>
+       <FadeUpAnimation>
       <div className="sectors_mob">
       <div className="sols_links">
              
@@ -404,7 +406,8 @@ export default function Main() {
             </div>
       </div>
        
-       
+       </FadeUpAnimation>
+       <FadeUpAnimation>
       <div className="mid_cont_5">
       <div className="top_cont">
             <p className="head_text">
@@ -431,7 +434,7 @@ export default function Main() {
         </div>
         <button className="contact_btn">Contact us</button>
       </div>
-       
+      </FadeUpAnimation>
        
       {/* <div className="mid_cont_6">
         <div className="left">
@@ -455,7 +458,10 @@ export default function Main() {
             <img src="images/Homepage/mid_66.png" alt="" />
         </div>
         </div> */}
+        <FadeUpAnimation>
         <Testimonials/>
+        </FadeUpAnimation>
+          
          
        
         <div className="marquee_container">

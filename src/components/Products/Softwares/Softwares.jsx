@@ -3,6 +3,8 @@ import Navbar from "../../Navbar";
 import { useState } from "react";
 import { Software } from "..";
 import Footer from "../../Footer/Footer";
+import { Fade } from "@chakra-ui/react";
+import FadeUpAnimation from "../../../Routes/FadeUp";
 
 
 
@@ -13,6 +15,7 @@ export default function Softwares() {
         navigate(`/${route}`)
     }
   return (
+    <FadeUpAnimation>
     <div>
        <Navbar/>
       <div className="top_main">
@@ -24,6 +27,9 @@ export default function Softwares() {
                
             </div>
     </div>
+    <FadeUpAnimation>
+
+   
     <div className="mid_cont_1">
     <div className="bred">
 
@@ -59,6 +65,8 @@ export default function Softwares() {
         </div>
         </div> 
         <Footer/> 
+        </FadeUpAnimation>
     </div>
+    </FadeUpAnimation>
   )
 }

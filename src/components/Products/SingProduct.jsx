@@ -18,6 +18,7 @@ export default function SingProduct() {
         return <div>No data found for this route</div>;
     }
   return (
+    <FadeUpAnimation>
     <div className="Single_prod_container">
  
 
@@ -30,7 +31,7 @@ export default function SingProduct() {
             </div>
  
  
-
+            <FadeUpAnimation>
       <div className="inner1">
       <div className="bred">
 
@@ -149,9 +150,9 @@ export default function SingProduct() {
         </div>
         
       </div>
- 
+      </FadeUpAnimation>
        
-
+      <FadeUpAnimation>
       <div className="sols_links">
               <p className="head_text">
               List Of Measurement Devices
@@ -171,7 +172,8 @@ export default function SingProduct() {
                 }
               </div>
             </div>
-       
+            </FadeUpAnimation>
     </div>
+    </FadeUpAnimation>
   )
 }

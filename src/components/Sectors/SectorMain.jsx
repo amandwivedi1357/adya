@@ -7,6 +7,7 @@ export default function SectorMain() {
     const [isHovered, setIsHovered] = useState();
     const navigate = useNavigate()
   return (
+    <FadeUpAnimation>
     <div className="sector_container">
        
 
@@ -19,7 +20,7 @@ export default function SectorMain() {
       </div>
        
        
-
+    <FadeUpAnimation>
       <div className="sector_2">
         
         <div className="sector_2_inner">
@@ -55,7 +56,8 @@ export default function SectorMain() {
               </div>
             </div>
       </div>
-       
+      </FadeUpAnimation>
     </div>
+    </FadeUpAnimation>
   )
 }
