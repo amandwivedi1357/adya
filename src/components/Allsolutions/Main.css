@@ -196,11 +196,11 @@ letter-spacing: 0.25px;
         width: 100%;
       }
       .top_main .img_cont{
-        width: 100%;
+        width: auto;
       }
       .top_main .img_cont .head_text{
       /* border: 1px solid red; */
-        color: rgba(3, 3, 3, 0.90);
+        color: white;
 text-align: center;
 font-family: Poppins;
 font-size: 20px;

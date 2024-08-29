@@ -38,7 +38,8 @@ export default function SingleCareer() {
         <div className="bred">
 
                 
-<p>Home/Career</p>
+        <p><span onClick={()=>navigate('/')}>Home</span> {">"} <span onClick={()=>navigate('/career')}>Career</span></p>
+
 </div>
                     <p className="head_text">{singleData.postName}</p>
                     <p className="desc_text">{singleData.postDesc}</p>
@@ -71,7 +72,7 @@ export default function SingleCareer() {
                 ))
             }
         </div>
-        <button className="contact_btn">Contact us</button>
+        <button className="contact_btn" onClick={()=>window.open("https://docs.google.com/forms/d/e/1FAIpQLSenYTZKEShcDepz2PJ9trgYGyftdyOJseNsvp6wrVwMpckS-Q/viewform","_blank")}>Apply Now</button>
       </div>
                 </div>
 

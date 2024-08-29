@@ -43,7 +43,7 @@ import Carousel from "./Slider";
         post:'VP Products'
     },
     {
-        img:"/staff/Nagamani-removebg-preview.png",
+        img:"/staff/javed.jpg",
         name:'Javed Haque',
         post:'Director Manufacturing & QA'
     },
@@ -59,23 +59,23 @@ import Carousel from "./Slider";
     // },
     {
         img:"/staff/Mannar-removebg-preview.png",
-        name:'Mannar',
-        post:'VP Engineering'
+        name:'Konstantyn Voitsekhovskyi',
+        post:'Director Business Excellence'
     },
-    {
-        img:"/staff/J_Hari-removebg-preview (1).png",
-        name:'J_Hari',
-        post:'VP Engineering'
-    },
-    {
-        img:"/staff/Anitha-removebg-preview.png",
-        name:'Anitha',
-        post:'VP Engineering'
-    },
+    // {
+    //     img:"/staff/J_Hari-removebg-preview (1).png",
+    //     name:'J_Hari',
+    //     post:'VP Engineering'
+    // },
+    // {
+    //     img:"/staff/Anitha-removebg-preview.png",
+    //     name:'Anitha',
+    //     post:'VP Engineering'
+    // },
     {
         img:"/staff/Anil-removebg-preview.png",
-        name:'Anil',
-        post:'VP Engineering'
+        name:'Anil Vangala',
+        post:'Director - Energy Platform'
     },
 ]
 export default function AboutUs() {
@@ -86,7 +86,7 @@ export default function AboutUs() {
     <div className="about_container">
          
       <div className="top_main">
-         <img loading='lazy' className="sol_banner" src="images/About/About.jpg" alt="" />
+         <img loading='lazy' className="sol_banner" src="images/About/banners.jpg" alt="" />
         <div className="img_cont">
           <p className="head_text">About Us</p>
           

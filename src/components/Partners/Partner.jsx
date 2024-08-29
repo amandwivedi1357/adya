@@ -9,7 +9,7 @@ export default function PartnerMain() {
     <div>
          
        <div className="top_main">
-                 <img loading='lazy' className="sol_banner" src='/images/Product/partner.webp' alt="" />
+                 <img loading='lazy' className="sol_banner" src='/images/Product/partner (1).webp' alt="" />
                 <div className="img_cont">
                     <p className="head_text">Partners</p>
                     
