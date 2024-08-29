@@ -125,9 +125,10 @@ text-align: left;
     width: 100%;
 }
 .mid_cont3 {
-    margin: 50px 50px 50px 50px;
+    margin: 80px 50px 50px 50px;
 }
 .mid_cont3 .About_top .head_text{
+    margin-top: 30px;
     color: rgba(3, 3, 3, 0.90);
     font-family: Poppins;
     font-size: 30px;
@@ -139,7 +140,7 @@ text-align: left;
 .mid_cont3 .about_members{
     width: 100%;
 
-    margin-top: 89px;
+    margin-top: 59px;
     /* border: 1px solid red; */
     display: grid;
     gap: 85px;
@@ -156,7 +157,7 @@ text-align: left;
     
 }
 .about_members .single_member .mem_img{
-   
+   border-radius: 10px;
 }
 .about_members .single_member .name{
     margin-top: 12px;

@@ -13,6 +13,7 @@ import gsap from "gsap";
 import FadeUpAnimation from "../../Routes/FadeUp";
 import Testimonials from "./HomeSlider2";
 import Navbar from "../Navbar";
+import useCoolPageTransition from "../hooks/useCoolPageTransition";
 
 export default function Main() {
   const text1 = 'Committed to sustainable energy through Adya innovation'
@@ -22,6 +23,7 @@ export default function Main() {
   // const desc1 = 'Adya Smart Metering Solutions'
   // const videoRef = useRef()
     const navigate = useNavigate()
+    // useCoolPageTransition()
     const [isHovered, setIsHovered] = useState(false);
     // const [isHovered1, setIsHovered1] = useState(false);
     // const [isHovered2, setIsHovered2] = useState(false);
@@ -76,6 +78,7 @@ export default function Main() {
     // }, [text1, text2, text3]);
 
   return (
+    <FadeUpAnimation>
     <div className="red_home">
 
 {/* <div className="hero_Section">
@@ -83,7 +86,7 @@ export default function Main() {
     
   <div className="navbar">
         <div className="navbar_div" style={{cursor:'pointer'}} onClick={()=>navigate('/')}>
-          <img  src="/images/Homepage/logo.svg" alt="" className="logo"/>
+           <img loading='lazy'  src="/images/Homepage/logo.svg" alt="" className="logo"/>
           <div>
           <span className="Advanced-Energy-Management">
   Advanced{" "}
@@ -148,7 +151,7 @@ export default function Main() {
             {cards2_data.map((data,idx)=>(
                 <div className="card" key={idx} onMouseEnter={() => setIsHovered(idx)} onClick={()=>navigate(data.route)}
                 onMouseLeave={() => setIsHovered(null)}>
-                   <img src={isHovered === idx ? data.hover : data.img} alt="" className="card_vect"/>
+                    <img loading='lazy' src={isHovered === idx ? data.hover : data.img} alt="" className="card_vect"/>
                     <div className="redd" style={{display:"flex"}}>
                     <p className="head_text">
                         {data.head}{" "}
@@ -186,7 +189,7 @@ export default function Main() {
             {cards1_data.map((data,idx)=>(
                 <div className="card" key={idx} onClick={()=>navigate(data.head)}   onMouseEnter={() => setIsHovered(idx)}
                 onMouseLeave={() => setIsHovered(null)}>
-                    <img src={isHovered === idx ? data.hover : data.img} alt="" className="card_vect" />
+                     <img loading='lazy' src={isHovered === idx ? data.hover : data.img} alt="" className="card_vect" />
                     <div className="redd" style={{display:"flex"}}>
                     <p className="head_text">
                         {data.head}{" "}
@@ -225,12 +228,12 @@ export default function Main() {
                 <p className="desc_text">
                 Our services help utilities, solution providers and system integrators to rollout projects faster and cost effectively.
                 </p>
-                <img src="/images/Homepage/api.png" className="mid_2_mob" alt="" />
+                 <img loading='lazy' src="/images/Homepage/api.png" className="mid_2_mob" alt="" />
                 <div className="tabs">
                     <div onClick={()=>navigate(`services/Business Consulting`)} className="tab" onMouseEnter={() => setIsHovered1(true)}
                 onMouseLeave={() => setIsHovered1(false)}>
                         <div className="in_tab" >
-                            <img 
+                             <img loading='lazy' 
                              src={
                       isHovered1
                         ? "/images/Homepage/Bs_consulting_fff.svg"
@@ -248,7 +251,7 @@ export default function Main() {
                     <div onClick={()=>navigate(`services/Testing`)} className="tab" onMouseEnter={() => setIsHovered2(true)}
                 onMouseLeave={() => setIsHovered2(false)}>
                         <div className="in_tab">
-                            <img  src={
+                             <img loading='lazy'  src={
                       isHovered2
                         ? "/images/Homepage/test_fff.svg"
                         : "/images/Homepage/test.svg"
@@ -263,7 +266,7 @@ export default function Main() {
                     <div onClick={()=>navigate(`services/System Integrations`)} className="tab" onMouseEnter={() => setIsHovered3(true)}
                 onMouseLeave={() => setIsHovered3(false)}>
                         <div className="in_tab">
-                            <img src={
+                             <img loading='lazy' src={
                       isHovered3
                         ? "/images/Homepage/system_integ_fff.svg"
                         : "/images/Homepage/system_integ.svg"
@@ -278,7 +281,7 @@ export default function Main() {
                     <div onClick={()=>navigate(`services/API `)} className="tab" onMouseEnter={() => setIsHovered4(true)}
                 onMouseLeave={() => setIsHovered4(false)}>
                         <div className="in_tab">
-                            <img src={
+                             <img loading='lazy' src={
                       isHovered4
                         ? "/images/Homepage/d1_fff.svg"
                         : "/images/Homepage/d1.svg"
@@ -294,7 +297,7 @@ export default function Main() {
             </div>
         </div>
         <div className="right">
-            <img  src="/images/Homepage/Rectangle.png" alt="" />
+             <img loading='lazy'  src="/images/Homepage/Rectangle.png" alt="" />
         </div>
       </div>
         */}
@@ -306,14 +309,14 @@ export default function Main() {
        <FadeUpAnimation>
       <div className="mid_cont_4">
       <div className="left left4">
-            <img src="/images/Homepage/sectorss.jpeg" alt="" />
+             <img loading='lazy' src="/images/Homepage/sectorss.jpeg" alt="" />
         </div>
       <div className="right">
             <div className="right_content">
                 <p className="head_text">
                 Whom do we serve
                 </p>
-                <img src="/images/Homepage/mid_4_m.png" className="mid_2_mob" alt="" />
+                 <img loading='lazy' src="/images/Homepage/mid_4_m.png" className="mid_2_mob" alt="" />
                 <p className="desc_text">
                 Our services cater to a diverse range of sectors that benefit from the implementation of our cutting-edge energy management systems.
                 </p>
@@ -322,7 +325,7 @@ export default function Main() {
                     <div className="tab" onMouseEnter={() => setIsHovered5(true)}
                 onMouseLeave={() => setIsHovered5(false)}>
                         <div className="in_tab">
-                            <img src={
+                             <img loading='lazy' src={
                       isHovered5
                         ? "images/Homepage/energy_fff.svg"
                         : "images/Homepage/energy.svg"
@@ -337,7 +340,7 @@ export default function Main() {
                     <div className="tab" onMouseEnter={() => setIsHovered6(true)}
                 onMouseLeave={() => setIsHovered6(false)}>
                         <div className="in_tab">
-                            <img src={
+                             <img loading='lazy' src={
                       isHovered6
                         ? "images/Homepage/industrial_fff.svg"
                         : "images/Homepage/industrial.svg"
@@ -352,7 +355,7 @@ export default function Main() {
                     <div className="tab" onMouseEnter={() => setIsHovered7(true)}
                 onMouseLeave={() => setIsHovered7(false)}>
                         <div className="in_tab">
-                            <img src={
+                             <img loading='lazy' src={
                       isHovered7
                         ? "images/Homepage/commerce_fff.svg"
                         : "images/Homepage/commerce.svg"
@@ -367,7 +370,7 @@ export default function Main() {
                     {/* <div className="tab" onMouseEnter={() => setIsHovered8(true)}
                 onMouseLeave={() => setIsHovered8(false)}>
                         <div className="in_tab">
-                            <img src={
+                             <img loading='lazy' src={
                       isHovered8
                         ? "images/Homepage/resident.svg"
                         : "images/Homepage/resident_e.svg"
@@ -395,7 +398,7 @@ export default function Main() {
                     <div className="single_link" key={idx} onClick={()=>navigate(`/sector/${data.route}`)} onMouseEnter={() => setIsHovered(idx)}
                     onMouseLeave={() => setIsHovered(null)}>
                     <div className="inner">
-                      <img className="link_img" src={isHovered === idx ? data.hover : data.img} alt="" />
+                       <img loading='lazy' className="link_img" src={isHovered === idx ? data.hover : data.img} alt="" />
                       <p className="link_text">{data.head}</p>
                     </div>
                     <p className="arrow-right">→</p>
@@ -444,7 +447,7 @@ export default function Main() {
             </p>
             <p className="desc_text">Empowering Journeys, Empowered Words</p>
         </div>
-        <img src="images/Homepage/test.png" alt="" className="mid_m_6"/>
+         <img loading='lazy' src="images/Homepage/test.png" alt="" className="mid_m_6"/>
         
         <div className="testimonial">
             <p>We are Immensely satisfied and delighted on the Installation, Commissioning of end to end smart meter project awarded to ADYA Smart Metering Pvt. Ltd., We also hereby certify that the plug & play project was delivered to our satisfactory levels.</p>
@@ -455,7 +458,7 @@ export default function Main() {
         
       </div>
       <div className="right">
-            <img src="images/Homepage/mid_66.png" alt="" />
+             <img loading='lazy' src="images/Homepage/mid_66.png" alt="" />
         </div>
         </div> */}
         <FadeUpAnimation>
@@ -468,7 +471,7 @@ export default function Main() {
       <div className="marquee">
         <div className="marquee__group">
           {img.map((data, idx) => (
-            <img
+             <img loading='lazy'
               src={`images/Homepage/${data.img}.png`}
               className="marquee__image"
               key={idx}
@@ -478,7 +481,7 @@ export default function Main() {
         </div>
         <div className="marquee__group">
           {img.map((data, idx) => (
-            <img
+             <img loading='lazy'
               src={`images/Homepage/${data.img}.png`}
               className="marquee__image"
               key={idx + img.length}
@@ -491,9 +494,10 @@ export default function Main() {
 
    
     </div>
+    </FadeUpAnimation>
   );
 }
- {/* <img className="sol_banner" src="images/Homepage/ban1.png" />
+ {/*  <img loading='lazy' className="sol_banner" src="images/Homepage/ban1.png" />
             <div className="inner_container">
                 <p className="head_text">
                     Enabling Sustainable Energy Management Solutions for Utilities, Commercial & Industries sectors.

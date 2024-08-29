@@ -47,6 +47,10 @@ border: 1px solid #E85123;
 background: #E85123;
 box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06);
 }
+.post .Apply_button:hover{
+  background: transparent;
+  color: #E85123;
+}
 .pd{
   color: #000;
 }

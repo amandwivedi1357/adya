@@ -4,66 +4,69 @@ import  './Contact.css'
 import {City, Country, State} from 'country-state-city';
 import { useNavigate } from 'react-router-dom';
 import FadeUpAnimation from '../../Routes/FadeUp';
+import { useToast } from '@chakra-ui/react';
+import emailjs from '@emailjs/browser';
 const style = {width:'20px',
 marginRight:'15px',
 }
 export default function Contact() {
-    const [countries, setCountries] = useState([]);
-    const [selectedCountry, setSelectedCountry] = useState('');
-    const [states, setStates] = useState([]);
-    const [selectedState, setSelectedState] = useState('');
-    const [cities, setCities] = useState([]);
   
+    // const [countries, setCountries] = useState([]);
+    // const [selectedCountry, setSelectedCountry] = useState('');
+    // const [states, setStates] = useState([]);
+    // const [selectedState, setSelectedState] = useState('');
+    // const [cities, setCities] = useState([]);
+    const toast = useToast();
     const [formData, setFormData] = useState({
       firstname: '',
       lastname: '',
       email: '',
-      company: '',
-      industry: '',
-      jobTitle: '',
       contactNumber: '',
-      country: selectedCountry,
-      state: selectedState,
-      city: '',
-      interest: '',
-      looking: '',
+      // industry: '',
+      // jobTitle: '',
+      // company: '',
+      // // country: selectedCountry,
+      // // state: selectedState,
+      // city: '',
+      // interest: '',
+      // looking: '',
       message: '',
     });
-  console.log(selectedState)
-    useEffect(() => {
-      const allCountries = Country.getAllCountries();
-      setCountries(allCountries);
-    }, []);
+
+    // useEffect(() => {
+    //   const allCountries = Country.getAllCountries();
+    //   setCountries(allCountries);
+    // }, []);
   
-    const handleCountryChange = (event) => {
-        const newCountryISO = event.target.value;
-        const newCountry = countries.find(country => country.isoCode === newCountryISO);
-        setSelectedCountry(newCountryISO);
-        const newStates = State.getStatesOfCountry(newCountryISO);
-        setStates(newStates);
-        setSelectedState(''); 
-        setCities([]);
-        setFormData((prevFormData) => ({
-            ...prevFormData,
-            country: newCountry.name,
-            state: '', // Reset state when country changes
-        }));
+    // const handleCountryChange = (event) => {
+    //     const newCountryISO = event.target.value;
+    //     const newCountry = countries.find(country => country.isoCode === newCountryISO);
+    //     setSelectedCountry(newCountryISO);
+    //     const newStates = State.getStatesOfCountry(newCountryISO);
+    //     setStates(newStates);
+    //     setSelectedState(''); 
+    //     setCities([]);
+    //     setFormData((prevFormData) => ({
+    //         ...prevFormData,
+    //         country: newCountry.name,
+    //         state: '', // Reset state when country changes
+    //     }));
       
-    };
+    // };
   
-    const handleStateChange = (event) => {
-        const newStateCode = event.target.value;
-        setSelectedState(newStateCode);
-        const newState = states.find(state => state.isoCode === newStateCode); // Find the state by its ISO code
-        const stateName = newState ? newState.name : ''; // Get the name of the state or default to an empty string if not found
-        setFormData(prevFormData => ({
-            ...prevFormData,
-            state: stateName, // Update the state name in the formData
-        }));
-        const currentCountry = selectedCountry; // Store the current value of selectedCountry
-        const newCities = City.getCitiesOfState(currentCountry, newStateCode);
-        setCities(newCities);
-    };
+    // const handleStateChange = (event) => {
+    //     const newStateCode = event.target.value;
+    //     setSelectedState(newStateCode);
+    //     const newState = states.find(state => state.isoCode === newStateCode); // Find the state by its ISO code
+    //     const stateName = newState ? newState.name : ''; // Get the name of the state or default to an empty string if not found
+    //     setFormData(prevFormData => ({
+    //         ...prevFormData,
+    //         state: stateName, // Update the state name in the formData
+    //     }));
+    //     const currentCountry = selectedCountry; // Store the current value of selectedCountry
+    //     const newCities = City.getCitiesOfState(currentCountry, newStateCode);
+    //     setCities(newCities);
+    // };
     
     
   
@@ -78,7 +81,27 @@ export default function Contact() {
   
     const handleSubmit = (e) => {
       e.preventDefault();
-      console.log(formData);
+  
+      emailjs.send('service_2ozh449', 'template_36yquzs', formData, 'rKV6Rh3kT2N6CxjYJ')
+        .then((result) => {
+          toast({
+            title: 'Email Sent Successfully!',
+            description: 'We have received your message and will get back to you shortly.',
+            status: 'success',
+            duration: 5000,
+            isClosable: true,
+          });
+        })
+        .catch((error) => {
+          toast({
+            title: 'Error Sending Email',
+            description: 'There was an error sending your message. Please try again later.',
+            status: 'error',
+            duration: 5000,
+            isClosable: true,
+          });
+          console.error('Error sending email:', error.text);
+        });
     };
     const navigate = useNavigate()
   
@@ -87,7 +110,7 @@ export default function Contact() {
     <div className='contact-us_container'>
        
       <div className="top_main">
-            <img className="sol_banner" src="images/About/Contact_banner.png" alt="" />
+             <img loading='lazy'  className="sol_banner" src="images/About/Contact_banner.png" alt="" />
             <div className="img_cont">
                 <p className="head_text">
                 Connect With Adya
@@ -108,32 +131,32 @@ export default function Contact() {
                 <div className="inner_contact_2 grey">
                     <div className="office_info">
                        <div className="inner_office_info">
-                        <img style={style} className='loc_icon' src="images/About/location.svg" alt="" />
+                         <img loading='lazy' style={style} className='loc_icon' src="images/About/location.svg" alt="" />
                         <p className='address_head'>India, Headquarters </p>
                        </div>
                        <p className="full_address">Plot no.61, Nagarjuna hills, Punjagutta, Hyderabad - 500 082, Telangana, India</p>
                        <div style={{marginBottom:'23px'}} className="inner_office_info">
-                        <img style={style} className='loc_icon' src="images/About/call.svg" alt="" />
+                         <img loading='lazy' style={style} className='loc_icon' src="images/About/call.svg" alt="" />
                         <p className='address'>+91 40 4857 9530 </p>
                        </div>
                        <div style={{marginBottom:'23px'}} className="inner_office_info">
-                        <img style={style} className='loc_icon' src="images/About/@.svg" alt="" />
+                         <img loading='lazy' style={style} className='loc_icon' src="images/About/@.svg" alt="" />
                         <p className='address'>info@adyasmartmetering.com </p>
                        </div>
 
                        <div className="inner_office_info">
-                        <img style={style} className='loc_icon' src="images/About/location.svg" alt="" />
+                         <img loading='lazy' style={style} className='loc_icon' src="images/About/location.svg" alt="" />
                         <p className='address_head'>North America, Regional Sales </p>
                        </div>
                        <p className="full_address">7909 Rocky Mountain Lane, Mckinney, TX 75070</p>
                        <div style={{marginBottom:'23px'}} className="inner_office_info">
-                        <img style={style} className='loc_icon' src="images/About/call.svg" alt="" />
+                         <img loading='lazy' style={style} className='loc_icon' src="images/About/call.svg" alt="" />
                         <p className='address'> (972)-832-9454 </p>
                        </div>
                     </div>
                 </div>
                 <div className="inner_contact_2 imgg">
-                    <img src="images/About/sm_banner.png" alt="" />
+                     <img loading='lazy' src="images/About/sm_banner.png" alt="" />
                     <div className="text-overlay">
         <p>Find us on google maps</p>
     </div>
@@ -167,21 +190,21 @@ export default function Contact() {
                     <input value={formData.email} onChange={handleChange} name='email' type="email" className='inner_inputs' id='email' />
                 </div>
                 <div className='inner_fields'>
-                    <p className='inner_lables' htmlFor="company">Company / Organization <span style={{color:'red'}}>*</span></p>
-                    <input value={formData.company} onChange={handleChange} name='company' type="text" className='inner_inputs' id='company' />
+                    <p className='inner_lables' htmlFor="firstname">Contact Number  <span style={{color:'red'}}>*</span></p>
+                    <input value={formData.contactNumber} onChange={handleChange} name='contactNumber' type="text" className='inner_inputs' id='firstname'/>
                 </div>
                </div>
-               <div className="outer_single_line">
+               {/* <div className="outer_single_line">
                 <div className='inner_fields' style={{ position: 'relative' }}>
                     <p className='inner_lables' htmlFor="industry">Industry 
-                      {/* <span style={{color:'red'}}>*</span> */}
+                     
                       </p>
                     <select value={formData.industry} onChange={handleChange} name='industry'  type="text" className='inner_inputs' id='industry' >
                         <option className='option' value="">1</option>
                         <option className='option' value="">2</option>
                         <option className='option' value="">3</option>
                     </select>
-                    <img  style={{
+                     <img loading='lazy'  style={{
       position: 'absolute',
       right: '5%',
       top: '50%',
@@ -213,7 +236,7 @@ export default function Contact() {
                     </option>
                   ))}
                 </select>
-                    <img  style={{
+                     <img loading='lazy'  style={{
       position: 'absolute',
       right: '5%',
       top: '50%',
@@ -239,7 +262,7 @@ export default function Contact() {
                     </option>
                   ))}
                 </select>
-                    <img  style={{
+                     <img loading='lazy'  style={{
       position: 'absolute',
       right: '5%',
       top: '50%',
@@ -263,7 +286,7 @@ export default function Contact() {
                     </option>
                   ))}
                 </select>
-                    <img  style={{
+                     <img loading='lazy'  style={{
       position: 'absolute',
       right: '5%',
       top: '50%',
@@ -280,7 +303,7 @@ export default function Contact() {
                         <option className='option' value= "Products">Products</option>
                         <option className='option' value="Services">Services</option>
                     </select>
-                    <img  style={{
+                     <img loading='lazy'  style={{
       position: 'absolute',
       right: '5%',
       top: '50%',
@@ -300,7 +323,7 @@ export default function Contact() {
                         <option className='option' value="Service Related">Service Related</option>
                         <option className='option' value="Solutions Related">Solutions Related</option>
                     </select>
-                    <img  style={{
+                     <img loading='lazy'  style={{
       position: 'absolute',
       right: '5%',
       top: '50%',
@@ -309,7 +332,7 @@ export default function Contact() {
     }} src="images/About/ArrowDropDown.svg" alt="" />
                 </div>
                </div>
-            
+             */}
                <div className="outer_text_area">
                <p className='inner_lables' htmlFor="message">Message<span style={{color:'red'}}>*</span></p>
 

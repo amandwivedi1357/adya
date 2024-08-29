@@ -12,7 +12,7 @@ export default function Navbar() {
       
       <div className="navbar">
         <div className="navbar_div" style={{cursor:'pointer'}} onClick={()=>navigate('/')}>
-          <img  src="/images/Homepage/logo.svg" alt="" className="logo"/>
+           <img loading='lazy'  src="/images/Homepage/logo.svg" alt="" className="logo"/>
           <div>
           <span className="Advanced-Energy-Management">
   Advanced{" "}

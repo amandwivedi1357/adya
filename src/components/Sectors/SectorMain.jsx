@@ -12,7 +12,7 @@ export default function SectorMain() {
        
 
        <div className="top_main">
-        <img className="sol_banner" src="images/Homepage/sector_banner1.jpg" alt="" />
+         <img loading='lazy' className="sol_banner" src="images/Homepage/sector_banner1.jpg" alt="" />
         <div className="img_cont">
           <p className="head_text">Sectors</p>
           
@@ -46,7 +46,7 @@ export default function SectorMain() {
                     <div className="single_link" key={idx} onClick={()=>navigate(`/sector/${data.route}`)} onMouseEnter={() => setIsHovered(idx)}
                     onMouseLeave={() => setIsHovered(null)}>
                     <div className="inner">
-                      <img className="link_img" src={isHovered === idx ? data.hover : data.img} alt="" />
+                       <img loading='lazy' className="link_img" src={isHovered === idx ? data.hover : data.img} alt="" />
                       <p className="link_text">{data.head}</p>
                     </div>
                     <p className="arrow-right">→</p>

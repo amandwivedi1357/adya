@@ -20,13 +20,13 @@ function MySlider() {
       descText: 'Adya Smart metering solutions'
     },
     {
-      image: 'images/Homepage/slid3.webp',
-      headText: 'Our advanced data analytics offer actionable insights, empowering all stakeholders to make informed decisions',
+      image: 'images/Homepage/slid6.webp',
+      headText: 'Upgrade your existing digital meter to a smart meter using our Digi2Smart (™) IoT plug-in device ',
       descText: 'Adya Smart metering solutions'
     },
     {
-      image: 'images/Homepage/slid4.webp',
-      headText: 'Upgrade your existing digital meter to a smart meter using our Digi2Smart (™) IoT plug-in device ',
+      image: 'images/Homepage/slid5.webp',
+      headText: 'Our advanced data analytics offer actionable insights, empowering all stakeholders to make informed decisions ',
       descText: 'Adya Smart metering solutions'
     }
   ];
@@ -54,7 +54,7 @@ function MySlider() {
       <Slider ref={sliderRef} {...settings}>
         {slides.map((data, idx) => (
           <div key={idx} className="hero_Section">
-            <img className="sol_banner_home" src={data.image} alt={`Slide ${idx + 1}`} />
+             <img loading='lazy' className="sol_banner_home" src={data.image} alt={`Slide ${idx + 1}`} />
             <div className="inner_container_home">
               <p className="head_text">{data.headText}</p>
             </div>

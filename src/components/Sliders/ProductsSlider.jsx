@@ -26,7 +26,7 @@ export default function ProductsSlider({item}) {
     {item.map((data,idx)=>(
         
                 <div className="card" key={idx}>  
-                    <img src={data.hover} alt="" className="card_vect" />
+                     <img loading='lazy' src={data.hover} alt="" className="card_vect" />
                     <div className="redd" style={{display:"flex"}}>
                     <p className="head_text">
                         {data.head}{" "}

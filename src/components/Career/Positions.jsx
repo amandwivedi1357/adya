@@ -15,7 +15,7 @@ function Positions({ data, index, expandedIndex, setExpandedIndex }) {
         <div className={`Positions_container ${isExpanded ? 'expanded' : ''}`} >
             <div className="post">
                 <p className="post_name">{data.postName}  </p>
-                <button className="Apply_button">Apply Now</button>
+                <button className="Apply_button" onClick={()=>window.open("https://docs.google.com/forms/d/e/1FAIpQLSenYTZKEShcDepz2PJ9trgYGyftdyOJseNsvp6wrVwMpckS-Q/viewform","_blank")}>Apply Now</button>
             </div>
             <p className="post_desc pd">{data.postDesc} <span onClick={expandMainReqContainer} className='read_more'>{Clicked ? 'Read Less' : 'Read more'}</span></p>
             

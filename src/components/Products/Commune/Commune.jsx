@@ -18,7 +18,7 @@ export default function Commune() {
     <div>
        <Navbar/>
       <div className="top_main">
-            <img className="sol_banner" src="/images/Homepage/products.jpg" alt="" />
+             <img loading='lazy' className="sol_banner" src="/images/Homepage/products.jpg" alt="" />
             <div className="img_cont">
                 <p className="head_text">
                 Communication Module 
@@ -47,7 +47,7 @@ export default function Commune() {
             {Communicate.map((data,idx)=>(
                 <div onClick={()=>handleClick(data.route)} className="card" key={idx}   onMouseEnter={() => setIsHovered(idx)}
                 onMouseLeave={() => setIsHovered(null)}>
-                    <img src={isHovered === idx ? data.hover : data.img} alt="" className="card_vect" />
+                     <img loading='lazy' src={isHovered === idx ? data.hover : data.img} alt="" className="card_vect" />
                     <div className="redd" style={{display:"flex"}}>
                     <p className="head_text">
                         {data.head}{" "}    

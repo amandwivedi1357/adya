@@ -25,11 +25,11 @@ export default function SingleService() {
              
 
             <div className="top_main">
-                <img className="sol_banner" src='/images/Services/serv.png' alt="" />
+                 <img loading='lazy' className="sol_banner" src='/images/Services/serv.png' alt="" />
                 <div className="img_cont">
                     <p className="head_text">{singleData.route}</p>
                     <div className="bred">
-                        <img src="/images/Homepage/Home.svg" alt="" />
+                         <img loading='lazy' src="/images/Homepage/Home.svg" alt="" />
                         <p><span onClick={()=>navigate('/')}>Home</span> / <span onClick={()=>navigate('/services')}>Services</span></p>
                         </div>
                 </div>
@@ -55,11 +55,11 @@ export default function SingleService() {
                 </div>
                 {/* <div className="info_graphics">
                 <p className="head_text">Solution Architecture</p>
-                    <img className="info_g" src={singleData.solution_arch} alt="" />
+                     <img loading='lazy' className="info_g" src={singleData.solution_arch} alt="" />
                 </div> */}
                 {/* <div className="permanent">
                     <p className="head_text">Services</p>
-                    <img className="perm_img" src='/images/Infograpics/perm_infoGraphics.png' alt="" />
+                     <img loading='lazy' className="perm_img" src='/images/Infograpics/perm_infoGraphics.png' alt="" />
                 </div> */}
             </div>
              
@@ -75,7 +75,7 @@ export default function SingleService() {
                     <div className="single_link" key={idx} onClick={()=>navigate(`/services/${data.head}`)} onMouseEnter={() => setIsHovered(idx)}
                     onMouseLeave={() => setIsHovered(null)}>
                     <div className="inner">
-                      <img className="link_img" src={isHovered === idx ? data.hover : data.img} alt="" />
+                       <img loading='lazy' className="link_img" src={isHovered === idx ? data.hover : data.img} alt="" />
                       <p className="link_text">{data.head}</p>
                     </div>
                     <p className="arrow-right">→</p>

@@ -25,11 +25,11 @@ export default function SingleSector() {
         <div>
              
             <div className="top_main">
-                <img className="sol_banner" src='/images/Homepage/sector_banner1.jpg' alt="" />
+                 <img loading='lazy' className="sol_banner" src='/images/Homepage/sector_banner1.jpg' alt="" />
                 <div className="img_cont">
                     <p className="head_text">{singleData.route}</p>
                     <div className="bred">
-                        <img src="/images/Homepage/Home.svg" alt="" />
+                         <img loading='lazy' src="/images/Homepage/Home.svg" alt="" />
                         <p><span onClick={()=>navigate('/')}>Home</span> / <span onClick={()=>navigate('/sector')}>Sectors</span></p>
 
                     </div>
@@ -55,11 +55,11 @@ export default function SingleSector() {
                 </div>
                 {/* <div className="info_graphics">
                 <p className="head_text">Solution Architecture</p>
-                    <img className="info_g" src={singleData.solution_arch} alt="" />
+                     <img loading='lazy' className="info_g" src={singleData.solution_arch} alt="" />
                 </div>
                 <div className="permanent">
                     <p className="head_text">Services</p>
-                    <img className="perm_img" src='/images/Infograpics/perm_infoGraphics.png' alt="" />
+                     <img loading='lazy' className="perm_img" src='/images/Infograpics/perm_infoGraphics.png' alt="" />
                 </div> */}
             </div>
              
@@ -74,7 +74,7 @@ export default function SingleSector() {
                     <div className={`single_link ${singleData.route === data.head ? 'active' : ''}`} key={idx} onClick={()=>navigate(`/sector/${data.head}`)} onMouseEnter={() => setIsHovered(idx)}
                     onMouseLeave={() => setIsHovered(null)}>
                     <div className="inner">
-                    <img 
+                     <img loading='lazy' 
                                                     className="link_img" 
                                                     src={isHovered === idx || decodedSingle === data.head ? data.hover : data.img} 
                                                     alt="" 

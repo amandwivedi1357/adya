@@ -20,7 +20,7 @@ const Slide2 = () => {
       </div>
 </div>
 <div className='right_content_hero'>
-  <img className='gr_img' src="/images/Homepage/slid1.png" alt="" />
+   <img loading='lazy' className='gr_img' src="/images/Homepage/slid1.png" alt="" />
 </div>
 </div>
     </div>

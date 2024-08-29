@@ -17,7 +17,7 @@ export default function AllService() {
        
 
         <div className="top_main">
-            <img className="sol_banner" src="/images/Services/serv.png" alt="" />
+             <img loading='lazy' className="sol_banner" src="/images/Services/orig-banner.jpg" alt="" />
             <div className="img_cont">
                 <p className="head_text">
                 Services 
@@ -53,7 +53,7 @@ export default function AllService() {
                     <div className="single_link" key={idx} onClick={()=>navigate(`/services/${data.head}`)} onMouseEnter={() => setIsHovered(idx)}
                     onMouseLeave={() => setIsHovered(null)}>
                     <div className="inner">
-                      <img className="link_img" src={isHovered === idx ? data.hover : data.img} alt="" />
+                       <img loading='lazy' className="link_img" src={isHovered === idx ? data.hover : data.img} alt="" />
                       <p className="link_text">{data.head}</p>
                     </div>
                     <p className="arrow-right">→</p>

@@ -42,7 +42,7 @@ const Carousel = () => {
             <div className="carousel-wrapper" ref={carouselRef}>
                 {board.map((member, index) => (
                     <div className="carousel-slide" key={index}>
-                        <img src={member.img} alt={member.name} />
+                         <img loading='lazy' src={member.img} alt={member.name} />
                         <h3>{member.name}</h3>
                         <p>{member.post}</p>
                     </div>

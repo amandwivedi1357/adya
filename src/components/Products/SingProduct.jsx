@@ -23,7 +23,7 @@ export default function SingProduct() {
  
 
       <div className="top_main">
-                <img className="sol_banner" src='/images/Homepage/products.jpg' alt="" />
+                 <img loading='lazy' className="sol_banner" src='/images/Homepage/products.jpg' alt="" />
                 <div className="img_cont">
                     <p className="head_text">{singleData.head}</p>
                    
@@ -143,7 +143,7 @@ export default function SingProduct() {
         <div className="images_container">
           {singleData.images.map((item,idx)=>(
             <div key={idx} className="single_image">
-                 {/* <img src='/images/Services/Partners.png' key={idx} alt="" /> */}
+                 {/*  <img loading='lazy' src='/images/Services/Partners.png' key={idx} alt="" /> */}
             </div>
            
           ))}
@@ -163,7 +163,7 @@ export default function SingProduct() {
                     <div className="single_link" key={idx} onClick={()=>navigate(`/${data.route}`)} onMouseEnter={() => setIsHovered(idx)}
                     onMouseLeave={() => setIsHovered(null)}>
                     <div className="inner">
-                      <img className="link_img" src={isHovered === idx ? data.hover : data.img} alt="" />
+                       <img loading='lazy' className="link_img" src={isHovered === idx ? data.hover : data.img} alt="" />
                       <p className="link_text">{data.head}</p>
                     </div>
                     <p className="arrow-right">→</p>

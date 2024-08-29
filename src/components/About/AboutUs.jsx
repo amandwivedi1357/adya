@@ -8,45 +8,44 @@ import FadeUpAnimation from "../../Routes/FadeUp";
 import Carousel from "./Slider";
  const board = [
     {
-        img:"/images/About/VP.png",
-        name:'Viraj  Pathi',
+        img:"/staff/VP.png",
+        name:'Viraj Pathi',
         post:'Founder & CEO'
     },
     {
-        img:"/staff/Virupakshi-removebg-preview (1).png",
-        name:'Virupakshi',
-        post:'VP Engineering (Products)'
+        img:"/staff/ANISH.png",
+        name:'Anish',
+        post:'COO'
     },
-    
-    {
-        img:"/staff/Vimala-removebg-preview (1).png",
-        name:'Vimala',
-        post:'VP Engineering'
-    },
-    {
-        img:"/staff/Srinivas-removebg-preview.png",
-        name:'Srinivas',
-        post:'VP Engineering'
-    },
-    {
-        img:"/staff/Sindhu-removebg-preview.png",
-        name:'Sindhu',
-        post:'VP Engineering'
-    },
-    {
-        img:"/staff/Shaik-removebg-preview.png",
-        name:'Shaik',
-        post:'VP Engineering'
-    },
+    // {
+    //     img:"/staff/Vimala-removebg-preview (1).png",
+    //     name:'Vimala',
+    //     post:'VP Engineering'
+    // },
+    // {
+    //     img:"/staff/Srinivas-removebg-preview.png",
+    //     name:'Srinivas',
+    //     post:'VP Engineering'
+    // },
+    // {
+    //     img:"/staff/Sindhu-removebg-preview.png",
+    //     name:'Sindhu',
+    //     post:'VP Engineering'
+    // },
+    // {
+    //     img:"/staff/Shaik-removebg-preview.png",
+    //     name:'Shaik',
+    //     post:'VP Engineering'
+    // },
     {
         img:"/staff/Satish-removebg-preview.png",
-        name:'Satish',
-        post:'VP Engineering'
+        name:'Satish Babu Madela',
+        post:'VP Products'
     },
     {
         img:"/staff/Nagamani-removebg-preview.png",
-        name:'Nagamani',
-        post:'VP Engineering'
+        name:'Javed Haque',
+        post:'Director Manufacturing & QA'
     },
     // {
     //     img:"/staff/mudda-removebg-preview.png",
@@ -80,13 +79,14 @@ import Carousel from "./Slider";
     },
 ]
 export default function AboutUs() {
+    // FDE3ED
   const navigate = useNavigate()
   return (
-    <FadeUpAnimation>
+    
     <div className="about_container">
          
       <div className="top_main">
-        <img className="sol_banner" src="images/About/Banner.png" alt="" />
+         <img loading='lazy' className="sol_banner" src="images/About/About.jpg" alt="" />
         <div className="img_cont">
           <p className="head_text">About Us</p>
           
@@ -137,7 +137,7 @@ export default function AboutUs() {
       <FadeUpAnimation>
       <div className="mid_cont">
         <div className="mill_div">
-            <img className="mid_banner" src="images/About/mid_banner.png" alt="" />
+             <img loading='lazy' className="mid_banner" src="images/About/mid_banner.png" alt="" />
         </div>
         <p className="head_text">
         Our Vision & Mission
@@ -195,13 +195,13 @@ export default function AboutUs() {
       <div className="mid_cont2">
         <div className="left">
 
-        <img src="images/Services/awards.png" alt="" className="awards" />
+         <img loading='lazy' src="images/Services/awards.png" alt="" className="awards" />
         </div>
         <div className="right">
             <p className="head_text">Awards & Recognitions</p>
             <div className="btm_cont">
                 <div className="award1">
-                    <img src="/images/Services/aw1.svg" alt="" />
+                     <img loading='lazy' src="/images/Services/aw1.svg" alt="" />
                     <p className="head_text1">
                     Electrical Research & Development Association
                     </p>
@@ -212,7 +212,7 @@ export default function AboutUs() {
                         
                     </ul>
                 <div className="award2">
-                    <img src="/images/Services/aw1.svg" alt="" />
+                     <img loading='lazy' src="/images/Services/aw1.svg" alt="" />
                     <p className="head_text1">
                     Earth Care Award - 2012
                     </p>
@@ -227,7 +227,7 @@ export default function AboutUs() {
         </div>
       </div>
       </FadeUpAnimation>
-      <FadeUpAnimation>
+      
       <div className="mid_cont3">
         <div className="About_top">
             <p className="head_text">
@@ -240,7 +240,7 @@ export default function AboutUs() {
         <div className="about_members">
             {board.map((data,idx)=>(
                 <div key={idx} className="single_member">
-                    <img src={data.img} alt={data.name} className="mem_img" />
+                     <img loading='lazy' src={data.img} alt={data.name} className="mem_img" />
                     <p className="name">
                         {data.name}
                     </p>
@@ -255,8 +255,8 @@ export default function AboutUs() {
         <Carousel/>
         </div>
       </div>
-      </FadeUpAnimation>
+      
     </div>
-    </FadeUpAnimation>
+    
   );
 }

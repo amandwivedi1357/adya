@@ -16,7 +16,7 @@ export default function CareerMain() {
     <div>
        
       <div className="top_main">
-            <img className="sol_banner" src="images/Homepage/careerBanner.png" alt="" />
+             <img loading='lazy' className="sol_banner" src="images/Services/new-career.jpg" alt="" />
             <div className="img_cont">
                 <p className="head_text">
                 Join Our Team 

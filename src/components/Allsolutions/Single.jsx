@@ -22,7 +22,7 @@ console.log(singleData)
              
                 
             <div className="top_main">
-                <img className="sol_banner" src='images/Homepage/singl_sol1.jpg' alt="" />
+                 <img loading='lazy' className="sol_banner" src='images/Homepage/singl_sol1.jpg' alt="" />
                 <div className="img_cont">
                     <p className="head_text">{singleData.route}</p>
                   
@@ -56,7 +56,7 @@ console.log(singleData)
                         <div className="info_graphics">
                             <p className="head_text">Solution Architecture</p>
 
-                            <img className="info_g" src={singleData.solution_arch} alt="" />
+                             <img loading='lazy' className="info_g" src={singleData.solution_arch} alt="" />
                         </div>
                     )
                 }
@@ -64,7 +64,7 @@ console.log(singleData)
                     singleData.solution_img && (
                         <div className="permanent">
                             <p className="head_text">Services</p>
-                            <img className="perm_img" src={singleData.solution_img} alt="" />
+                             <img loading='lazy' className="perm_img" src={singleData.solution_img} alt="" />
                         </div>
                     )
                 } */}
@@ -82,7 +82,7 @@ console.log(singleData)
                                     cards1_AllSolutions.map((data, idx) => (
                                         <div className={`single_link ${singleData.route === data.head ? 'active' : ''}`} key={idx} onClick={() => navigate(`/${data.head}`)} onMouseEnter={() => setIsHovered(idx)} onMouseLeave={() => setIsHovered(null)}>
                                             <div className="inner">
-                                            <img 
+                                             <img loading='lazy' 
                                                     className="link_img" 
                                                     src={isHovered === idx || singleData.route === data.head ? data.hover : data.img} 
                                                     alt="" 
@@ -103,7 +103,7 @@ console.log(singleData)
                                     cards1_Sectors.map((data, idx) => (
                                         <div className="single_link" key={idx} onClick={() => navigate(`/${data.head}`)} onMouseEnter={() => setIsHovered(idx)} onMouseLeave={() => setIsHovered(null)}>
                                             <div className="inner">
-                                                <img className="link_img" src={isHovered === idx ? data.hover : data.img} alt="" />
+                                                 <img loading='lazy' className="link_img" src={isHovered === idx ? data.hover : data.img} alt="" />
                                                 <p className="link_text">{data.head}</p>
                                             </div>
                                             <p className="arrow-right">→</p>

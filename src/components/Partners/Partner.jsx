@@ -9,7 +9,7 @@ export default function PartnerMain() {
     <div>
          
        <div className="top_main">
-                <img className="sol_banner" src='/images/Services/Partners.png' alt="" />
+                 <img loading='lazy' className="sol_banner" src='/images/Product/partner.webp' alt="" />
                 <div className="img_cont">
                     <p className="head_text">Partners</p>
                     
@@ -81,7 +81,7 @@ export default function PartnerMain() {
                     </div>
                     
                     <div className="right">
-                        <img src="images/Services/lightning.png" alt="" />
+                         <img loading='lazy' src="images/Services/lightning.png" alt="" />
                     </div>
                    
                </div>

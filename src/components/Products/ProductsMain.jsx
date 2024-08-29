@@ -17,7 +17,7 @@ export default function ProductsMain() {
     <div className="products_container">
           
          <div className="top_main">
-            <img className="sol_banner" src="/images/Homepage/products.jpg" alt="" />
+             <img loading='lazy' className="sol_banner" src="/images/Homepage/products.jpg" alt="" />
             <div className="img_cont">
                 <p className="head_text">
                 Products 
@@ -52,7 +52,7 @@ export default function ProductsMain() {
             {products_Card.map((data,idx)=>(
                 <div onClick={()=>handleClick(data.route)} className="card" key={idx}   onMouseEnter={() => setIsHovered(idx)}
                 onMouseLeave={() => setIsHovered(null)}>
-                    <img src={isHovered === idx ? data.hover : data.img} alt="" className="card_vect" />
+                     <img loading='lazy' src={isHovered === idx ? data.hover : data.img} alt="" className="card_vect" />
                     <div className="redd" style={{display:"flex"}}>
                     <p className="head_text">
                         {data.head}{" "}    
@@ -76,7 +76,7 @@ export default function ProductsMain() {
                 <div key={idx} className="tab" onMouseEnter={() => setIsHovered5(true)}
                 onMouseLeave={() => setIsHovered5(false)} onClick={()=>handleClick(data.route)}>
                         <div className="in_tab">
-                            <img src={
+                             <img loading='lazy' src={
                       isHovered5
                         ? "images/Homepage/energy_fff.svg"
                         : data.img

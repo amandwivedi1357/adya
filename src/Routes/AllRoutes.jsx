@@ -18,10 +18,13 @@ import SingleProduct from "../pages/SingleProduct/SingleProduct";
 import Softwares from "../components/Products/Softwares/Softwares";
 import Commune from "../components/Products/Commune/Commune";
 import SingleCareer from "../components/Career/SingleCareer";
+import Overlay from "./Overlay";
 
 
 export default function AllRoutes() {
   return (
+    <>
+    {/* <Overlay/> */}
     <Routes>
         <Route path="/" element={<Home/>} />
       <Route path="/all-solutions" element={<AllSolutions/>} />
@@ -46,5 +49,7 @@ export default function AllRoutes() {
       <Route path="/Communication-Module/:single" element={<SingleProduct/>}/>
       {/* <Route path="/products/single" element={<Products/>}/> */}
     </Routes>
+    </>
+    
   )
 }

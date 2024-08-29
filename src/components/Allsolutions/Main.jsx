@@ -4,8 +4,9 @@ import { cards1_AllSolutions } from ".."
 import "./Main.css"
 import { useNavigate } from "react-router-dom";
 import FadeUpAnimation from "../../Routes/FadeUp";
+import useCoolPageTransition from "../hooks/useCoolPageTransition";
 export default function Main() {
-    
+    // useCoolPageTransition()
     const [isHovered5, setIsHovered5] = useState(false);
    
     const navigate = useNavigate();
@@ -14,11 +15,14 @@ export default function Main() {
         navigate(`/${route}`)
     }
   return (
+    <FadeUpAnimation>
+
+    
     <div>
          
 
         <div className="top_main">
-            <img className="sol_banner" src="images/Homepage/singl_sol1.jpg" alt="" />
+             <img loading='lazy' className="sol_banner" src="images/Homepage/singl_sol1.jpg" alt="" />
             <div className="img_cont">
                 <p className="head_text">
                 Solutions 
@@ -45,7 +49,7 @@ export default function Main() {
             {cards1_AllSolutions.map((data,idx)=>(
                 <div onClick={()=>handleClick(data.head)} className="card" key={idx}   onMouseEnter={() => setIsHovered(idx)}
                 onMouseLeave={() => setIsHovered(null)}>
-                    <img src={isHovered === idx ? data.hover : data.img} alt="" className="card_vect" />
+                     <img loading='lazy' src={isHovered === idx ? data.hover : data.img} alt="" className="card_vect" />
                     <div className="redd" style={{display:"flex"}}>
                     <p className="head_text">
                         {data.head}{" "}    
@@ -73,7 +77,7 @@ export default function Main() {
                 <div key={idx} className="tab" onMouseEnter={() => setIsHovered5(true)}
                 onMouseLeave={() => setIsHovered5(false)} onClick={()=>handleClick(data.head)}>
                         <div className="in_tab">
-                            <img src={
+                             <img loading='lazy' src={
                       isHovered5
                         ? "images/Homepage/energy_fff.svg"
                         : data.img
@@ -92,5 +96,6 @@ export default function Main() {
         </div>
         </FadeUpAnimation> 
     </div>
+    </FadeUpAnimation>
   )
 }
