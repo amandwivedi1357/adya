@@ -58,7 +58,7 @@ import Carousel from "./Slider";
     //     post:'VP Engineering'
     // },
     {
-        img:"/staff/Mannar-removebg-preview.png",
+        img:"/staff/konstantyn.png",
         name:'Konstantyn Voitsekhovskyi',
         post:'Director Business Excellence'
     },

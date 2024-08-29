@@ -15,8 +15,13 @@ function MySlider() {
       descText: 'Adya Smart metering solutions'
     },
     {
-      image: 'images/Homepage/slid2.webp',
+      image: 'images/Homepage/slide2.png',
       headText: 'Our products are designed for long-lasting, high accuracy and consistent performance',
+      descText: 'Adya Smart metering solutions'
+    },
+    {
+      image: 'images/Homepage/slid5.webp',
+      headText: 'Our advanced data analytics offer actionable insights, empowering all stakeholders to make informed decisions ',
       descText: 'Adya Smart metering solutions'
     },
     {
@@ -24,11 +29,6 @@ function MySlider() {
       headText: 'Upgrade your existing digital meter to a smart meter using our Digi2Smart (™) IoT plug-in device ',
       descText: 'Adya Smart metering solutions'
     },
-    {
-      image: 'images/Homepage/slid5.webp',
-      headText: 'Our advanced data analytics offer actionable insights, empowering all stakeholders to make informed decisions ',
-      descText: 'Adya Smart metering solutions'
-    }
   ];
 
   const settings = {
