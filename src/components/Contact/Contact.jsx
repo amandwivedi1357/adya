@@ -137,7 +137,7 @@ export default function Contact() {
                        <p className="full_address">Plot no.61, Nagarjuna hills, Punjagutta, Hyderabad - 500 082, Telangana, India</p>
                        <div style={{marginBottom:'23px'}} className="inner_office_info">
                          <img loading='lazy' style={style} className='loc_icon' src="images/About/call.svg" alt="" />
-                        <p className='address'>+91 40 4857 9530 </p>
+                        <p className='address'>+799 399 4433</p>
                        </div>
                        <div style={{marginBottom:'23px'}} className="inner_office_info">
                          <img loading='lazy' style={style} className='loc_icon' src="images/About/@.svg" alt="" />

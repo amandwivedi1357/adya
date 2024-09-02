@@ -54,7 +54,7 @@ console.log(singleData)
                 {
                     singleData.solution_arch && (
                         <div className="info_graphics">
-                            <p className="head_text">Solution Architecture</p>
+                            <p className="head_text">Our Services</p>
 
                              <img loading='lazy' className="info_g" src={singleData.solution_arch} alt="" />
                         </div>

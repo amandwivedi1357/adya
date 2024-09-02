@@ -140,15 +140,14 @@ export default function SingProduct() {
                 </div> 
            </div>
         </div>
-        <div className="images_container">
+        {/* <div className="images_container">
           {singleData.images.map((item,idx)=>(
             <div key={idx} className="single_image">
-                 {/*  <img loading='lazy' src='/images/Services/Partners.png' key={idx} alt="" /> */}
             </div>
            
           ))}
         </div>
-        
+         */}
       </div>
       </FadeUpAnimation>
        
